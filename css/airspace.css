@@ -73,7 +73,7 @@ header .navbar {
   border: 0px;
 }
 header .navbar-brand {
-  padding-top: 0px 0;
+  padding-top: 5px 0;
 }
 header .navbar-default {
   background: none;
@@ -157,7 +157,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 0px;
 }
 #intro .section-title p {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 /*--
 	service Start
