@@ -48,6 +48,15 @@ a:focus,
 a:active {
   text-decoration: none !important;
 }
+
+.home-title h1 {
+  font-family: 'FontAwesome';
+}
+
+.home-title p {
+  font-family: 'FontAwesome';
+}
+
 .section-title {
   margin-bottom: 70px;
 }
