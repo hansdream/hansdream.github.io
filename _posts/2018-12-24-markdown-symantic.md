@@ -195,7 +195,7 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 `![대체텍스트](이미지주소)`
 <br>
 
-![logo](/img/logo.jpg){: width="100" height="100"}
+![logo](/img/logo.jpg){: width="100%" height="100%"}
 
 <br><br>
 
