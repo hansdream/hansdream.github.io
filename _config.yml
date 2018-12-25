@@ -14,15 +14,14 @@ keep_files:
 
 
 # Site settings
-title: Airspace
+title: MKJJO
 subtitle: "A free HTML5 agency template"
-url: "https://mkjjo.github.io/" # the base hostname & protocol for your site
+url: "https://mkjjo.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 disqus_url: "http://disqus.com/by/mk_cho"
-disqus_id: mk_cho
 baseurl:
 cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+logo: "/assets/logo.jpg"
 
 # Build settings
 markdown: kramdown
@@ -37,3 +36,10 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+plugins:
+  - jekyll-sitemap
+
+
+disqus:
+  shortname: mkjjo
