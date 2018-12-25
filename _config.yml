@@ -38,19 +38,19 @@ descriptions:
 # plugins:
 #   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 #   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  
+
 disqus:
   shortname: mkjjo
 
 
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path/
-
-defaults:
-  - scope:
-      path: ''
-      type: tags
-    values:
-      layout: tag
+# collections:
+#   tags:
+#     output: true
+#     permalink: /tags/:path/
+#
+# defaults:
+#   - scope:
+#       path: ''
+#       type: tags
+#     values:
+#       layout: tag
