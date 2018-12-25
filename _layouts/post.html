@@ -22,13 +22,14 @@ sitemap :
               <hr />
               <p>{{ content }}</p>
             </div>
+            {% if page.comments %}
+              {% include disqus_comments.html %}
+            {% endif %}
           </div><!-- .col-md-7 close -->
         </div>
       </div>
     </section>
-    {% if page.comments %}
-      {% include disqus_comments.html %}
-    {% endif %}
+
   </div>
   <p class="center-text" style="padding: 30px;">
     <a href="{{ site.baseurl }}/blog">Back to blog</a>
