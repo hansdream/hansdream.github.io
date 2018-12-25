@@ -5,7 +5,7 @@ layout: page
 permalink: /search/
 tipue_search_active: true
 exclude_from_search: true
-comments: true
+comments: false
 ---
 
 <!-- search box -->
@@ -17,11 +17,11 @@ comments: true
   <div style="clear: both;"></div>
 </form><!-- search box close -->
 
-<div id="tipue_search_content"></div> # 이 부분은 search_content.js가 담당한다.
+<div id="tipue_search_content"></div>
 <script>
 $(document).ready(function() {
   $('#tipue_search_input').tipuesearch({
-    'wholeWords' : false, # 단어 검색 여부 한글 검색을 위해서는 false가 필수이다.
+    'wholeWords' : false, 
     'showTime' : false  });
 });
 </script>
