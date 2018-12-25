@@ -59,8 +59,8 @@ http://www.tipue.com/search
 }
 .tipue_search_icon
 {
-   width: 48px;
-   height: 48px;
+   width: 24px;
+   height: 24px;
 }
 .tipue_search_left
 {
@@ -78,19 +78,17 @@ http://www.tipue.com/search
 
 #tipue_search_content
 {
-  max-width: 750px;
-	padding-top: 5px;
-  padding-top: 5px;
+  max-width: 100%;
+  min-height: 100px;
 	margin: 7px;
   border-bottom: 1px dotted #ddd;
 }
+
 #tipue_search_results_count
 {
 	color: #333;
   font-weight: bold
   padding: 40px;
-	padding-top: 5px;
-  padding-down: 5px;
 	margin: 7px;
 
 }
