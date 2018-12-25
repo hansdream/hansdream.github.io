@@ -231,6 +231,4 @@ img.aligncenter{display:block;margin:0 auto}
 - <http://jaebok.tistory.com/87>
 
 
-{% if page.comments != false %}
-  {% include disqus_comments.html %}
-{% endif %}
+{% include disqus_comments.html %}
