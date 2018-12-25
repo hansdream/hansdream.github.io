@@ -19,6 +19,7 @@ permalink: /blog/
 {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} <a href="https://mkjjo.github.io{{ post.url | relative_url }}#disqus_thread">Comments</a> </span>
   <p class="post-date">{{ post.date | date_to_long_string }}</p>
   <p>
     {{ post.content | strip_html | truncatewords: 50 }}
