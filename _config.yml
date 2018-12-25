@@ -35,6 +35,18 @@ descriptions:
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
+
+tipue_search:
+  include: # 포함할 url을 선택한다.
+    pages: false # posts 폴더 이외에 다른 문서 선택 여부 (true일 경우 모든 url이 포함된다.)
+    collections: []
+  exclude: # 제외시킬 url을 선택한다.
+    files: [search.html, index.html, tags.html]
+    categories: []
+    tags: []
+
+
+    
 # plugins:
 #   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 #   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
