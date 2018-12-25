@@ -229,3 +229,8 @@ img.aligncenter{display:block;margin:0 auto}
 - <http://oztheme.tistory.com/65>
 - <https://blog.kalkin7.com>
 - <http://jaebok.tistory.com/87>
+
+
+{% if page.comments != false %}
+  {% include disqus_comments.html %}
+{% endif %}
