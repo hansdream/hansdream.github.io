@@ -7,18 +7,12 @@ tipue_search_active: true
 exclude_from_search: true
 ---
 
-<form action="{{ page.url | relative_url }}">
-  <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
-  <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
-  <div style="clear: both;"></div>
-</form>
 
-<div id="tipue_search_content"></div>
-
+<div id="tipue_search_content"></div> # 이 부분은 search_content.js가 담당한다.
 <script>
 $(document).ready(function() {
-  $('#tipue_search_input').tipuesearch();
+  $('#tipue_search_input').tipuesearch({
+    'wholeWords' : false, # 단어 검색 여부 한글 검색을 위해서는 false가 필수이다.
+    'showTime' : false  });
 });
 </script>
-
-
