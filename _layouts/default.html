@@ -3,6 +3,20 @@
   <head>
 
     {% include head.html %}
+    <!-- The big email subscribe modal content -->
+    {% if site.subscribers %}
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                {% if site.logo %}
+                    <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
+                {% endif %}
+                <h1 class="subscribe-overlay-title">search{{ site.title }}</h1>
+                <p class="subscribe-overlay-description">posts search</p>
+                {% include subscribe-form.html placeholder="keyword" %}
+            </div>
+        </div>
+    {% endif %}
 
   </head>
   <body>
