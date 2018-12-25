@@ -4,6 +4,7 @@ title: "[MarkDown] 기본 문법 설명"
 subtitle: "마크다운 작성을 위한 주요 문법"
 categories: [blog]
 tags: [markdown]
+comments: true
 ---
 
 
