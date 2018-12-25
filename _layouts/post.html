@@ -19,6 +19,9 @@ comments: true
               <hr />
               <p>{{ content }}dddddd</p>
             </div>
+            {% if page.comments != false %}
+              {% include disqus_comments.html %}
+            {% endif %}
           </div><!-- .col-md-7 close -->
         </div>
       </div>
@@ -28,11 +31,5 @@ comments: true
     <a href="{{ site.baseurl }}/blog">Back to blog</a>
   </p>
 
-
-
-
-  {% if page.comments != false %}
-    {% include disqus_comments.html %}
-  {% endif %}
 
 </article>
