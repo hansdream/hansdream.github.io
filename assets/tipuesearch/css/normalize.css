@@ -25,7 +25,8 @@ html {
  */
 
 body {
-  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -46,10 +47,33 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-family: 'Roboto', sans-serif;
+ }
+ h2 {
+   font-size: 30px;
+   font-weight: 400;
+ }
+ h3 {
+   font-size: 28px;
+   font-weight: 300;
+ }
+ p {
+   font-size: 15px;
+   line-height: 28px;
+ }
+ ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+ }
+
+
 
 /* Grouping content
    ========================================================================== */
@@ -102,21 +126,17 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 
-a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
-}
 
 /**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
+ a,
+ a:active,
+ a:focus,
+ a:active {
+   text-decoration: none !important;
+ }
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -124,8 +144,6 @@ a:hover {
 
 abbr[title] {
   border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
 }
 
 /**
