@@ -17,7 +17,6 @@ keep_files:
 title: MKJJO
 subtitle: "A free HTML5 agency template"
 #url: "https://mkjjo.github.io" # the base baseurl: ""
-
 url: "https://comh.cf/" # the base hostname & protocol for your site
 baseurl: "/airspace-jekyll
 cover: "/assets/cover.png"
