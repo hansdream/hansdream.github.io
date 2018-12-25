@@ -63,6 +63,14 @@ a:active {
 }
 
 .intro-message {
+    font-weight: bold;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message p {
+    font-style: italic;
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
@@ -91,16 +99,6 @@ a:active {
 
     .intro-message > h1 {
         font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
     }
 
     .intro-divider {
