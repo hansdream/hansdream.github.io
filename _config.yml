@@ -41,3 +41,16 @@ plugins:
 
 disqus:
   shortname: mkjjo
+
+
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
