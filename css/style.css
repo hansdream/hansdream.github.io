@@ -104,8 +104,14 @@
 
 
 
- div.split-line {
-   border-top-width : 3px;
+ .red-dot-line {
+   border-top-width : 1px;
    border-top-style : dotted;
    border-top-color : red;
+ }
+
+ .gray-dot-line {
+   border-top-width : 1px;
+   border-top-style : dotted;
+   border-top-color : gray;
  }

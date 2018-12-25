@@ -2,7 +2,10 @@
 layout: post
 title: "[MarkDown] 기본 문법 설명"
 subtitle: "마크다운 작성을 위한 주요 문법"
+categories: [blog]
+tags: [markdown]
 ---
+
 
 마크다운 작성을 위한 주요 문법
 
@@ -21,15 +24,13 @@ subtitle: "마크다운 작성을 위한 주요 문법"
 
 # The largest heading
 ## The second largest heading
-###### The smallest headin
+###### The smallest heading
 
 <br><br>
 
-<div class="split-line">
-
----
-
-</div>
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 2. 문자스타일 바꾸기
 
@@ -43,7 +44,9 @@ subtitle: "마크다운 작성을 위한 주요 문법"
 
 <br><br>
 
----
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 3. 테이블 만들기
 **`\` 문자를 통해 `|` 문자를 넣을 수 있음.**
@@ -79,7 +82,9 @@ subtitle: "마크다운 작성을 위한 주요 문법"
 
 <br><br>
 
----
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 4. 인용구
 ```
@@ -89,9 +94,26 @@ In the words of Abraham Lincoln:
 In the words of Abraham Lincoln:
 > Pardon my French
 
+<br>
+
+**중첩인용구**
+
+```
+>fitst
+>>second
+>>>tirth
+```
+
+>fitst
+>>second
+>>>tirth
+
+
 <br><br>
 
----
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 5. 코드블럭
 ```
@@ -114,7 +136,9 @@ if a == 1:
 
 <br><br>
 
----
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 6. 링크
 **`[]`와 `()`로 표현할 수 있다.**
@@ -126,7 +150,9 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 <br><br>
 
----
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 7. 리스트 표현
 `-`와 `*`로 표현 가능하다.
@@ -161,12 +187,15 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 <br><br>
 
----
+~~~
+<div class="gray-dot-line"></div>
+~~~
 
 ### 8. 이미지 넣기
-`![대체텍스트](이미지주소 "이미지제목")`
+`![대체텍스트](이미지주소)`
 <br>
-![logo](/img/logo.jpg "logo")
+
+![logo](/img/logo.jpg){: width="100" height="100"}
 
 <br><br>
 
@@ -189,7 +218,9 @@ img.aligncenter{display:block;margin:0 auto}
 
 <br><br>
 
----
+~~~
+<div class="red-dot-line"></div>
+~~~
 
 ### **Reference**
 
