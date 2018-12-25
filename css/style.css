@@ -33,3 +33,71 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+
+
+
+ ul.list_note {
+   padding: 5px 0 5px 20px;
+   margin: 0 5px 10px 5px;
+   font-size: 95%;
+   font-weight: 300;
+   line-height: 1.5;
+   color: #777777;
+   border-left: 5px
+   solid #D3EAFA;
+ }
+
+ ul.list_note li {
+   margin: 0 0 5px 10px;
+ }
+
+ ul.list_note p {
+   color: #333333;
+ }
+
+ ul.list-important {
+   padding: 5px 0 5px 20px;
+   margin: 0 5px 10px 5px;
+   font-size: 95%;
+   font-weight: 300;
+   line-height: 1.5;
+   color: #777777;
+   border-left: 5px
+   solid #ecbebe;
+ }
+
+ ul.list-important li {
+   margin: 0 0 5px 10px;
+ }
+
+ ul.list-important p {
+   color: #333333;
+ }
+
+ hr.one {
+   height: 1px;
+   margin: 5px 20px 40px 20px;
+   border-top: 1px
+   solid #bbb;
+ }
+
+
+ iframe, object, embed { max-width:100%; }
+ video { max-width:100%; height: auto; }
+ .media-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
+ }
+ .media-container iframe,
+ .media-container object,
+ .media-container embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
