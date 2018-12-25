@@ -18,6 +18,14 @@
               <img src="{{ site.baseurl }}/img/logo.jpg" alt="Logo">
             </a>
           </div>
+          <!-- search box -->
+          <form action="/search">
+            <div class="tipue_search_box">
+              <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+              <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="최소 3글자 이상" required></div>
+            <div style="clear: both;"></div>
+          </form>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
@@ -25,7 +33,7 @@
                 <li><a href="{{ site.baseurl }}/work">Work</a></li>
                 <li><a href="{{ site.baseurl }}/blog">blog</a></li>
                 <li><a href="{{ site.baseurl }}/trend">Trend</a></li>
-                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>                
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
