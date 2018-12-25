@@ -16,7 +16,6 @@ sitemap :
             <h1>{{ page.title }}</h1>
             <div class="post-info-wrapper">
               <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
-              {% include tag.html %}
             </div>
             <hr />
             <p>{{ content }}</p>
@@ -30,9 +29,6 @@ sitemap :
   </section>
 
 
-  <section class="tags">
-    <strong>Tags:</strong> <a href="/search/?tag=Jekyll">Jekyll</a>,&nbsp;<a href="/search/?tag=tag-search">tag-search</a>,&nbsp;<a href="/search/?tag=카테고리검색">카테고리검색</a>,&nbsp;<a href="/search/?tag=태그검색">태그검색</a>
-  </section>
 
 
 </div>
