@@ -17,13 +17,13 @@ http://www.tipue.com/search
 #tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text
 {
      font: 300 12px/1.7 Roboto, sans-serif;
-     padding: 0 40px
-     font-weight: bold
+     margin: 0 40px;
+     font-weight: bold;
 }
 .tipue_search_content_title
 {
      font: 100 20px/1.7 Roboto, sans-serif;
-     padding: 0 40px;
+     margin: 0 40px;
      width: 100%;
      min-height: 100px;
      background-color: white;
@@ -32,6 +32,7 @@ http://www.tipue.com/search
 {
      font: 300 12px/1.7 Roboto, sans-serif;
      padding: 0 40px;
+     margin: 2px 0;
      width: 100%;
      min-height: 150px;
      background-color: white;
@@ -67,7 +68,7 @@ http://www.tipue.com/search
 .tipue_search_left
 {
      float: left;
-     padding: 15px 9px 0 0;
+     margin: 15px 9px 0 0;
 }
 .tipue_search_right
 {
@@ -82,16 +83,15 @@ http://www.tipue.com/search
 {
   max-width: 100%;
   min-height: 100px;
-	margin: 5px;
+	padding: 0 40px;
   border-bottom: 1px dotted #ddd;
 }
 
 #tipue_search_results_count
 {
 	color: #333;
-  font-weight: bold
-  padding: 0 40px;
-	margin: 5px;
+  font-weight: bold;
+	padding: 0 40px;
 
 }
 #tipue_search_warning
@@ -135,25 +135,27 @@ http://www.tipue.com/search
 .tipue_search_content_url a, .tipue_search_related_text a
 {
    color: #5396ea;
-   padding: 0 40px
+   padding: 0 40px;
    text-decoration: none;
 }
 .tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after
 {
    color: #555;
+   padding: 0 40px;
 }
 .tipue_search_content_text
 {
 	color: #333;
   word-wrap: break-word;
   hyphens: auto;
-  margin-top: 5px;
-  border-bottom: 1px dotted #ddd;
+  font-weight: bold;
+  border-bottom: 1px;
 }
 .tipue_search_content_bold
 {
    color: #333;
-   border-bottom: 1px dotted #ddd;
+   font-weight: bold;
+   border-bottom: 1px;
 }
 .tipue_search_content_debug
 {
@@ -163,7 +165,7 @@ http://www.tipue.com/search
 .tipue_search_related_title
 {
 	color: #333;
-  padding: 40px;
+  padding: 0 40px;
   width: 100%;
   min-height: 100px;
   background-color: white;
