@@ -10,7 +10,7 @@ comments: false
 
 <!-- search box -->
 <form action="/search">
-  <div class="tipue_search_box navbar-right">
+  <div class="tipue_search_box">
     <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
     <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
   </div>
@@ -21,7 +21,7 @@ comments: false
 <script>
 $(document).ready(function() {
   $('#tipue_search_input').tipuesearch({
-    'wholeWords' : false, 
+    'wholeWords' : false,
     'showTime' : false  });
 });
 </script>
