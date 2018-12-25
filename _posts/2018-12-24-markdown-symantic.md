@@ -31,12 +31,12 @@ subtitle: "마크다운 작성을 위한 주요 문법"
 
 ### 2. 문자스타일 바꾸기
 
-| Style             | Syntax     | Example             | Output            |
-| :---              | :---       | :---:               | :---:             |
-| Bold              | **, __     | `**sample text**`   | **sample text**   |
-| Italic            | *, _       | `*sample text*`     | *sample text*     |
-| Strikethrough     | ~~         | `~~sample text~~`   | ~~sample text~~   |
-| Bold and italic   | ""-        | `""sample _text_""` | ""sample _text_"" |
+| Style             | Syntax     | Example             | Output            
+| :---------------- | ----------------       | ----------------               | ----------------             
+| Bold              | **, __     | `**sample text**`   | **sample text**   
+| Italic            | *, _       | `*sample text*`     | *sample text*     
+| Strikethrough     | ~~         | `~~sample text~~`   | ~~sample text~~   
+| Bold and italic   | ""-        | `""sample _text_""` | ""sample _text_""
 
 <br><br>
 
@@ -188,7 +188,7 @@ img.aligncenter{display:block;margin:0 auto}
 
 ---
 
-### Reference
+### **Reference**
 
 - <https://help.github.com/categories/writing-on-github/>
 - <http://oztheme.tistory.com/65>
