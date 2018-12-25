@@ -2,6 +2,22 @@
 layout: default
 ---
 
+
+
+<img src="/img/tag-256.png" alt="Tags: " class="tag-img"/>
+<div class="post-tags">
+  {% if post %}
+    {% assign tags = post.tags %}
+  {% else %}
+    {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a href="/tags/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+</div>
+<br/>
+
+<!--
 <div id="navbar" class="container">
     <h5><a id="link-back" href="/">Main</a></h5>
     {% include share.html %}
@@ -27,3 +43,4 @@ layout: default
         {% include pagination.html %}
     </div>
 </div>
+ -->
