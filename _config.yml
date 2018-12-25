@@ -16,9 +16,10 @@ keep_files:
 # Site settings
 title: Airspace
 subtitle: "A free HTML5 agency template"
-url: "https://comh.cf/" # the base hostname & protocol for your site
+url: "https://mkjjo.github.io/" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-url: “https://{mkjjo}.github.io
+disqus_url: "http://disqus.com/by/mk_cho"
+disqus_id: mk_cho
 baseurl:
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
