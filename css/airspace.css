@@ -50,11 +50,12 @@ a:active {
 }
 
 .home-title h1 {
-  font-family: 'FontAwesome';
+  font-family: sans-serif;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .home-title p {
-  font-family: 'FontAwesome';
+  font-family: sans-serif;
 }
 
 .section-title {
