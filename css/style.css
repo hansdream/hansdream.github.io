@@ -30,6 +30,11 @@
   color: #333;
 }
 
+.post-comment {
+  font-size: 15px;
+  color: #333;
+}
+
 .post-area a:hover {
   color: #0D0017;
 }
