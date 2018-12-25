@@ -193,7 +193,6 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 ~~~
 
 ### 8. 이미지 넣기
-`![대체텍스트](이미지주소)`
 
 <br><br>
 
