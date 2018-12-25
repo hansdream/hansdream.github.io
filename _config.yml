@@ -18,6 +18,7 @@ title: Airspace
 subtitle: "A free HTML5 agency template"
 url: "https://comh.cf/" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+url: “https://{mkjjo}.github.io
 baseurl:
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
