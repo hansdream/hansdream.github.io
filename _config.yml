@@ -17,7 +17,7 @@ keep_files:
 title: MKJJO
 subtitle: "A free HTML5 agency template"
 url: "https://mkjjo.github.io" # the base
-baseurl: "mkjjo"
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.jpg"
 
