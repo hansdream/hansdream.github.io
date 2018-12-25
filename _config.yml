@@ -19,7 +19,7 @@ subtitle: "A free HTML5 agency template"
 url: "https://mkjjo.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 disqus_url: "http://disqus.com/by/mk_cho"
-baseurl:
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.jpg"
 
@@ -38,8 +38,8 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 plugins:
-  - jekyll-sitemap
-
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 disqus:
   shortname: mkjjo
