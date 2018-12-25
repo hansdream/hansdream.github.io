@@ -194,9 +194,6 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 ### 8. 이미지 넣기
 `![대체텍스트](이미지주소)`
-<br>
-
-![logo](/img/logo.jpg){: width="100%" height="100%"}
 
 <br><br>
 
@@ -232,5 +229,3 @@ img.aligncenter{display:block;margin:0 auto}
 
 
 {% include disqus_comments.html %}
-
--dsdfds
