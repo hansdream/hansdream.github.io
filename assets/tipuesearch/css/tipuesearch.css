@@ -85,9 +85,7 @@ http://www.tipue.com/search
 {
 	color: #333;
   font-weight: bold;
-	padding: 20px 40px;
-  margin-top: 20px
-  border-top: 1px dotted #ddd;
+	padding: 20px 300px;  /* 첫결과 상단 패딩을 결정함 */
 
 }
 #tipue_search_warning
