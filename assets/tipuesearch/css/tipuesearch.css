@@ -77,7 +77,7 @@ http://www.tipue.com/search
 
 #tipue_search_content
 {
-	padding: 20px 40px;
+	padding: 1px 40px;
   border-bottom: 1px dotted #ddd;
 }
 
@@ -85,7 +85,7 @@ http://www.tipue.com/search
 {
 	color: #333;
   font-weight: bold;
-	padding: 0px 40px;
+	padding: 20px 40px;
   margin-top: 20px
   border-top: 1px dotted #ddd;
 
