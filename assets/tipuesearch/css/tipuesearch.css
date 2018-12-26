@@ -21,7 +21,7 @@ http://www.tipue.com/search
 .tipue_search_content_title
 {
      font: 100 20px/1.7 Roboto, sans-serif;
-     padding: 1px 40px;
+     padding: 1px 100px;
      width: 100%;
      background-color: white;
 }
@@ -155,7 +155,6 @@ http://www.tipue.com/search
 .tipue_search_related_title
 {
 	color: #333;
-  padding: 5px 100px;
   width: 100%;
   background-color: white;
 }
