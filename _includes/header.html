@@ -21,15 +21,18 @@
           <!-- Search bar -->
           <ul class="nav navbar-nav navbar-right">
             <li>
-            <form action="{{ site.baseurl }}/search.html">
-              <input type="text" id="tipue_search_input" name="q" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-              <button type="submit" class="">
-                <i class="fa fa-fw fa-search"></i>
-              </button>
-            </form>
+              <form action="{{ site.baseurl }}/search">
+                <div class="tipue_search_box">
+                  <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
+                  <button type="submit" class="">
+                    <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+                  </button>
+                </div>
+              </form>
             </li>
-          </ul>
-                      <!-- Collect the nav links, forms, and other content for toggling -->
+          </ul><!-- search box close -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
