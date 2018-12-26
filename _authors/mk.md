@@ -1,4 +1,4 @@
 ---
-name: mk
-title: 미경
+name: MK
+title: MK
 ---
