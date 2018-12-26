@@ -76,7 +76,6 @@ http://www.tipue.com/search
 #tipue_search_content
 {
 	padding: 1px 40px;  /* 조회 결과 블럭의 패딩 결정 */
-  border-bottom: 1px dotted #ddd;
 }
 
 #tipue_search_results_count
