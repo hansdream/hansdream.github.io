@@ -67,3 +67,5 @@ defaults:
   - scope:
       path: ''
       type: tags
+    values:
+      layout: tag
