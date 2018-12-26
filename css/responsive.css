@@ -398,3 +398,36 @@ px      68    160    252    344    436    */
 	Overrides styles for devices with a
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+
+
+
+/* search box */
+
+
+#tipue_search_input
+{
+  color: #333;
+  background-color: white;
+	border: 1px solid #e3e3e3;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+     box-shadow: none;
+	outline: 0;
+	margin: 0;
+  max-height: 50px
+}
+.tipue_search_icon
+{
+   width:24px;
+   height: 24px;
+}
+.tipue_search_left
+{
+     float: left;
+     margin: 15px 9px 0 0;
+}
+.tipue_search_right
+{
+     float: right;
+}
