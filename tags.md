@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: tag
 permalink: /tags/
 title: Tags
 comments: false
-author: MKJJO
 ---
 
 
