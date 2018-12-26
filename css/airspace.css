@@ -865,6 +865,11 @@ font header .navbar-default .navbar-nav li a:hover {
   border-bottom: 1px dotted #ddd;
 }
 
+#not-found {
+  padding: 1px 40px;
+  font-weight: bold;
+}
+
 /*---------------------------------------------
 					Contact Close
 -----------------------------------------------*/
