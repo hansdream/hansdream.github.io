@@ -76,7 +76,7 @@ http://www.tipue.com/search
 
 #tipue_search_content
 {
-	padding: 1px 100px;
+	padding: 1px 40px 20px 0px;  /* 조회결과의 '주소와 본문내용' 패딩 결정 */
   border-bottom: 1px dotted #ddd;
 }
 
