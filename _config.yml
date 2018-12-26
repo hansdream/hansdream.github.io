@@ -69,8 +69,3 @@ defaults:
       type: tags
     values:
       layout: tag
-  - scope:
-      path: ''
-      type: authors
-    values:
-      layout: author
