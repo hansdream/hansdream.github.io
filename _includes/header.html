@@ -19,10 +19,9 @@
             </a>
           </div>
           <!-- Search bar -->
-          {% if site.theme_settings.search %}
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <form action={{ site.baseurl }}/search.html method="get">
+              <form action="{{ site.baseurl }}/search.html" method="get">
                 <div class="tipue_search_box">
                   <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
                   <button type="submit" class="">
@@ -31,8 +30,7 @@
                 </div>
               </form>
             </li>
-          </ul>
-          {% endif %}<!-- search box close -->
+          </ul><!-- search box close -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
