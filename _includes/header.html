@@ -18,8 +18,18 @@
               <img src="{{ site.baseurl }}/img/logo.jpg" alt="Logo">
             </a>
           </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
+          <!-- Search bar -->
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+            <form action="{{ site.baseurl }}/search.html">
+              <input type="text" id="tipue_search_input" name="q" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
+              <button type="submit" class="">
+                <i class="fa fa-fw fa-search"></i>
+              </button>
+            </form>
+            </li>
+          </ul>
+                      <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
@@ -30,15 +40,6 @@
                 <li><a href="{{ site.baseurl }}/search">PostSearch</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
-            <!-- Search bar -->
-            <li>
-            <form action="{{ site.baseurl }}/search.html">
-              <input type="text" id="search-box" name="query" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-              <button type="submit" class="">
-                <i class="fa fa-fw fa-search"></i>
-              </button>
-            </form>
-            </li>
           </div><!-- /.container-fluid -->
         </nav>
       </div>
