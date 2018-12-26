@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 permalink: /tags/
 title: Tags
+comments: false
 ---
 
 
