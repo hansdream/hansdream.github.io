@@ -21,14 +21,14 @@
           <!-- Search bar -->
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <div class="tipue_search_box">
-                <a href="{{ site.baseurl }}/search">
+              <form action="{{ site.baseurl }}/search.html">
+                <div class="tipue_search_box">
                   <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
                   <button type="submit" class="">
                     <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
                   </button>
-                </a>
-              </div>
+                </div>
+              </form>
             </li>
           </ul><!-- search box close -->
 
