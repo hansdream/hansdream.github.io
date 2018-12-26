@@ -75,7 +75,7 @@ http://www.tipue.com/search
 
 #tipue_search_content
 {
-	padding: 1px 40px;  /* 조회 결과의 'title' 패딩 결정 */
+	padding: 1px 40px;  /* 조회 결과 블럭의 패딩 결정 */
   border-bottom: 1px dotted #ddd;
 }
 
@@ -108,11 +108,13 @@ http://www.tipue.com/search
 .tipue_search_content_title a
 {
    color: #666;
+   padding-top: 20px;
    font-weight: bold;
 }
 .tipue_search_content_title a:hover
 {
    color: #666;
+   padding-top: 20px;
    font-weight: bold;
 }
 .tipue_search_content_url
