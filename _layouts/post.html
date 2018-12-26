@@ -20,9 +20,7 @@ sitemap :
             <hr />
             <p>{{ content }}</p>
           </div>
-          {% if page.tags %}
-            {% include post_tags.html %}
-          {% endif %}
+          {% include post_tags.html %}
           {% if page.comments %}
             {% include disqus_comments.html %}
           {% endif %}
