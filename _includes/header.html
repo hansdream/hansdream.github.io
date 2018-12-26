@@ -31,16 +31,16 @@
               </ul>
             </div><!-- /.navbar-collapse -->
             <!-- Search bar -->
-            {% if site.theme_settings.search %}
-            <li>
-            <form action="{{ site.baseurl }}/search.html">
-              <input type="text" id="search-box" name="query" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-              <button type="submit" class="">
-                <i class="fa fa-fw fa-search"></i>
-              </button>
-            </form>
-            </li>
-            {% endif %}
+            <ul>
+              <li>
+              <form action="{{ site.baseurl }}/search.html">
+                <input type="text" id="search-box" name="query" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
+                <button type="submit" class="">
+                  <i class="fa fa-fw fa-search"></i>
+                </button>
+              </form>
+              </li>
+            </ul>
           </div><!-- /.container-fluid -->
         </nav>
       </div>
