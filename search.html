@@ -8,21 +8,23 @@ comments: false
 ---
 
 <section id="intro" style="border: 1px dotted #ddd;">
-  
-<div class="search">
-    <div id="search-results"></div>
-    <p id="not-found" style="display: none">
-        {{ site.theme_settings.str_search_no_results }}
-    </p>
-</div>
+
+  <div class="search">
+      <div id="search-results"></div>
+      <p id="not-found" style="display: none">
+          {{ site.theme_settings.str_search_no_results }}
+      </p>
+  </div>
 
 
-<!-- tipue_search_content -->
-<div id="tipue_search_content"></div>
-<script>
-  $(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-      'wholeWords' : false,
-      'showTime' : false  });
-    });
-</script>
+  <!-- tipue_search_content -->
+  <div id="tipue_search_content"></div>
+  <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'wholeWords' : false,
+        'showTime' : false  });
+      });
+  </script>
+
+</section>
