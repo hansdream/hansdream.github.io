@@ -855,20 +855,6 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 40px 0px;
 }
 
-/*--
-	search results
---*/
-
-#tipue_search_content
-{
-	padding: 1px 40px;
-  border-bottom: 1px dotted #ddd;
-}
-
-#not-found {
-  padding: 1px 40px;
-  font-weight: bold;
-}
 
 /*---------------------------------------------
 					Contact Close
