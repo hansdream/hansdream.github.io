@@ -50,7 +50,7 @@
  font-size: 0.97em;
  line-height: 1.4;
 }
-/* 
+/*
 .archive-item a {
  font-family: "PT Sans",Helvetica,Arial,sans-serif;
  background: none;
@@ -58,8 +58,36 @@
  font-size: 0.9em;
  } */
 
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+
  .archive-item a:link, .archive-item a:visited {
-   font-size: 20px;
+   font-size: 14px;
    color: #333;
  }
 
