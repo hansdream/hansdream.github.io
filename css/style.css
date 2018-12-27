@@ -62,6 +62,9 @@
  font-size: 0.9em;
  } */
 
+#archive {
+  padding-left: 40px;
+}
  .archive-item a:link, .archive-item a:visited {
    font-size: 14px;
    color: #333;
