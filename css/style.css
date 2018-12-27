@@ -67,8 +67,12 @@
    color: #0D0017;
  }
 
+ .archive-title {
+   color: #ddd;
+ }
+
 .archive-group {
-  padding-left: 40px;
+  padding-left: 40px 20px;
   background-color: white;
   border-bottom: 1px dotted #ddd;
 }

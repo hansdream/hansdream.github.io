@@ -25,9 +25,11 @@ title: Tags
       <div id="archives">
       {% for tag in site.tags %}
         <div class="archive-group">
-          {% capture tag_name %}{{ tag | first }}{% endcapture %}
-          <a name="{{ tag_name | slugize }}"></a>
-          <h3 id="#{{ tag_name | slugize }}" class="bold">{{ tag_name }}</h3>
+          <div class="archive-title">
+            {% capture tag_name %}{{ tag | first }}{% endcapture %}
+            <a name="{{ tag_name | slugize }}"></a>
+            <h3 id="#{{ tag_name | slugize }}" class="bold">{{ tag_name }}</h3>
+          </div>
           {% for post in site.tags[tag_name] %}
           <article class="archive-item">
             <h4><a class="archive-item-title" href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
