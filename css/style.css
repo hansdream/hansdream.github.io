@@ -35,7 +35,7 @@
 
 
 // for tag cloud and archives
-.tag-cloud {
+/* .tag-cloud {
   list-style: none;
   padding: 0;
   text-align: justify;
@@ -44,6 +44,47 @@
     display: inline-block;
     margin: 0 12px 12px 0;
   }
+} */
+
+.tag-cloud {
+  margin: 32px 8px 64px 22px;
+  font-size: 0.97em;
+  line-height: 1.4;
+}
+.tag-cloud a {
+  background: none;
+  font-weight: 700;
+  margin-right: 14px;
+}
+.archive-group>h3 {
+  margin-bottom: 16px;
+}
+.archive-item {
+  margin: 0;
+}
+.archive-item:last-child:after {
+  margin-top: 80px;
+}
+.archive-item h4 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.05em;
+}
+.archive-item a:before {
+  content: '•';
+  margin-right: 10px;
+}
+.archive-item a {
+  font-family: "Kopub Batang", "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
+  background: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-left: 16px;
+}
+.archive-item::after {
+  content: '';
+  margin: 0;
+  padding: 0;
 }
 
 #archives {
