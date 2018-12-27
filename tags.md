@@ -9,7 +9,8 @@ title: Tags
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
 
-
+    <h1>{{ page.title }}</h1>
+    <br>
     <div class="tag-cloud">
     {% for tag in site.tags %}
       <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
@@ -19,7 +20,7 @@ title: Tags
       </span>
     {% endfor %}
     </div>
-
+    <br>
     <div id="archives">
     {% for tag in site.tags %}
       <div class="archive-group">
