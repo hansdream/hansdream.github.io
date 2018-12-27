@@ -1,7 +1,7 @@
 ---
 layout: tag
 permalink: /tags/
-title: Tagsaa
+title: Tags
 comments: false
 ---
 

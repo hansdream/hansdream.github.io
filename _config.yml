@@ -54,18 +54,18 @@ tipue_search:
 # disqus:
 #   shortname: mkjjo
 #
-
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path/
-  authors:
-    output: true
-    permalink: /authors/:path/
-
-defaults:
-  - scope:
-      path: ''
-      type: tags
-    values:
-      layout: tag
+#
+# collections:
+#   tags:
+#     output: true
+#     permalink: /tags/:path/
+#   authors:
+#     output: true
+#     permalink: /authors/:path/
+#
+# defaults:
+#   - scope:
+#       path: ''
+#       type: tags
+#     values:
+#       layout: tag
