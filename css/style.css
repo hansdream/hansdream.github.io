@@ -50,23 +50,29 @@
  font-size: 0.97em;
  line-height: 1.4;
 }
-
+/* 
 .archive-item a {
  font-family: "PT Sans",Helvetica,Arial,sans-serif;
  background: none;
  font-weight: 500;
  font-size: 0.9em;
+ } */
+
+ .archive-item a:link, .archive-item a:visited {
+   font-size: 20px;
+   color: #333;
  }
 
-#archives {
-  padding: 40px;
-}
+ .archive-item a:hover {
+   color: #0D0017;
+ }
+
 .archive-group {
+  padding: 40px;
   background-color: white;
   border-bottom: 1px dotted #ddd;
 }
 .archive-item {
-  margin-left: 40px;
   width: 100%;
   min-height: 150px;
 }
