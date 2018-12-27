@@ -45,6 +45,10 @@
 
 
 // for tag cloud and archives
+.tags-title {
+  padding-left: 40px:
+}
+
 .tag-cloud {
  margin: 32px 8px 64px 22px;
  font-size: 0.97em;
