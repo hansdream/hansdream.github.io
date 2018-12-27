@@ -1,4 +1,0 @@
----
-name: fintech
-title: fintech
----

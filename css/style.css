@@ -35,19 +35,8 @@
 
 
 // for tag cloud and archives
-/* .tag-cloud {
-  list-style: none;
-  padding: 0;
-  text-align: justify;
-  font-size: 16px;
-  li {
-    display: inline-block;
-    margin: 0 12px 12px 0;
-  }
-} */
-
 .tag-cloud {
-  margin: 32px 8px 64px 22px;
+  margin: 40px 8px 64px 22px;
   font-size: 0.97em;
   line-height: 1.4;
 }
@@ -75,7 +64,7 @@
   margin-right: 10px;
 }
 .archive-item a {
-  font-family: "Kopub Batang", "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "PT Sans",Helvetica,Arial,sans-serif;
   background: none;
   font-weight: 500;
   font-size: 0.9em;
@@ -87,27 +76,8 @@
   padding: 0;
 }
 
-#archives {
-  padding: 5px;
-}
-.archive-group {
-  margin: 5px;
-  border-top: 1px solid #ddd;
-}
-.archive-item {
-  margin-left: 5px;
-}
-.post-tags {
-  float: left;
-}
-.tag-img {
-  width: 23px;
-  float: left;
-  margin: 0 10px 0 0;
-  padding: 5px 0 0 0;
-}
 
-/*
+
 .post-tags {
     display: inline-block;
     background: rgba(106,159,181,0.15);
@@ -121,28 +91,10 @@
     -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
- */
 
-/*
-
-
- .red-dot-line {
-   border-top-width : 1px;
-   border-top-style : dotted;
-   border-top-color : red;
- }
-
- .gray-dot-line {
-   border-top-width : 1px;
-   border-top-style : dotted;
-   border-top-color : gray;
- } */
-
-
-
- .post-tags {
+ /* .post-tags {
    float: left;
- }
+ } */
 
  .tag-img {
    width: 23px;
