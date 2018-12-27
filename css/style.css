@@ -73,8 +73,7 @@
   border-bottom: 1px dotted #ddd;
 }
 .archive-item {
-  width: 100%;
-  min-height: 150px;
+  padding: 0 2px;
 }
 
 /*
