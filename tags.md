@@ -1,8 +1,7 @@
 ---
-layout: tag
+layout: default
 permalink: /tags/
 title: Tags
-comments: false
 ---
 
 
