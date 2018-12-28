@@ -7,7 +7,7 @@ title: Tags
 
 <div class="post">
   <!-- Wrapper Start -->
-
+  <section id="intro" style="border: 1px dotted #ddd;">
     <div class="tags-title">
       <h1>{{ page.title }}</h1>
     </div>
@@ -40,5 +40,5 @@ title: Tags
 
     {% endfor %}
     </div>
-  
+  </section>
 </div>
