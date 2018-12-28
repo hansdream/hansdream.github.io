@@ -79,7 +79,8 @@ hist = model.fit(X_train, Y_train, batch_size = batch_size, epochs = epochs, ver
 
 ```
 위 모델링은 다른 유사 데이터셋에서는 우수한 성능을 나타냈던 설계이다. 하지만 **테스트 데이터의 재현율(recall)**이나 **검증데이터의 loss**가 학습에 따라 줄어들지 않는다.
-![img area](./img/2018-12-28-learningcurve-worst-graph.PNG)
+<br>
+![img_area](../img/2018-12-28-learningcurve-worst-graph.PNG)
 
 <br>
 **_교차검증_**
@@ -137,7 +138,11 @@ hist = model.fit(X_train, Y_train, batch_size = batch_size, epochs = epochs, ver
 ```
 레이어층을 늘리는 대신 점진적으로 노드수를 줄여나가며 Dropout을 적용하였다.
 
-![img area](./img/2018-12-28-learningcurve-best-graph.PNG)
+<br>
+
+<img max-height="100px" width="100%">
+![img_area](../img/2018-12-28-learningcurve-best-graph.PNG)
+</img>
 
 위의 학습곡선을 살펴보면 학습함에 따라 검증데이터의 loss가 줄어들고 있는 것을 확인할 수 있다.
 <br><br>
