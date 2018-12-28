@@ -81,9 +81,10 @@ hist = model.fit(X_train, Y_train, batch_size = batch_size, epochs = epochs, ver
 위 모델링은 다른 유사 데이터셋에서는 우수한 성능을 나타냈던 설계이다. 하지만 **테스트 데이터의 재현율(recall)**이나 **검증데이터의 loss**가 학습에 따라 줄어들지 않는다.
 <br>
 
-![img_area](../img/2018-12-28-learningcurve-worst-graph.PNG)
+![img_area](../img/2018-12-28-learningcurve-worst.PNG)
 
 <br>
+
 **_교차검증_**
 ```
 Trian 검증
@@ -141,7 +142,7 @@ hist = model.fit(X_train, Y_train, batch_size = batch_size, epochs = epochs, ver
 
 <br>
 
-![img_area](../img/2018-12-28-learningcurve-best-graph.PNG)
+![img_area](../img/2018-12-28-learningcurve-best.PNG)
 
 
 위의 학습곡선을 살펴보면 학습함에 따라 검증데이터의 loss가 줄어들고 있는 것을 확인할 수 있다.
