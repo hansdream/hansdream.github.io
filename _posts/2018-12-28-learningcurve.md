@@ -3,6 +3,9 @@ layout: post
 title: "[AI] DNN 모델링시 학습곡선 체크하기"
 subtitle: "학습곡선이 중요한 이유"
 comments: true
+sitemap :
+  changefreq : daily
+  priority : 1.0
 tags: [AI, 모델링tip]
 ---
 
@@ -78,7 +81,7 @@ np.random.seed(42)
 hist = model.fit(X_train, Y_train, batch_size = batch_size, epochs = epochs, verbose = 1, validation_split = .2)
 
 ```
-위 모델링은 다른 유사 데이터셋에서는 우수한 성능을 나타냈던 설계이다. 하지만 **테스트 데이터의 재현율(recall)**이나 **검증데이터의 loss**가 학습에 따라 줄어들지 않는다.
+위 모델링은 다른 유사 데이터셋에서는 우수한 성능을 나타냈던 설계이다. 하지만 **테스트 데이터의 재현율(recall)**이 좋지 않은 결과가 나왔다.
 <br>
 
 ![img_area](/img/2018-12-28-learningcurve-best.PNG)
