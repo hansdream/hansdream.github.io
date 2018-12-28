@@ -22,7 +22,7 @@ title: Tags
     {% endfor %}
     </div>
     <br>
-    ---
+    
     <div id="archives">
     {% for tag in site.tags %}
       <div class="archive-group">
@@ -37,7 +37,7 @@ title: Tags
         </article>
         {% endfor %}
       </div>
-    ---
+
     {% endfor %}
     </div>
   </section>
