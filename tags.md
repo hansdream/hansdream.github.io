@@ -22,23 +22,23 @@ title: Tags
     {% endfor %}
     </div>
     <br>
-    <div class="post-info-wrapper">
-      <div id="archives">
-      {% for tag in site.tags %}
-        <div class="archive-group">
-          <div class="archive-title">
-            {% capture tag_name %}{{ tag | first }}{% endcapture %}
-            <a name="{{ tag_name | slugize }}"></a>
-            <h3 id="#{{ tag_name | slugize }}" class="bold">{{ tag_name }}</h3>
-          </div>
-          {% for post in site.tags[tag_name] %}
-          <article class="archive-item">
-            <h4><a class="archive-item-title" href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
-          </article>
-          {% endfor %}
+    ---
+    <div id="archives">
+    {% for tag in site.tags %}
+      <div class="archive-group">
+        <div class="archive-title">
+          {% capture tag_name %}{{ tag | first }}{% endcapture %}
+          <a name="{{ tag_name | slugize }}"></a>
+          <h3 id="#{{ tag_name | slugize }}" class="bold">{{ tag_name }}</h3>
         </div>
-      {% endfor %}
+        {% for post in site.tags[tag_name] %}
+        <article class="archive-item">
+          <h4><a class="archive-item-title" href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
+        </article>
+        {% endfor %}
       </div>
+    ---
+    {% endfor %}
     </div>
   </section>
 </div>
