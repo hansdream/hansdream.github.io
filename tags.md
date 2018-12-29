@@ -5,6 +5,10 @@ title: Tags
 ---
 
 
+<!-- Slider Start -->
+<section id="tags-header">
+</section>
+
 <div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
