@@ -52,6 +52,10 @@ a:active {
   text-decoration: none !important;
 }
 
+.home-title {
+  font-family: 'Nanum Gothic Coding', sans-serif !important;
+}
+
 .home-title h1 {
   font-family: 'FontAwesome', sans-serif !important;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -107,7 +111,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 
-.logo-text {
+.logo-text h2{
   color: #4E2E5A;
   text-transform: uppercase;
   font-size: 28px;
