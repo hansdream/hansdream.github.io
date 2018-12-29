@@ -26,8 +26,8 @@ title: Tags
     <div class="tags-title">
       <h1>{{ page.title }}</h1>
     </div>
-    <br>
     <-->
+    <br>
     <div class="tag-cloud" style="padding-left:40px;">
     {% for tag in site.tags %}
       <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
