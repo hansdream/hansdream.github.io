@@ -9,6 +9,7 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
  @font-face {
  	  font-family: "Gidole-Regular";
@@ -20,7 +21,7 @@
 	Common Css
 --*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nanum Gothic Coding';
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -29,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic Coding';
 }
 h2 {
   font-size: 30px;
