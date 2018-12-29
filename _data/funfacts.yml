@@ -2,13 +2,13 @@
   icon: ion-ios-timer-outline
   text: Total working year
 - counter: 2
-  icon: ion-cube
+  icon: ion-happy-outline
   text: MIS Development
 - counter: 6
   icon: ion-ios-flower-outline
   text: Retail Strategy Design
 - counter: 1.5
-  icon: ion-document
+  icon: ion-ios-barcode-outline
   text: Lisk Management
 - counter: 1
   icon: ion-ios-paperplane-outline
