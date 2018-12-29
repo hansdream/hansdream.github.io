@@ -134,29 +134,29 @@ http://www.tipue.com/search
 }
 .tipue_search_content_url a, .tipue_search_related_text a
 {
-   color: #5396ea;
+   /* #5396ea 하늘색 */
    text-decoratidon: none;
 }
 .tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after
 {
-   color: #555;
+   color: #555; /* 검정 */
 }
 .tipue_search_content_text
 {
-	color: #333;
+	color: #333; /* 진회색 */
   word-wrap: break-word;
   hyphens: auto;
   border-bottom: 1px;
 }
 .tipue_search_content_bold
 {
-   color: #333;
+   color: #333; /* 진회색 */
    font-weight: bold;
    border-bottom: 1px;
 }
 .tipue_search_content_debug
 {
-	color: #333;
+	color: #333; /* 진회색 */
   margin: 5 px 0;
 }
 .tipue_search_related_title
@@ -194,21 +194,21 @@ http://www.tipue.com/search
 	padding: 10px 10px 10px 10px;
   background-color: #fff;
   border-radius: 3px;
-	color: #333;
+	color: #333; /* 진회색 */
 	text-align: center;
 }
 #tipue_search_foot_boxes li.current
 {
 	padding: 10px 17px 10px 17px;
-  background: #f6f6f6;
-  border: 1px solid #e3e3e3;
+  background: #f6f6f6;  /*연베이지 */
+  border: 1px solid #e3e3e3; /*중간베이지 */
   border-radius: 1px;
-	color: #333;
+	color: #333; /* 진회색 */
 	text-align: center;
 }
 #tipue_search_foot_boxes li a:hover
 {
-   background: #f6f6f6;
+   background: #f6f6f6;  /*연베이지 */
 }
 
 
@@ -222,7 +222,7 @@ http://www.tipue.com/search
 }
 .tipue_search_spinner > div
 {
-     background-color: #e3e3e3;
+     background-color: #e3e3e3; /*중간베이지 */
      height: 100%;
      width: 2px;
      display: inline-block;
