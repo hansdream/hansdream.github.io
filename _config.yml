@@ -19,7 +19,7 @@ subtitle: "A free HTML5 agency template"
 url: "https://mkjjo.github.io"
 baseurl: ""
 cover: "/assets/cover.png"
-logo: "/assets/logo.jpg"
+logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
