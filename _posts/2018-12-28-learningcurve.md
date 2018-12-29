@@ -2,6 +2,7 @@
 layout: post
 title: "[AI] DNN 모델링시 학습곡선 체크하기"
 subtitle: "학습곡선이 중요한 이유"
+author: "MK"
 comments: true
 sitemap :
   changefreq : daily
