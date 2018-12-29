@@ -1,18 +1,18 @@
 - counter: 10
-  icon: ion-ios-chatboxes-outline
+  icon: ion-ios-timer-outline
   text: Total working year
 - counter: 2
-  icon: ion-ios-glasses-outline
+  icon: ion-cube
   text: MIS Development
-- counter: 2
-  icon: ion-ios-glasses-outline
+- counter: 6
+  icon: ion-ios-flower-outline
   text: Retail Strategy Design
 - counter: 1.5
-  icon: ion-ios-glasses-outline
+  icon: ion-document
   text: Lisk Management
 - counter: 1
-  icon: ion-ios-compose-outline
+  icon: ion-ios-paperplane-outline
   text: Data Scientist
 - counter: 5
-  icon: ion-ios-timer-outline
+  icon: ion-ios-compose-outline
   text: Using Program Languages
