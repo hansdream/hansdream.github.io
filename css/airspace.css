@@ -743,7 +743,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-left: 90px;
 }
 #slider-contact .block h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontAwesome';
   font-weight: 100;
   font-size: 45px;
   line-height: 60px;
@@ -753,7 +753,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #slider-contact .block p {
   font-size: 23px;
   line-height: 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontAwesome';
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 3px;

@@ -20,6 +20,7 @@
  }
 
 .post-area {
+  font-family: 'Nanum Gothic Coding';
   padding: 40px;
   width: 100%;
   min-height: 150px;
@@ -106,8 +107,6 @@
     transition: all 0.1s ease-in-out;
 }
  */
-
-
 
  .subscribe-button {
      display: block;
