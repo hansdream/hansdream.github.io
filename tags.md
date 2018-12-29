@@ -40,7 +40,7 @@ title: Tags
         <div class="archive-title">
           {% capture tag_name %}{{ tag | first }}{% endcapture %}
           <a name="{{ tag_name | slugize }}"></a>
-          <h3 id="#{{ tag_name | slugize }}" class="bold">{{ tag_name }}</h3>
+          <h4 id="#{{ tag_name | slugize }}" class="bold">{{ tag_name }}</h3>
         </div>
         {% for post in site.tags[tag_name] %}
         <article class="archive-item">

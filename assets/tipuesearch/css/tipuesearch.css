@@ -103,7 +103,7 @@ http://www.tipue.com/search
 }
 #tipue_search_warning a
 {
-   color: #5396ea;
+   /* color: #5396ea; */
    text-decoration: none;
 }
 #tipue_search_warning a:hover
