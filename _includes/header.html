@@ -16,7 +16,7 @@
             </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">
               <!-- logo -->
-              <div class="logo-text">
+              <div id="logo-text">
                 <h2>MKJJO</h2>
               <div> <!-- <img src="{{ site.baseurl }}/img/logo.png" alt="Logo"> -->
             </a>
@@ -26,7 +26,7 @@
             <li>
               <form action="{{ site.baseurl }}/search.html" method="get">
                 <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-                <button type="submit">
+                <button type="submit" class="tipue_search_icon_none">
                   <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
                 </button>
               </form>

@@ -60,6 +60,13 @@ http://www.tipue.com/search
    border: 1px solid #e3e3e3;
    border-radius: 10px;
 }
+
+.tipue_search_icon_none
+{
+   background-color: white;
+   border: 0px;
+}
+
 .tipue_search_left
 {
      float: left;
