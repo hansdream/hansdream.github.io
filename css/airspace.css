@@ -52,12 +52,15 @@ a:active {
   text-decoration: none !important;
 }
 
+.index-text {
+  font-family: sans-serif
+}
 .home-title {
   font-family: 'Nanum Gothic Coding', sans-serif !important;
 }
 
 .home-title h1 {
-  font-family: 'FontAwesome', sans-serif !important;
+  font-family: 'Nanum Gothic Coding', sans-serif !important;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
@@ -70,6 +73,7 @@ a:active {
 }
 .section-title h2 {
   text-transform: uppercase;
+  font-family: sans-serif !important;
   font-size: 28px;
   font-weight: 600;
 }
