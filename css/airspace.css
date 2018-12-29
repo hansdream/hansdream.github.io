@@ -505,16 +505,8 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 45px;
   float: left;
   letter-spacing: 6px;
-  padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
-}
-#tags-header .block p {
-  font-size: 16px;
-  font-weight: 300;
-  float: left;
-  letter-spacing: 1px;
-  word-spacing: 3px;
 }
 
 /*--
@@ -551,16 +543,8 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 45px;
   float: left;
   letter-spacing: 6px;
-  padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
-}
-#search-header .block p {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  float: left;
 }
 
 /*--
