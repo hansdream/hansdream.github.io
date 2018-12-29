@@ -30,18 +30,6 @@
 
           </div>
 
-          <!-- Search bar -->
-          <div style="float: right;">
-            <ul><li>
-            <form action="{{ site.baseurl }}/search.html" method="get">
-              <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-              <button type="submit" class="tipue_search_icon_none">
-                <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-              </button>
-            </form>
-            </li></ul>
-          </div>
-          <!-- end search -->
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,6 +43,19 @@
               <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
+
+          <!-- Search bar -->
+          <div style="float: right;">
+            <ul><li>
+            <form action="{{ site.baseurl }}/search.html" method="get">
+              <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
+              <button type="submit" class="tipue_search_icon_none">
+                <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+              </button>
+            </form>
+            </li></ul>
+          </div>
+          <!-- end search -->
 
         </div><!-- /.container-fluid -->
 
