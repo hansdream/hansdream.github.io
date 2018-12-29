@@ -50,19 +50,20 @@ http://www.tipue.com/search
 	-webkit-appearance: none;
      box-shadow: none;
 	outline: 0;
-	margin: 0;
-  height: 24px
-  width: 100px
+	margin: 5;
 }
 .tipue_search_icon
 {
    width:24px;
    height: 24px;
+   background-color: white;
+   border: 1px solid #e3e3e3;
+   border-radius: 10px;
 }
 .tipue_search_left
 {
      float: left;
-     margin: 15px 9px 0 0;
+     margin: 15px 9px 2px 2px;
 }
 .tipue_search_right
 {
@@ -75,7 +76,11 @@ http://www.tipue.com/search
 
 #tipue_search_content
 {
-	padding: 1px 40px;  /* 조회 결과 블럭의 패딩 결정 */
+  font-family: 'Nanum Gothic Coding',sans-serif;
+  padding: 1px 40px;  /* 조회 결과 블럭의 패딩 결정 */
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
 }
 
 #tipue_search_results_count
@@ -106,15 +111,12 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title a
 {
-   color: #666;
    padding-top: 20px;
-   font-weight: bold;
 }
+
 .tipue_search_content_title a:hover
 {
-   color: #666;
    padding-top: 20px;
-   font-weight: bold;
 }
 .tipue_search_content_url
 {
