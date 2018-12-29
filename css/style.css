@@ -20,7 +20,7 @@
  }
 
 .post-area {
-  font-family: 'Nanum Gothic Coding';
+  font-family: 'Nanum Gothic Coding',sans-serif;
   padding: 40px;
   width: 100%;
   min-height: 150px;
