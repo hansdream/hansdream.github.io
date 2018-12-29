@@ -83,6 +83,7 @@ a:active {
 	Header Start
 --*/
 header {
+  font-family: 'Roboto', sans-serif;
   background: #fff;
   padding: 20px 0;
 }
@@ -889,6 +890,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	footer Start
 --*/
 footer {
+  font-family: 'Roboto', sans-serif;
   background: #F5F5F5;
   text-align: center;
   padding-top: 48px;
