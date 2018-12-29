@@ -16,25 +16,25 @@
             </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">
               <!-- logo -->
-              <h2>MKJJO</h2> <!-- <img src="{{ site.baseurl }}/img/logo.png" alt="Logo"> -->
+              <div class="logo-text">
+                <h2>MKJJO</h2>
+              <div> <!-- <img src="{{ site.baseurl }}/img/logo.png" alt="Logo"> -->
             </a>
           </div>
           <!-- Search bar -->
           <ul class="nav navbar-nav navbar-right">
             <li>
               <form action="{{ site.baseurl }}/search.html" method="get">
-                <div class="tipue_search_box">
-                  <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-                  <button type="submit" class="">
-                    <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-                  </button>
-                </div>
+                <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
+                <button type="submit" class="tipue_search_icon">
+                  <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+                </button>
               </form>
             </li>
           </ul><!-- search box close -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse home-title" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
                 <li><a href="{{ site.baseurl }}/work">Work</a></li>
