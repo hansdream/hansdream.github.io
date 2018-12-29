@@ -6,23 +6,48 @@
       <!-- header Nav Start -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
+
+
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
+
+            <!-- togle 모바일/가로 축소시 사용시 활성화됨 -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
+            <!-- end togle -->
+
+            <!-- logo -->
             <a class="navbar-brand" href="{{ site.baseurl }}/">
               <!-- logo -->
               <div class="logo-text">
                 <h2>MKJJO</h2>
               <div> <!-- <img src="{{ site.baseurl }}/img/logo.png" alt="Logo"> -->
             </a>
+            <!-- end logo -->
+
           </div>
+
+
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right home-title">
+              <li><a href="{{ site.baseurl }}/">Home</a></li>
+              <li><a href="{{ site.baseurl }}/work">Work</a></li>
+              <li><a href="{{ site.baseurl }}/blog">blog</a></li>
+              <!--
+              <li><a href="{{ site.baseurl }}/trend">Trend</a></li>
+               -->
+              <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+
           <!-- Search bar -->
-          <ul class="nav navbar-nav navbar-right">
+          <ul>
             <li>
               <form action="{{ site.baseurl }}/search.html" method="get">
                 <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
@@ -33,21 +58,10 @@
             </li>
           </ul><!-- search box close -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right home-title">
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/work">Work</a></li>
-                <li><a href="{{ site.baseurl }}/blog">blog</a></li>
-                <!--
-                <li><a href="{{ site.baseurl }}/trend">Trend</a></li>
-                 -->
-                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-      </div>
+
+        </div><!-- /.container-fluid -->
+      </nav>
     </div>
   </div>
+</div>
 </header><!-- header close -->
