@@ -53,8 +53,22 @@ a:active {
 }
 
 .index-text {
-  font-family: sans-serif
+  font-family: sans-serif !important;
 }
+.index-text h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.index-text h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+.index-text p {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+
 .home-title {
   font-family: 'Nanum Gothic Coding', sans-serif !important;
 }
