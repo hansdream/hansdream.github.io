@@ -57,12 +57,12 @@ a:active {
 }
 
 .home-title h1 {
-  font-family: sans-serif;
+  font-family: 'Nanum Gothic Coding';
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .home-title p {
-  font-family: sans-serif;
+  font-family: 'Nanum Gothic Coding';
 }
 
 .section-title {
@@ -74,7 +74,7 @@ a:active {
   font-weight: 600;
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
+  font-family: 'Volkhov', serif; /* 필기체 느낌 */
   font-style: italic;
   color: #666;
 }
@@ -198,6 +198,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #service .service-item h4 {
   padding-top: 20px;
   margin: 0;
+  font-weight: bold;
   color: #666;
 }
 #service .service-item p {
