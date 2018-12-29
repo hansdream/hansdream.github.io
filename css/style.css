@@ -44,11 +44,6 @@
   float: left;
 }
 
-img.alignleft{float:left}
-img.alignright{float:right}
-img.aligncenter{display:block;margin:0 auto}
-img.size-origin{width: 100%; height: 100%;}
-
 .tag-img {
   width: 23px;
   float: left;
