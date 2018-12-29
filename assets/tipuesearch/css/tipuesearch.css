@@ -105,18 +105,20 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title
 {
-  color: #666;
+  color: black !important;
   width: 100%;
   background-color: white;
 }
 .tipue_search_content_title a
 {
    padding-top: 20px;
+   font-weight: 300;
 }
 
 .tipue_search_content_title a:hover
 {
    padding-top: 20px;
+   font-weight: 300;
 }
 .tipue_search_content_url
 {
