@@ -477,8 +477,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #tags-header {
   background: url("../img/tags-bg.jpg") no-repeat;
   background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 107px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   position: relative;
   background-attachment: fixed;
 }
@@ -497,12 +497,13 @@ font header .navbar-default .navbar-nav li a:hover {
 #tags-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
+  padding-left: 40px;
   text-align: center;
 }
 #tags-header .block h1 {
   font-weight: 100;
   font-size: 45px;
+  float: left;
   letter-spacing: 6px;
   padding-bottom: 15px;
   margin-top: 0;
@@ -511,6 +512,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #tags-header .block p {
   font-size: 16px;
   font-weight: 300;
+  float: left;
   letter-spacing: 1px;
   word-spacing: 3px;
 }
@@ -521,8 +523,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #search-header {
   background: url("../img/search-bg.jpg") no-repeat;
   background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 107px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   position: relative;
   background-attachment: fixed;
 }
@@ -541,12 +543,13 @@ font header .navbar-default .navbar-nav li a:hover {
 #search-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
+  padding-left: 40px;
   text-align: center;
 }
 #search-header .block h1 {
   font-weight: 100;
   font-size: 45px;
+  float: left;
   letter-spacing: 6px;
   padding-bottom: 15px;
   margin-top: 0;
@@ -557,6 +560,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 3px;
+  float: left;
 }
 
 /*--
