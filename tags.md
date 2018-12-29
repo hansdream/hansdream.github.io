@@ -7,16 +7,28 @@ title: Tags
 
 <!-- Slider Start -->
 <section id="tags-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1 class="animated fadeInUp home-title">Tags</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
+    <!-->
     <div class="tags-title">
       <h1>{{ page.title }}</h1>
     </div>
     <br>
-    <div class="tag-cloud">
+    <-->
+    <div class="tag-cloud" style="padding-left:40px;">
     {% for tag in site.tags %}
       <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
         <a href="#{{ tag | first | slugize }}">
