@@ -477,8 +477,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #tags-header {
   background: url("../img/tags-bg.jpg") no-repeat;
   background-size: cover;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   position: relative;
   background-attachment: fixed;
 }
@@ -523,8 +523,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #search-header {
   background: url("../img/search-bg.jpg") no-repeat;
   background-size: cover;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   position: relative;
   background-attachment: fixed;
 }

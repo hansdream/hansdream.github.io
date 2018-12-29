@@ -22,11 +22,6 @@ title: Tags
 <div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
-    <!-->
-    <div class="tags-title">
-      <h1>{{ page.title }}</h1>
-    </div>
-    <-->
     <br>
     <div class="tag-cloud" style="padding-left:40px;">
     {% for tag in site.tags %}
