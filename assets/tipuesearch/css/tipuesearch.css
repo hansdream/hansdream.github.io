@@ -50,7 +50,7 @@ http://www.tipue.com/search
 	-webkit-appearance: none;
      box-shadow: none;
 	outline: 0;
-	margin: 2px;
+	padding: 2px;
 }
 .tipue_search_icon
 {
