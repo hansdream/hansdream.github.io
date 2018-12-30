@@ -143,15 +143,3 @@ img[alt=”img-area”] { width: 450px; }
     display: inline;
     /* make the list stand-out for this example */
 }
-/* add a comma after each list item */
-.inline li:after {
-    content: ',';
-}
-/* but remove it from the last list item */
-.inline li:last-child:after {
-    content: '';
-}
-/* and add either 'and ' or '& ' before the last list item */
-.inline li:last-child:before {
-    content: 'and ';
-}
