@@ -24,23 +24,6 @@
 
           </div>
 
-          <!-- Search bar -->
-          <div style="float: right;">
-          <ul><li>
-            <a href="{{ site.baseurl }}/tags/#">
-              <button type="submit" class="tipue_search_icon_none">
-                <img src="/assets/tipuesearch/tag.png" class="tipue_search_icon">
-              </button>
-            </a>
-            <form action="{{ site.baseurl }}/search.html" method="get">
-              <input type="text" name="q" id="tipue_search_input" placeholder="Searchee" style="margin-left: 2px; width:100px;" pattern=".{3,}" title="At least 3 characters" required>
-              <button type="submit" class="tipue_search_icon_none">
-                <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-              </button>
-            </form>
-          </li></ul>
-          </div>
-          <!-- end search -->
           <br>
           <br>
 
@@ -64,10 +47,28 @@
               <li><a href="{{ site.baseurl }}/trend">Trend</a></li>
                -->
               <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+              <li>
+                <a href="{{ site.baseurl }}/tags/#">
+                  <button type="submit" class="tipue_search_icon_none">
+                    <img src="/assets/tipuesearch/tag.png" class="tipue_search_icon">
+                  </button>
+                </a>
+              </li>
             </ul>
           </div><!-- /.navbar-collapse -->
 
+          <!-- Search bar -->
+          <div style="float: right;">
+            <form action="{{ site.baseurl }}/search.html" method="get">
+              <input type="text" name="q" id="tipue_search_input" placeholder="Search" style="margin-left: 2px; width:100px;" pattern=".{3,}" title="At least 3 characters" required>
+              <button type="submit" class="tipue_search_icon_none">
+                <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+              </button>
+            </form>
+          </div>
+          <!-- end search -->
 
+          
         </div><!-- /.container-fluid -->
 
       </nav>
