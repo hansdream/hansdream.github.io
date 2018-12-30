@@ -113,20 +113,20 @@ header .navbar-default {
   background: none;
   border: 0px;
 }
-header .navbar-default .navbar-nav {
+header .navbar-title .navbar-nav {
   padding-top: 10px;
 }
-header .navbar-default .navbar-nav li a {
+header .navbar-title .navbar-nav li a {
   color: #333333;
-  padding: 10px 0px;
+  padding: 10px 26px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav li a:hover {
+font header .navbar-title .navbar-nav li a:hover {
   color: #000;
 }
 
 header .navbar-button {
-  float: right;
+  float: right !important;
   padding: 0px !important;
   font-size: 0px !important;
 }
