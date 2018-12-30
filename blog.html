@@ -2,21 +2,24 @@
 layout: page
 title: Blog
 permalink: /blog/
+comments: false
 ---
 
 
 <!-- Slider Start -->
 <section id="blog-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10">
-        <div class="block">
-          <h1 class="animated fadeInUp home-title">What I'm researching and studing</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1 class="animated fadeInUp home-title">What I'm researching and studing</h1>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
+
+
 {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
