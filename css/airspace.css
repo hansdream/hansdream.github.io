@@ -477,8 +477,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #work-header .block h1 {
   font-weight: 100;
-  font-size: 2vmax;
-  line-height: 4vmax;
+  font-size: 2.75vmax;
+  line-height: 3.57vmax;
   letter-spacing: 6px;
   margin-top: 0;
   text-transform: capitalize;
