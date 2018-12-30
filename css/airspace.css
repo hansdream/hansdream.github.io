@@ -125,7 +125,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
 
-header .navbar-button .navbar-nav {
+header .navbar-button {
   display: inline;
   float: right;
   padding: 0px !important;
