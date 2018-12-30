@@ -92,7 +92,7 @@ a:active {
 	-webkit-appearance: none;
      box-shadow: none;
 	outline: 0;
-	padding: 2px;
+	padding: 0px;
 }
 .tipue_search_icon
 {
@@ -112,7 +112,7 @@ a:active {
 .tipue_search_left
 {
      float: left;
-     margin: 15px 9px 2px 2px;
+     margin: 0px;
 }
 .tipue_search_right
 {
