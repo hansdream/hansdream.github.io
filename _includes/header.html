@@ -26,19 +26,21 @@
 
           <!-- Search bar -->
           <div style="float: right;">
+            <a href="{{ site.baseurl }}/tags/#">
+              <button type="submit" class="tipue_search_icon_none">
+                <img src="/assets/tipuesearch/tag.png" class="tipue_search_icon">
+              </button>
+            </a>
             <form action="{{ site.baseurl }}/search.html" method="get">
               <input type="text" name="q" id="tipue_search_input" placeholder="Search" style="margin-left: 2px; width:100px;" pattern=".{3,}" title="At least 3 characters" required>
               <button type="submit" class="tipue_search_icon_none">
                 <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
               </button>
             </form>
-            <a href="{{ site.baseurl }}/tags/#">
-              <button type="submit" class="tipue_search_icon_none">
-                <img src="/assets/tipuesearch/tag.png" class="tipue_search_icon">
-              </button>
-            </a>
           </div>
           <!-- end search -->
+          <br>
+          <br>
 
           <!-- togle 모바일/가로 축소시 사용시 활성화됨 -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -48,7 +50,7 @@
           <span class="icon-bar"></span>
           </button>
           <!-- end togle -->
-          
+
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
