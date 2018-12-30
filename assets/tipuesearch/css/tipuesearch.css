@@ -92,7 +92,7 @@ a:active {
 	-webkit-appearance: none;
      box-shadow: none;
 	outline: 0;
-	padding: 3px;
+	/*padding: 3px;*/
 }
 .tipue_search_icon
 {
@@ -102,14 +102,15 @@ a:active {
    border: 1px solid #e3e3e3;
    border-radius: 10px;
    margin: 0px !important;
-   padding: 0px 2px !important;
+   padding: 0px 0px 0px 3px !important;
 }
 
 .tipue_search_icon_none
 {
    background-color: white;
    border: 0px;
-   padding: 0px 2px !important;
+   margin: 0px !important;
+   padding: 0px 0px 0px 3px !important;
 }
 
 .tipue_search_left
