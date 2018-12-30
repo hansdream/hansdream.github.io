@@ -125,7 +125,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
 
-header .navbar-title{
+header .navbar-title li a {
   padding: 10px 26px !important;
 }
 header .navbar-button {
