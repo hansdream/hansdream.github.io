@@ -114,7 +114,7 @@ header .navbar-default {
   border: 0px;
 }
 header .navbar-default .navbar-nav {
-  /*padding-top: 10px;*/
+  padding-top: 10px;
 }
 header .navbar-default .navbar-nav li a {
   color: #333333;
@@ -125,6 +125,9 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
 
+header .navbar-default .navbar-button li a {
+  padding: 0px;
+}
 
 .logo-text {
   color: #4E2E5A;
