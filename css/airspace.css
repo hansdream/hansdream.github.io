@@ -16,6 +16,7 @@
 /*--
 	Common Css
 --*/
+
 body {
   font-family: 'Nanum Gothic Coding', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -445,7 +446,6 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 1px;
   word-spacing: 3px;
 }
-
 /*--
   work header
 --*/
@@ -481,6 +481,7 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 6px;
   padding-bottom: 15px;
   margin-top: 0;
+  line-height: 50px;
   text-transform: capitalize;
 }
 #work-header .block p {
