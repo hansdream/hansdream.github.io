@@ -126,6 +126,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 header .navbar-button {
+  float: left !important;
   padding: 0px !important;
 }
 
