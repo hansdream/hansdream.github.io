@@ -434,9 +434,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #global-header .block h1 {
   font-weight: 100;
-  font-size: 45px;
+  font-size: 3vmax;
+  line-height: 4vmax;
   letter-spacing: 6px;
-  padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
 }
@@ -477,8 +477,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #work-header .block h1 {
   font-weight: 100;
-  font-size: 2.75vmax;
-  line-height: 3.57vmax;
+  font-size: 3vmax;
+  line-height: 4vmax;
   letter-spacing: 6px;
   margin-top: 0;
   text-transform: capitalize;
@@ -521,7 +521,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #tags-header .block h1 {
   font-weight: 100;
-  font-size: 45px;
+  font-size: 3vmax;
   float: left;
   letter-spacing: 6px;
   margin-top: 0;
@@ -559,7 +559,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #search-header .block h1 {
   font-weight: 100;
-  font-size: 45px;
+  font-size: 3vmax;
   float: left;
   letter-spacing: 6px;
   margin-top: 0;
@@ -598,9 +598,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #contact-header .block h1 {
   font-weight: 100;
-  font-size: 45px;
+  font-size: 3vmax;
+  line-height: 4vmax;
   letter-spacing: 6px;
-  padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
 }
@@ -641,9 +641,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #blog-header .block h1 {
   font-weight: 100;
-  font-size: 45px;
+  font-size: 3vmax;
+  line-height: 4vmax;
   letter-spacing: 6px;
-  padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
 }
