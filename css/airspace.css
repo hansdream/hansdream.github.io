@@ -613,7 +613,6 @@ font header .navbar-default .navbar-nav li a:hover {
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
-  position: relative;
   background-attachment: fixed;
 }
 #blog-header:before {
