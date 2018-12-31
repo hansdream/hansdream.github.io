@@ -72,4 +72,4 @@ plugins:
 
 
 
-action = "https://formspree.io/bbuduck@naver.com"
+action: "https://formspree.io/bbuduck@naver.com"
