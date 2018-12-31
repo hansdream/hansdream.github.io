@@ -276,12 +276,12 @@ header .navbar-button {
   line-height: 1.6;
 }
 #call-to-action .btn-call-to-action {
-  padding: 15px 35px;
+  padding: 10px 35px;
   border: none;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   color: #333333;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 /*--
 	Feature Start
