@@ -81,6 +81,10 @@ a:active {
 
 /* search box */
 
+#tipue_search .block ul li
+{
+  display: inline-block;
+}
 
 #tipue_search_input
 {
