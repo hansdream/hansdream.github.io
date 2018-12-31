@@ -4,6 +4,9 @@ title: Contact me!
 permalink: /contact/
 ---
 
+<!--
+ https://dev-yakuza.github.io/ko/jekyll/send-email/
+-->
 <!-- Slider Start -->
 <section id="contact-header">
   <div class="container">
@@ -37,8 +40,9 @@ permalink: /contact/
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form>
+          <form action = "https://formspree.io/bbuduck@naver.com">
             <div class="form-group-2">
+              <input type="hidden" name="_subject" value="블로그에서 새로운 연락이 왔습니다." />
               <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
             </div>
             <button class="btn btn-default" type="submit">Send Message(개발 중)</button>

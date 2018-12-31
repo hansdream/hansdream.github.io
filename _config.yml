@@ -69,3 +69,7 @@ plugins:
 #       type: tags
 #     values:
 #       layout: tag
+
+
+
+action = "https://formspree.io/bbuduck@naver.com"
