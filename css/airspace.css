@@ -870,6 +870,11 @@ header .navbar-button {
   padding-top: 150px;
   padding-bottom: 107px;
   position: relative;
+  @media only screen and (min-width : 320px)  {}
+  @media only screen and (min-width : 480px)  {}
+  @media only screen and (min-width : 768px)  {}
+  @media only screen and (min-width : 992px)  {background-attachment: fixed;} // Ok NOW the background is fixed.
+  @media only screen and (min-width : 1200px) {}
 }
 #slider-contact:before {
   content: "";
