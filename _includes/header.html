@@ -49,14 +49,13 @@
           </div><!-- /.navbar-collapse -->
 
           <!-- Search bar -->
-          <form>
           <div class="navbar-button">
           <ul class="navbar-nav navbar-right" style="white-space: nowrap;">
           <li>
           <form action="{{ site.baseurl }}/search.html" method="get">
             <input type="text" name="q" id="tipue_search_input" placeholder="Search" pattern=".{3,}" title="At least 3 characters" required>
-            <button type="submit" class="tipue_search_icon_none">
-              <img src="/assets/tipuesearch/search.png" class="tipue_search_icon" style="margin: 0px !important;">
+            <button type="submit" id="tipue_search_icon_none">
+              <img src="/assets/tipuesearch/search.png" id="tipue_search_icon">
             </button>
           </form>
           </li>
@@ -64,15 +63,14 @@
           <li>
           <a href="{{ site.baseurl }}/tags/#">
             <div style="float: right;">
-            <button type="submit" class="tipue_search_icon_none">
-              <img src="/assets/tipuesearch/tag.png" class="tipue_search_icon" style="margin: 0px !important;">
+            <button type="submit" id="tipue_search_icon_none">
+              <img src="/assets/tipuesearch/tag.png" id="tipue_search_icon">
             </button>
             </div>
           </a>
           </li>
           </ul>
           </div>
-          <form>
           <!-- end search -->
 
 
