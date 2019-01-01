@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	/*$("#portfolio-contant-active").mixItUp();*/
+	$("#portfolio-contant-active").mixItUp();
 
 
 	$("#testimonial-slider").owlCarousel({
