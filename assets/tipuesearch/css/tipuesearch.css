@@ -107,6 +107,7 @@ a:active {
    border: 1px solid #e3e3e3;
    border-radius: 10px;
    padding: 0px 0px 0px 3px !important;
+   vertical-align: top;
 }
 
 .tipue_search_icon_none
@@ -114,6 +115,7 @@ a:active {
    background-color: white;
    border: 0px !important;
    padding: 0px 0px 0px 3px !important;
+   vertical-align: top;
 }
 
 .tipue_search_left
