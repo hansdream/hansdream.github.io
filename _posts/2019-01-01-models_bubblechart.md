@@ -36,7 +36,7 @@ models = pd.read_csv("./datas/model_result_pivot.csv")
 
 
 이제 필요한 데이터만 추출해오자~!
-**train, test 기준을 선택한다.**
+**train이나 test 기준을 선택한다.**
 
 ```phthon
 target_data = models[models.dataset == 'test']
@@ -85,6 +85,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # 데이터 읽어오기
+models = pd.read_csv("./datas/model_result_pivot.csv")
 target_data = models[models.dataset == 'test']
 
 # x,y,size 데이터 셋팅
