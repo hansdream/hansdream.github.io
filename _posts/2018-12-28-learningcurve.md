@@ -145,7 +145,7 @@ hist = model.fit(X_train, Y_train, batch_size = batch_size, epochs = epochs, ver
 ```
 레이어층을 늘리는 대신 점진적으로 노드수를 줄여나가며 Dropout을 적용하였다.
 
-<br>
+
 
 ![img_area](/img/posting/2018-12-28-learningcurve-best.PNG){: .post-img}
 
