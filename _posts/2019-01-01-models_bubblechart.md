@@ -29,6 +29,8 @@ models = pd.read_csv("./datas/model_result_pivot.csv")
 <br>
 
 <div class="table .table-striped"></div>
+
+
 |dataset	| model		| accuracy		| recall	| 	precision|	f1_score		| auc
 |----------|----------|----------|----------|----------| ----------|----------
 |train	| 	dnn	| 	96.488965	| 	96.675265	| 	96.316391|	96.495494		| 96.744319
