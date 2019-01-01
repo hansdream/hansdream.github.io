@@ -7,7 +7,7 @@ comments: true
 sitemap :
   changefreq : daily
   priority : 1.0
-tags: [마크다운]
+tags: [그래프]
 ---
 
 모델의 성과를 비교하고 싶을 때 버블차트를 이용해보면 좋다.
