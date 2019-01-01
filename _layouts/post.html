@@ -6,6 +6,18 @@ sitemap :
   priority : 1.0
 ---
 
+
+<style>
+  table {
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #444444;
+  }
+</style>
+
 <div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
@@ -14,7 +26,7 @@ sitemap :
         <div>
           <div class="block">
             <h1>{{ page.title }}</h1>
-            <div class="post-info-wrapper post-img table-striped">
+            <div class="post-info-wrapper post-img">
               <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
             </div>
             <hr />
