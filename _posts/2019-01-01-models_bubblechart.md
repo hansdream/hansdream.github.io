@@ -50,7 +50,7 @@ target_data = models[models.dataset == 'test']
 색상은 아래와 같이 임의로 지정하였다.
 **모델수와 일치하게 셋팅되어야 한다.**
 
-```
+```Python
 colors = ['#afcd38', '#00e8d8', '#909abe', '#9b6191']
 ```
 
