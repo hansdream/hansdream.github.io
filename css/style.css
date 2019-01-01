@@ -129,7 +129,7 @@
      opacity: 1;
  }
 
-img[alt=”img-area”] { width: 450px; }
+img[alt=img-area] { width: 450px; }
 
 
 .inline {
