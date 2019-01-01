@@ -12,7 +12,7 @@ tags: [그래프]
 
 모델의 성과를 비교하고 싶을 때 버블차트를 이용해보면 좋다.
 
-최종 output 이미지는 다음과 같다.
+최종 output 활용 이미지는 다음과 같다.
 <br>
 ![img_area](/img/posting/2019-01-01-001-output.PNG){: .post-img}
 <br>
@@ -46,45 +46,47 @@ target_data = models[models.dataset == 'test']
 ```
 <br><br>
 
-### 2. 버블차트 그리기
----
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-target_data = models[models.dataset == 'test']
-
-x = target_data.accuracy
-y =  target_data.f1_score
-z = target_data.recall
-
-colors = np.array([0.81520346,0.28735556 , 0.6542928, 0.3542928])
-
-plt.scatter(x, y, s=(z-50)*30,c=colors, alpha=0.5)
-
-plt.show()
-```
-
-
+### 2. 버블 색상 지정
 색상은 아래와 같이 임의로 지정하였다.
 **모델수와 일치하게 셋팅되어야 한다.**
 
 ```
-colors = np.array([0.81520346,0.28735556 , 0.6542928, 0.3542928])
+colors = ['#afcd38', '#00e8d8', '#909abe', '#9b6191']
 ```
-
-아래와 같은 이미지가 출력된다.
-<br>
-![img_area](/img/posting/2019-01-01-001-output2.PNG){: .post-img}
-
-ppt나 엑셀등 보조툴을 통해 그래프를 보강하면 좋다.
 
 <br><br>
 ### 3. 라벨 표시하기
 ---
-참고로 라벨을 지정해서 확인하는 코드는 아래와 같다.
+라벨을 지정해서 가독성을 향상시키자. <br>
+*순서에 유의해야 한다.*
 
 ```Python
+users =['dnn', 'random forest', 'extra trees', 'ensemble']
+```
+
+<br><br>
+
+### 4. 버블차트 그리기
+```Python
+# x,y,size 데이터 셋팅
+x = target_data.accuracy
+y =  target_data.f1_score
+s = target_data.recall
+
+df = pd.DataFrame(dict(accuracy=x, f1_score=y, users=users, s=(s-50)*30, c=colors )) # size 크기는 값에 다라 조정
+
+# 그래프 그리기         
+ax = df.plot.scatter(x='accuracy', y='f1_score', s=df.s, c= df.c,  alpha=0.5)
+for i, txt in enumerate(users):
+    ax.annotate(txt, (df.accuracy.iat[i],df.f1_score.iat[i]))
+plt.show()
+```      
+<br><br>
+
+
+### Full code
+
+```python
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -101,19 +103,17 @@ s = target_data.recall
 users =['dnn', 'random forest', 'extra trees', 'ensemble']
 
 # 컬러셋팅
-colors =  list(np.array([0.81520346,0.28735556, 0.6542928, 0.3542928]))
-df = pd.DataFrame(dict(accuracy=x, f1_score=y, users=users, s=s, c=colors ))
+colors = ['#afcd38', '#00e8d8', '#909abe', '#9b6191']
+df = pd.DataFrame(dict(accuracy=x, f1_score=y, users=users, s=(s-50)*30, c=colors )) # size 크기는 값에 다라 조정
 
-# 그래프 그리기
-ax = df.plot.scatter(x='accuracy', y='f1_score', s=df.s*10,c= df.c,  alpha=0.5)
+# 그래프 그리기         
+ax = df.plot.scatter(x='accuracy', y='f1_score', s=df.s, c= df.c,  alpha=0.5)
 for i, txt in enumerate(users):
     ax.annotate(txt, (df.accuracy.iat[i],df.f1_score.iat[i]))
 plt.show()
-```
-<br>
-단, 위 코드는 색상이 표시 되지 않아 원인을 확인 중
-<br>
+```     
 
-![img_area](/img/posting/2019-01-01-001-output3.PNG){: .post-img}
+
+![img_area](/img/posting/2019-01-01-001-output1.PNG){: .post-img}
 
 <br>
