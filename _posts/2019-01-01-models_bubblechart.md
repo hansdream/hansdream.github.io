@@ -110,6 +110,6 @@ plt.show()
 단, 위 코드는 색상이 표시 되지 않아 원인을 확인 중
 <br>
 
-![img_area](/img/posting/2019-01-01-001-output3.PNG)
+![img_area](/img/posting/2019-01-01-001-output3.PNG){: .post-img}
 
 <br>
