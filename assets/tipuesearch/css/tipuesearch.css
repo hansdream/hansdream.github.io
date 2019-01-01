@@ -99,9 +99,10 @@ a:active {
 	outline: 0;
   padding: 2px;
   width: 100px;
+  vertical-align: top;
 }
 
-#tipue_search_input .tipue_search_icon
+.tipue_search_icon
 {
    width:24px;
    height: 24px;
@@ -112,7 +113,7 @@ a:active {
    margin-top: -3px !important;
 }
 
-#tipue_search_input .tipue_search_icon_none
+.tipue_search_icon_none
 {
    background-color: white;
    border: 0px !important;
