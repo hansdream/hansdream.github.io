@@ -129,7 +129,7 @@
      opacity: 1;
  }
 
-img[alt=img-area] { width: 450px; !important}
+img[alt=img-area] { width: 450px !important;}
 
 .post-img {
   width: 450px !important;

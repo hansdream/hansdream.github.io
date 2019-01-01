@@ -157,6 +157,8 @@ header .navbar-button {
   background-attachment: fixed;
   background-position: 10% 0%;
   padding: 200px 0 280px 0;
+  width: auto;
+  height: 100%;
   position: relative;
 }
 #slider:before {
