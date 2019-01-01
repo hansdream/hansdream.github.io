@@ -47,6 +47,7 @@ target_data = models[models.dataset == 'test']
 <br><br>
 
 ### 2. 버블 색상 지정
+---
 색상은 아래와 같이 임의로 지정하였다.
 **모델수와 일치하게 셋팅되어야 한다.**
 
@@ -67,6 +68,7 @@ users =['dnn', 'random forest', 'extra trees', 'ensemble']
 <br><br>
 
 ### 4. 버블차트 그리기
+---
 ```Python
 # x,y,size 데이터 셋팅
 x = target_data.accuracy
@@ -85,7 +87,7 @@ plt.show()
 
 
 ### Full code
-
+---
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
