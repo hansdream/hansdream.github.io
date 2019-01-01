@@ -107,14 +107,14 @@ a:active {
    background-color: white;
    border: 1px solid #e3e3e3;
    border-radius: 10px;
-   padding: 0px 0px 0px 3px !important;
+   padding: -3px 0px 0px 3px !important;
 }
 
 .tipue_search_icon_none
 {
    background-color: white;
    border: 0px !important;
-   padding: 0px 0px 0px 3px !important;
+   padding: -3px 0px 0px 3px !important;
 }
 
 .tipue_search_left
