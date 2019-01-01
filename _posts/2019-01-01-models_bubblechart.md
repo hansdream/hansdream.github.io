@@ -14,7 +14,7 @@ tags: [그래프]
 
 최종 output 이미지는 다음과 같다.
 <br>
-![img_area](/img/posting/2019-01-01-001-output.PNG)
+![img_area](/img/posting/2019-01-01-001-output.PNG){: .post-img}
 <br>
 <br>
 ### 1. 데이터 가져오기
@@ -71,7 +71,7 @@ colors = np.array([0.81520346,0.28735556 , 0.6542928, 0.3542928])
 ```
 
 아래와 같은 이미지가 출력된다.
-![img_area](/img/posting/2019-01-01-001-output2.PNG)
+![img_area](/img/posting/2019-01-01-001-output2.PNG){: .post-img}
 
 ppt나 엑셀등 보조툴을 통해 그래프를 보강하면 좋다.
 
