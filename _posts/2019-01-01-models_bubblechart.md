@@ -28,8 +28,6 @@ models = pd.read_csv("./datas/model_result_pivot.csv")
 아래와 같은 포맷이다. (샘플)
 <br>
 
-<div class="table .table-striped"></div>
-
 
 |dataset	| model		| accuracy		| recall	| 	precision|	f1_score		| auc
 |----------|----------|----------|----------|----------| ----------|----------
