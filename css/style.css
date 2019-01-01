@@ -132,7 +132,7 @@
 img[alt=img-area] { width: 450px; !important}
 
 .post-img {
-  width: 450px; !important
+  width: 450px !important;
 }
 
 .inline {
