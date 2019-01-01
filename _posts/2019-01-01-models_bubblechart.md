@@ -28,12 +28,13 @@ models = pd.read_csv("./datas/model_result_pivot.csv")
 아래와 같은 포맷이다. (샘플)
 <br>
 
+<div class="table .table-striped"></div>
 |dataset	| model		| accuracy		| recall	| 	precision|	f1_score		| auc
 |----------|----------|----------|----------|----------| ----------|----------
 |train	| 	dnn	| 	96.488965	| 	96.675265	| 	96.316391|	96.495494		| 96.744319
 |train	| 	random forest	| 	92.791631	| 	93.350530|	92.318594		| 92.831694	| 	96.744319
 |train	| 	extra trees	| 	90.427056	| 	89.567211		| 91.134442		| 90.344030	| 	96.744319
-{ .table-striped}
+
 
 이제 필요한 데이터만 추출해오자~!
 **train이나 test 기준을 선택한다.**
