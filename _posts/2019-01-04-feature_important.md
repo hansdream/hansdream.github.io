@@ -13,23 +13,23 @@ tags: [변수선택]
 ### 1. 모델 가져오기
 ---
 먼저 나무유형 머신러닝 모델이 필요하다. 작업 후 pickle 변수 저장 후 사용하였다.
-<br>
-[저장하기 코드 참고]
+<br><br>
+**[저장하기 코드 참고]**
 ```Python
 import pickle
 pickle.dump(models, open('./models/models.pkl','wb'))
 ```
 <br>
-[가져오기 코드 참고]
+**[가져오기 코드 참고]**
 ```Python
 with open('./models/models.pkl', 'rb') as file:
     models = pickle.load(file)
 ```
 <br>
 해당 변수에는 'random forest'라는 이름의 나무유형 모델이 저장되어 있다.
-<br><br>
+<br><br><br>
 ### 2. 변수별 중요도 추출
-변수 중요도 반환 함수 생성
+**변수 중요도 반환 함수 생성**
 ```Python
 def feature_impt(model_nm, x, y):
     model = models[model_nm]
@@ -44,7 +44,7 @@ rf_impt = feature_impt('random forest',x_train, y_train)
 <br><br>
 ### 3. 랭킹 및 그래프 그리기
 ---
-그래프 함수 생성
+**그래프 함수 생성**
 ```Python
 def graph_generator(model,importances, X):
     std = np.std([tree.feature_importances_ for tree in model.estimators_],
