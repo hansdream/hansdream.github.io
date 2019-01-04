@@ -29,13 +29,14 @@ with open('./models/models.pkl', 'rb') as file:
 해당 변수에는 'random forest'라는 이름의 나무유형 모델이 저장되어 있다.
 <br><br><br>
 ### 2. 변수별 중요도 추출
+---
 **변수 중요도 반환 함수 생성**
 ```Python
 def feature_impt(model_nm, x, y):
     model = models[model_nm]
     model = model.fit(x, y)
     return model.feature_importances_
-```Python
+```
 <br>
 
 ```Python
