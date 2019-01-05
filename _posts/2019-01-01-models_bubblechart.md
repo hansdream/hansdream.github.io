@@ -21,7 +21,7 @@ tags: [그래프]
 ---
 모델 성능을 미리 csv파일로 작성해두었다.
 
-```phthon
+```python
 models = pd.read_csv("./datas/model_result_pivot.csv")
 ```
 
@@ -39,7 +39,7 @@ models = pd.read_csv("./datas/model_result_pivot.csv")
 이제 필요한 데이터만 추출해오자~!
 **train이나 test 기준을 선택한다.**
 
-```phthon
+```python
 target_data = models[models.dataset == 'test']
 ```
 <br><br>
@@ -49,7 +49,7 @@ target_data = models[models.dataset == 'test']
 색상은 아래와 같이 임의로 지정하였다.
 **모델수와 일치하게 셋팅되어야 한다.**
 
-```Python
+```python
 colors = ['#afcd38', '#00e8d8', '#909abe', '#9b6191']
 ```
 
@@ -59,7 +59,7 @@ colors = ['#afcd38', '#00e8d8', '#909abe', '#9b6191']
 라벨을 지정해서 가독성을 향상시키자. <br>
 *순서에 유의해야 한다.*
 
-```Python
+```python
 users =['dnn', 'random forest', 'extra trees', 'ensemble']
 ```
 
@@ -67,7 +67,7 @@ users =['dnn', 'random forest', 'extra trees', 'ensemble']
 
 ### 4. 버블차트 그리기
 ---
-```Python
+```python
 # x,y,size 데이터 셋팅
 x = target_data.accuracy
 y =  target_data.f1_score
