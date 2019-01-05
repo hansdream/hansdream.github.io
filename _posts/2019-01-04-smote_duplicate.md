@@ -28,8 +28,8 @@ tags: [데이터불균형]
 
 **_언더샘플링_**<br>
 
-- 무작위추출 : 무작위로 정상 데이터를 일부만 선택
-- 유의정보 : 유의한 데이터만을 남기는 방식(알고리즘 : EasyEnsemble, BalanceCascade)
+-무작위추출 : 무작위로 정상 데이터를 일부만 선택
+-유의정보 : 유의한 데이터만을 남기는 방식(알고리즘 : EasyEnsemble, BalanceCascade)
 언더샘플링의 경우 데이터의 소실이 매우 크고, 때로는 중요한 정상데이터를 잃게 될 수 있다.<br>
 
 ![img_area](/img/posting/2019-01-04-001-undersampling.PNG){: .post-img}
@@ -136,6 +136,7 @@ print("After OverSampling, counts of label '0': {}".format(sum(y_resampled==0)))
 X_resampled.shape, y_resampled.shape
 ```
 <br><br>
+
 ### **Reference**
 ---
 - <https://www.analyticsvidhya.com/blog/2016/03/practical-guide-deal-imbalanced-classification-problems/>
