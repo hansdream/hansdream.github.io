@@ -73,4 +73,5 @@ graph_generator(models['random forest'], rf_impt, x_train)
 ```
 <br>
 ![img_area](/img/posting/2019-01-04-001-feature-importce-list.PNG){: .post-img}
+
 ![img_area](/img/posting/2019-01-04-001-feature-importances.PNG){: .post-img}

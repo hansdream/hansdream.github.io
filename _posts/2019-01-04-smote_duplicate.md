@@ -17,6 +17,7 @@ tags: [데이터불균형]
 예를 들어 부도예측시 `부도`는 전체 기업의 3%내외로 `극소수`이다.
 <br><br>
 ![img_area](/img/posting/2019-01-04-001-unbalance.PNG){: .post-img}
+
 이러한 비대칭 데이터셋에서는 정확도(accuracy)가 높아도 재현율(recall, 실제 부실을 부실이라고 예측할 확률)이 급격히 작아지는 현상이 발생하게 된다.
 <br><br>
 100개의 데이터 중 3개가 부실이면, 모두 정상이라고 예측해도 정확도가 97%가 나오기 때문이다.
@@ -29,6 +30,7 @@ tags: [데이터불균형]
 - 유의정보 : 유의한 데이터만을 남기는 방식(알고리즘 : EasyEnsemble, BalanceCascade)
 언더샘플링의 경우 데이터의 소실이 매우 크고, 때로는 중요한 정상데이터를 잃게 될 수 있다.<br>
 ![img_area](/img/posting/2019-01-04-001-undersampling.PNG){: .post-img}
+
 <br><br><br>
 #### 오버 샘플링<br>
 - 무작위추출 : 무작위로 소수 데이터를 복제
@@ -36,6 +38,7 @@ tags: [데이터불균형]
 정보가 손실되지 않는다는 장점이 있으나, 복제된 관측치를 원래 데이터 세트에 추가하기 만하면 여러 유형의 관측치를 다수 추가하여 오버 피팅 (overfitting)을 초래할 수 있다. 이러한 경우 trainset의 성능은 높으나 testset의 성능은 나빠질 수 있다.<br>
 - 합성 데이터 생성 : 소수 데이터를 단순 복제하는 것이 아니라 새로운 복제본을 만들어 낸다.<br>
 ![img_area](/img/posting/2019-01-04-001-oversampling.PNG){: .post-img}
+
 <br><br><br>
 #### 비용 민감 학습(Cost Sensitive Learning,CSL) : 오분류하는 행위를 비용으로 측정한다.<br>
 ** Total Cost = C(FN)xFN + C(FP)xFP ** <br>
@@ -64,6 +67,7 @@ SMOTE는 일반적인 경우 성공적으로 작동하지만, 소수데이터들
 - 두 개의 특정 기능 사이의 선분을 따라 임의의 점을 선택할 수 있다.
 
 ![img_area](/img/posting/2019-01-04-001-smote.PNG){: .post-img}
+
 <br><br>
 
 ### 파이썬 코드
@@ -94,6 +98,7 @@ print("After OverSampling, counts of label '1': {}".format(sum(y_resampled==1)))
 print("After OverSampling, counts of label '0': {}".format(sum(y_resampled==0)))
 ```
 ![img_area](/img/posting/2019-01-04-001-smoteresult.PNG){: .post-img}
+
 정상데이터수를 기준으로 50% : 50%로 소수데이터가 합성생성된다.
 
 ```Python
