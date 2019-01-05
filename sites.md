@@ -8,7 +8,7 @@ title: Sites
 
 <!-- Slider Start -->
 <section id="sites-header">
-  <div class="container">
+  <div class="container" style="padding-left: 40px;">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
@@ -20,14 +20,14 @@ title: Sites
 </section>
 
 
-<div class="post">
+<div class="post" style="padding-left: 40px;">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
     <div>
 
     <h3>Color</h3>
     <a href = "http://www.paletton.com/" target="_sub"> http://www.paletton.com </a><br>
-    <img src="/img/sites/paletton.PNG" class = "post-img" ><br><br>
+    <img src="/img/sites/paletton.PNG" class = "post-img"><br><br>
 
     <h3>Tool Info</h3>
     <a href = "https://stackshare.io/stackups/django-vs-laravel-vs-nodejs" target="_sub">
