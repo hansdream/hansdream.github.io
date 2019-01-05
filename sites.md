@@ -25,11 +25,11 @@ title: Sites
   <section id="intro" style="border: 1px dotted #ddd;">
     <div>
 
-    <h3>Color</h2>
+    <h3>Color</h3>
     <a href = "http://www.paletton.com/" target="_sub"> http://www.paletton.com </a><br>
-    <img src="/img/sites/paletton.PNG" class = "post-img" ><br>
+    <img src="/img/sites/paletton.PNG" class = "post-img" ><br><br>
 
-    <h3>Tool Info</h2>
+    <h3>Tool Info</h3>
     <a href = "https://stackshare.io/stackups/django-vs-laravel-vs-nodejs" target="_sub">
       https://stackshare.io/stackups</a><br>
     <p>프로그래밍 언어 및 프레임워크 비교 사이트</p>
