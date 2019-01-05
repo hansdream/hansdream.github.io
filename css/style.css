@@ -130,7 +130,8 @@
  }
 
 .post-img {
-  width: 450px !important;
+  width: 450px;
+  left: 0;
 }
 
 .inline {
