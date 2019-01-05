@@ -98,16 +98,19 @@ SMOTE는 일반적인 경우 성공적으로 작동하지만, 소수데이터들
 **데이터 스케일링**
 
 ```Python
+
 from sklearn.preprocessing import MinMaxScaler
 
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaler.fit_transform(X_train)
 X_train = scaler.fit_transform(X_train)
+
 ```
 
 **데이터 복제**
 
 ```Python
+
 from sklearn.datasets import make_classification
 from sklearn.decomposition import PCA
 from imblearn.over_sampling import SMOTE
@@ -123,6 +126,7 @@ print('After OverSampling, the shape of train_y: {} \n'.format(X_resampled.shape
 
 print("After OverSampling, counts of label '1': {}".format(sum(y_resampled==1)))
 print("After OverSampling, counts of label '0': {}".format(sum(y_resampled==0)))
+
 ```
 
 ![img_area](/img/posting/2019-01-04-001-smoteresult.PNG){: .post-img}
@@ -130,7 +134,9 @@ print("After OverSampling, counts of label '0': {}".format(sum(y_resampled==0)))
 정상데이터수를 기준으로 50% : 50%로 소수데이터가 합성 생성된다.
 
 ```Python
+
 X_resampled.shape, y_resampled.shape
+
 ```
 <br><br>
 
