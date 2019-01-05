@@ -56,7 +56,6 @@ tags: [데이터불균형]
 오분류하는 행위를 비용으로 측정한다.
 
 **Total Cost = C(FN)xFN + C(FP)xFP**
-
 > FN은 잘못 예측 된 긍정적인 관찰의 수<br>
 FP는 잘못 예측 된 부정적 사례의 수<br>
 C(FN)과 C(FP)는 False Negative 및 False Positive와 관련된 비용과 각각 일치한다. C(FN)> C(FP)
