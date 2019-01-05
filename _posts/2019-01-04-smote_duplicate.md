@@ -23,24 +23,25 @@ tags: [데이터불균형]
 <br><br><br>
 ### 데이터 불균형 처리 방법
 ---
-##### 언더 샘플링<br>
-- 무작위추출 : 무작위로 정상 데이터를 일부만 선택<br>
-- 유의정보 : 유의한 데이터만을 남기는 방식(알고리즘 : EasyEnsemble, BalanceCascade)<br>
-* 언더샘플링의 경우 데이터의 소실이 매우 크고, 때로는 중요한 정상데이터를 잃게 될 수 있다.<br>
+#### 언더 샘플링<br>
+
+- 무작위추출 : 무작위로 정상 데이터를 일부만 선택
+- 유의정보 : 유의한 데이터만을 남기는 방식(알고리즘 : EasyEnsemble, BalanceCascade)
+언더샘플링의 경우 데이터의 소실이 매우 크고, 때로는 중요한 정상데이터를 잃게 될 수 있다.<br>
 ![img_area](/img/posting/2019-01-04-001-undersampling.PNG){: .post-img}
-<br><br>
-##### 오버 샘플링<br>
-- 무작위추출 : 무작위로 소수 데이터를 복제<br>
-- 유의정보 : 사전에 기준을 정해서 소수 데이터를 복제<br>
-* 정보가 손실되지 않는다는 장점이 있으나, 복제된 관측치를 원래 데이터 세트에 추가하기 만하면 여러 유형의 관측치를 다수 추가하여 오버 피팅 (overfitting)을 초래할 수 있다. 이러한 경우 trainset의 성능은 높으나 testset의 성능은 나빠질 수 있다.<br>
+<br><br><br>
+#### 오버 샘플링<br>
+- 무작위추출 : 무작위로 소수 데이터를 복제
+- 유의정보 : 사전에 기준을 정해서 소수 데이터를 복제
+정보가 손실되지 않는다는 장점이 있으나, 복제된 관측치를 원래 데이터 세트에 추가하기 만하면 여러 유형의 관측치를 다수 추가하여 오버 피팅 (overfitting)을 초래할 수 있다. 이러한 경우 trainset의 성능은 높으나 testset의 성능은 나빠질 수 있다.<br>
 - 합성 데이터 생성 : 소수 데이터를 단순 복제하는 것이 아니라 새로운 복제본을 만들어 낸다.<br>
 ![img_area](/img/posting/2019-01-04-001-oversampling.PNG){: .post-img}
-<br><br>
-- 비용 민감 학습(Cost Sensitive Learning,CSL) : 오분류하는 행위를 비용으로 측정한다.<br>
-Total Cost = C(FN)xFN + C(FP)xFP<br>
-FN은 잘못 예측 된 긍정적 인 관찰의 수<br>
-FP는 잘못 예측 된 부정적 사례의 수<br>
-C(FN)과 C(FP)는 False Negative 및 False Positive와 관련된 비용과 각각 일치한다. C(FN)> C(FP)
+<br><br><br>
+#### 비용 민감 학습(Cost Sensitive Learning,CSL) : 오분류하는 행위를 비용으로 측정한다.<br>
+** Total Cost = C(FN)xFN + C(FP)xFP ** <br>
+>FN은 잘못 예측 된 긍정적 인 관찰의 수<br>
+>FP는 잘못 예측 된 부정적 사례의 수<br>
+>C(FN)과 C(FP)는 False Negative 및 False Positive와 관련된 비용과 각각 일치한다. C(FN)> C(FP)
 <br><br>
 잘못 분류된 비용을 설명하는 비용 매트릭스를 사용하여 불균형 학습 문제를 해결한다.<br>
 최근의 이 방법론은 샘플링 기법으로의 대체로 대두되기도 한다.
