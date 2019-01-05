@@ -23,7 +23,7 @@ title: Tags
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
     <br>
-    <div class="tag-cloud">
+    <div class="tag-cloud" style="padding-left:40px;">
     {% for tag in site.tags %}
       <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
         <a href="#{{ tag | first | slugize }}">

@@ -8,7 +8,7 @@ title: Sites
 
 <!-- Slider Start -->
 <section id="sites-header">
-  <div class="container" style="padding-left: 40px;">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
