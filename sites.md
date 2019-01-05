@@ -20,20 +20,20 @@ title: Sites
 </section>
 
 
-<div class="post" style="padding-left: 40px;">
+<div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
-    <div>
+    <div style="padding-left: 40px;">
 
-    <h3>Color</h3>
-    <a href = "http://www.paletton.com/" target="_sub"> http://www.paletton.com </a><br>
-    <img src="/img/sites/paletton.PNG" class = "post-img"><br><br>
+      <h3>Color</h3>
+      <a href = "http://www.paletton.com/" target="_sub"> http://www.paletton.com </a><br>
+      <img src="/img/sites/paletton.PNG" class = "post-img"><br><br>
 
-    <h3>Tool Info</h3>
-    <a href = "https://stackshare.io/stackups/django-vs-laravel-vs-nodejs" target="_sub">
-      https://stackshare.io/stackups</a><br>
-    <p>프로그래밍 언어 및 프레임워크 비교 사이트</p>
-    <img src="/img/sites/stackshare.PNG" class = "post-img" ><br>
+      <h3>Tool Info</h3>
+      <a href = "https://stackshare.io/stackups/django-vs-laravel-vs-nodejs" target="_sub">
+        https://stackshare.io/stackups</a><br>
+      <p>프로그래밍 언어 및 프레임워크 비교 사이트</p>
+      <img src="/img/sites/stackshare.PNG" class = "post-img" ><br>
 
 
     </div>
