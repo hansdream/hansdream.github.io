@@ -74,7 +74,7 @@ shell에서 해당 폴더로 이동한 후 `db.sqlites3`의 수정일자를 확�
 (base) C:\Users\MK\projects\mkdjango>python manage.py makemigrations
 ```
 
-![img_area](/img/posting/2019-01-05-002-pycham.png){: .post-img}
+![img_area](/img/posting/2019-01-05-002-pycham.PNG){: .post-img}
 
 `0001_initial.py`가 생성된 걸 확인할 수 있다.<br>
 생성된 파일은 migration시 어떻게 DB에 정리할지를 정의해둔 파일이다.
@@ -118,10 +118,12 @@ admin.site.register(Candidate)
 
 
 아래와 같이 **Candidate를 등록** 할 수 있는 폼이 생성되었다.
+
 ![img_area](/img/posting/2019-01-05-002-admin_candidate1.PNG){: .post-img}
 
 
 **Add버튼을 클릭하여 후보를 등록한다.**
+
 ![img_area](/img/posting/2019-01-05-002-admin_candidate_add.PNG){: .post-img}
 
 
