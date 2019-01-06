@@ -39,7 +39,7 @@ shell에서 pip를 활용해 설치할 수 있다.<br>
 
 project라는 폴더를 미리 생성해두었다. 해당 폴더로 이동해 **Django 프로젝트를 생성** 한다.
 
-```shell
+```
 (base) C:\Users\MK>cd projects
 (base) C:\Users\MK\projects>django-admin startproject mkdjango
 ```
@@ -58,7 +58,7 @@ project라는 폴더를 미리 생성해두었다. 해당 폴더로 이동해 **
 ### 2. Django 서버구동
 ---
 
-```shell
+```
 (base) C:\Users\MK\projects\mkdjango>python manage.py runserver       
 ```
 
