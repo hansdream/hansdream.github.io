@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Django] Models 클래스 만들기"
+title: "[Django] Step2. Models 클래스 만들기"
 subtitle: "장고를 활용한 웹개발 방식"
 author: "MK"
 comments: true
@@ -10,7 +10,7 @@ sitemap :
 tags: [Django]
 ---
 
-[이전포스팅] [Django] 장고를 활용한 웹 구동방식의 이해  [보러가기](https://mkjjo.github.io/2019/01/05/django_operation_method.html)
+[이전포스팅] [Django] Step1. 장고를 활용한 웹 구동방식의 이해  [보러가기](https://mkjjo.github.io/2019/01/05/django_operation_method.html)
 
 
 
@@ -20,6 +20,7 @@ tags: [Django]
 
 Django에서 기본 제공하는 `db.sqlite3`와 연동하여 models.py에서 정의한 **models 클래스 데이터들을 DB형태로 관리** 하게 된다.
 
+<br><br>
 
 ### 1. 모델 생성하기
 ---
@@ -41,11 +42,12 @@ class Candidate(models.Model):
     area = models.CharField(max_length=15)
     party_number = models.IntegerField(default=0)
 
-    :# 항목을 대표하는 이름이 후보자의 name이 되도록 오버라이트
+    # 항목을 대표하는 이름이 후보자의 name이 되도록 오버라이트
     def __str__(self):
         return self.name
 ```
 
+<br><br>
 
 ---
 ### 2. DB 마이그레이션
@@ -87,7 +89,7 @@ shell에서 해당 폴더로 이동한 후 `db.sqlites3`의 수정일자를 확�
 
 DB가 모델을 받아들일 준비가 되었다.
 
-
+<br><br>
 
 ### 3. DB에 로드하기
 ---
@@ -114,13 +116,17 @@ admin.site.register(Candidate)
 
 ![img_area](/img/posting/2019-01-05-002-adminlogin.PNG){: .post-img}
 
+
 아래와 같이 **Candidate를 등록** 할 수 있는 폼이 생성되었다.
 ![img_area](/img/posting/2019-01-05-002-admin_candidate1.PNG){: .post-img}
+
 
 **Add버튼을 클릭하여 후보를 등록한다.**
 ![img_area](/img/posting/2019-01-05-002-admin_candidate_add.PNG){: .post-img}
 
+
 ![img_area](/img/posting/2019-01-05-002-admin_candidate2.PNG){: .post-img}
+
 
 **2) Shell 이용하기**
 
@@ -145,7 +151,7 @@ In [7]: no1
 Out[7]: <QuerySet [<Candidate: 힐러리>]>
 ```
 
-
+<br><br>
 
 ### 4. 데이터 보여주기
 ---
@@ -170,23 +176,25 @@ def index(request):
     return HttpResponse(str)
 ```
 
+<br><br>
+
 ### 5. 템플릿 사용하기
 
 해당 App폴더(elections) 안에 `templates`라는 폴더를 만든다.<br>
-또 다시 그 안에 `elections/templates/` App이름(elections) 폴더를 만든다. `elections/templates/elections` <br>
+또 다시 그 안에 elections/templates/App이름(elections) 폴더를 만든다. `elections/templates/elections` <br>
 이제 마지막으로 그 안에 `index.html`을 생성한다.
 
 
 ![img_area](/img/posting/2019-01-05-002-pycham2.PNG){: .post-img}
 
 
-templates폴더 안에 같은 이름의 폴더를 하나 더 만드는 이유는 아래와 같이 다양한 앱에서 index.html을 사용할 때 혼선을 막기 위해서이다.
+templates폴더 안에 같은 이름의 폴더를 하나 더 만드는 이유는 아래와 같이 **다양한 앱에서 index.html을 사용할 때 혼선을 막기 위해서이다.**
 
 ![img_area](/img/posting/2019-01-05-002-app_indexes.PNG){: .post-img}
 
-아래 처럼 **원하는 포맷 코드를 작성** 해둔다.
+`index.html`파일에 아래 처럼 **원하는 포맷 코드를 작성** 해둔다.
 
-```hteml
+```html
 <!-- C\Code\mysite\elections\templates\elections\index.html -->
 <!DOCTYPE html>
 <html lang="en">

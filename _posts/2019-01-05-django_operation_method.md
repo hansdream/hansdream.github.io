@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Django] 장고를 활용한 웹 구동방식의 이해"
+title: "[Django] Step1. 장고를 활용한 웹 구동방식의 이해"
 subtitle: "장고를 활용한 웹개발 방식"
 author: "MK"
 comments: true
