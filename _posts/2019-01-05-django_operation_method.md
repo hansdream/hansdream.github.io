@@ -143,20 +143,6 @@ mkdjango/
   manage.py
 ```
 
-App을 생성한 다음, `mkjango/settings.py` 파일에 해당 App명을 추가한다.
-
-```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'elections' # add
-]
-```
-
 <br><br>
 
 ### 5. HTML 구동방식 절차
