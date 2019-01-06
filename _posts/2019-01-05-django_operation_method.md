@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Djagno] 장고를 활용한 웹 구동방식의 이해"
+title: "[Django] 장고를 활용한 웹 구동방식의 이해"
 subtitle: "장고를 활용한 웹개발 방식"
 author: "MK"
 comments: true
@@ -25,16 +25,15 @@ Django는 문서관리시스템과 Wiki부터 SNS에 이르기까지 `다양한 
 
 Django는 파이썬 베이스로 리눅스, 윈도우 그리고 맥 OS X 등등 `다양한 운영체제`에서 작동할 수 있다.
 
-
+<br><br>
 
 ### 1. Django 설치 및 프로젝트 생성
 ---
 
-shell에서 pip를 활용해 설치할 수 있다.
-
+shell에서 pip를 활용해 설치할 수 있다.<br>
 이전에 이미 python, pip 설치는 완료되어야 한다.
 
-```shell
+```
 (base) C:\Users\MK>pip install django
 ```
 
@@ -54,6 +53,7 @@ project라는 폴더를 미리 생성해두었다. 해당 폴더로 이동해 **
                3개 디렉터리  12,264,472,576 바이트 남음
 ```
 
+<br><br>
 
 ### 2. Django 서버구동
 ---
@@ -77,6 +77,7 @@ Quit the server with CTRL-BREAK.
 
 `http://127.0.0.1:8000` 혹은 `localhost:8000`로 접속할 수 있다.
 
+<br><br>
 
 ### 3. 디렉토리 및 파일 구조
 ---
@@ -110,6 +111,7 @@ signals.py: 커스텀 시그널
 viewmixins.py: 뷰 모듈과 패키지를 더 가볍게하기 위해 뷰 믹스인을 이 모듈로 이전
 ```
 
+<br><br>
 
 ### 4. App 추가하기
 ---
@@ -117,7 +119,7 @@ Django에는 기능별로 App을 구분하고 생성한다.
 
 shell에서 elections라는 App을 생성하였다.
 
-```shell
+```
 (base) C:\Users\MK\projects\mkdjango>python manage.py startapp elections
 ```
 프로젝트 폴더 아래, App 폴더가 생성된 것을 확인할 수 있다.
@@ -155,6 +157,8 @@ INSTALLED_APPS = [
 ]
 ```
 
+<br><br>
+
 ### 5. HTML 구동방식 절차
 ---
 특정 App에 있는 특정 함수를 실행해 HTML화면에 나타내기 위해선 어떻게 해야할까?
@@ -165,7 +169,7 @@ INSTALLED_APPS = [
 
 ![img_area](/img/posting/2019-01-05-001-layers.png){: .post-img}
 
-우선, App에 함수를 생성해 놓은 후
+우선, 해당 App내의 views.py에서 함수를 생성해 놓은 후
 
 ```python
 from django.shortcuts import render
@@ -197,26 +201,27 @@ urlpatterns = [
 화면에 접근이 이루어 졌을때 누가 처리할 것인지를 명명한다.
 `admin`이면 `admin.site.urls` 호출하게 된다.
 
+<br><br>
 
 ### 6. MVC 패턴 이해하기
 ---
 아직, DB와 탬플릿에 대한 내용은 다루지 않았지만 Django는 db.sqlite3라는 파일을 통해 `DataBase기능`을 제공한다.
 
-나아가 App내에 `temppates을 생성`해 출력 포맷을 지정하기도 한다.
+나아가 App내에 `templates을 생성`해 출력 포맷을 지정하기도 한다.
 
-큰 단위의 프로젝트로 나아갈 수록 이러한 역할들을의 묶음을 구분해야할 필요성이 있다.
-
+큰 단위의 프로젝트로 나아갈 수록 이러한 역할들을의 묶음을 구분해야할 필요성이 있다.<br>
 그렇지 않으면 여러 개발자간 혼선과 크고 작은 오류가 발생할 것이다.
 
-MVC패턴은 다음과 같이 model, view, controller가 분리되는 개념을 말한다.
+**MVC패턴은 다음과 같이 model, view, controller가 분리되는 개념을 말한다.**
 
-Django는 더 나아가 MTV를 추구한다. 표준 MVC 패턴과 비교했을 때 Django의 디자인은 Model-Template-View + Controller 라고도 부른다. Controller는 이미 프레임 워크의 일부이기 때문에 종종 생략된다.
+**Django는 더 나아가 MTV를 추구한다.** 표준 MVC 패턴과 비교했을 때 Django의 디자인은 Model-Template-View + Controller 라고도 부른다. Controller는 이미 프레임 워크의 일부이기 때문에 종종 생략된다.
 
-즉, 이렇게 3가지 패턴으로 분류함으로써 효율적인 개발 생태계를 유지해나간다.
+즉, 이렇게 3가지 패턴으로 분류함으로써 `효율적인 개발 생태계를 유지`해나간다.
 
 ![img_area](/img/posting/2019-01-05-001-mvc.png){: .post-img}
 
 
+<br>
 
 결론적으로 전체 flow는 아래와 같이 흘러가게 된다.
 
@@ -236,15 +241,16 @@ Templates:
 파일의 구조나 레이아웃을 정의하고(예: HTML 페이지), 실제 내용을 보여주는 데 사용되는 플레이스홀더를 가진 텍스트 파일이다. view는 HTML 탬플릿을 이용하여 동적으로 HTML 페이지(.js, .html)를 만들고 model에서 가져온 데이터로 채운다. 탬플릿이 꼭 HTML 타입일 필요는 없다.
 ```
 
+<br>
 
 이벤트 발생에 따른 처리 주체 및 리소스들은 아래와 같다.
 
 ![img_area](/img/posting/2019-01-05-001-djangoflow2.PNG){: .post-img}
 
->주로 녹색네모들이 우리가 실질적으로 다루는것들이다. 다만, WSGI는 특별히 조작할 것은 없다.
->미들웨어(Middleware)라는것은 우리가 느낄수는 없지만 장고뒤에서 다양한 처리를 도와준다.
->WSGI는 웹서버와 장고를 적절하게 결합해주는 역할을 담당한다.
->urls.py파일은 정규표현식으로 구성되어 있다.
+>주로 녹색네모들이 우리가 실질적으로 다루는것들이다. 다만, WSGI는 특별히 조작할 것은 없다.<br>
+>미들웨어(Middleware)라는것은 우리가 느낄수는 없지만 장고뒤에서 다양한 처리를 도와준다.<br>
+>WSGI는 웹서버와 장고를 적절하게 결합해주는 역할을 담당한다.<br>
+>urls.py파일은 정규표현식으로 구성되어 있다.<br>
 
 
 <br>
