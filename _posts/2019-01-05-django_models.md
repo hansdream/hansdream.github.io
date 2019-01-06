@@ -42,7 +42,7 @@ class Candidate(models.Model):
     party_number = models.IntegerField(default=0)
 
     :# 항목을 대표하는 이름이 후보자의 name이 되도록 오버라이트
-    def __str__(self)
+    def __str__(self):
         return self.name
 ```
 
@@ -239,6 +239,8 @@ def index(request):
     return render(request, 'elections/index.html', context)  # 템플릿 이용
 ```
 
+
+![img_area](/img/posting/2019-01-05-002-template.PNG){: .post-img}
 
 <br>
 
