@@ -16,7 +16,7 @@ Django는 파이썬 코드를 활용한 Web Framework이다.
 
 Django는 문서관리시스템과 Wiki부터 SNS에 이르기까지 `다양한 종류의 웹 사이트`를 빌드하는데 사용할 수 있다. Django를 통해 개발된 대표적인 사이트는 아래와 같다.
 
-![img_area](/img/posting/2019-01-05-001-examples.PNG){: .post-img}
+![img_area](/img/posting/2019-01-05-001-examples.png){: .post-img}
 
 
 원하는 대부분의 기능들(각종 데이터베이스, 템플릿 엔진 등)을 제공하지만, 필요하다면 다른 컴포넌트들을 사용하기 위해 `확장`될 수 있다.
@@ -38,7 +38,7 @@ shell에서 pip를 활용해 설치할 수 있다.
 (base) C:\Users\MK>pip install django
 ```
 
-project라는 폴더를 미리 생성해두었다. 해당 폴더로 이동해 **Django 프로젝트를 생성**한다.
+project라는 폴더를 미리 생성해두었다. 해당 폴더로 이동해 **Django 프로젝트를 생성** 한다.
 
 ```shell
 (base) C:\Users\MK>cd projects
@@ -61,6 +61,7 @@ project라는 폴더를 미리 생성해두었다. 해당 폴더로 이동해 **
 ```shell
 (base) C:\Users\MK\projects\mkdjango>python manage.py runserver       
 ```
+
 ```
 Performing system checks...
 
@@ -73,6 +74,7 @@ Django version 2.1.5, using settings 'mkdjango.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
+
 `http://127.0.0.1:8000` 혹은 `localhost:8000`로 접속할 수 있다.
 
 
@@ -140,6 +142,7 @@ mkdjango/
 ```
 
 App을 생성한 다음, `mkjango/settings.py` 파일에 해당 App명을 추가한다.
+
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -160,7 +163,7 @@ INSTALLED_APPS = [
 
 `mkdjango > elections > views.py`
 
-![img_area](/img/posting/2019-01-05-001-layers.PNG){: .post-img}
+![img_area](/img/posting/2019-01-05-001-layers.png){: .post-img}
 
 우선, App에 함수를 생성해 놓은 후
 
@@ -176,7 +179,7 @@ def index(request):
 이 함수가 실행되도록 만들어 보자!
 `urls.py`를 통해 상호 호출 될 수 있도록 아래와 같은 구조로 파일을 수정한다.
 
-![img_area](/img/posting/2019-01-05-001-layers_code.PNG){: .post-img}
+![img_area](/img/posting/2019-01-05-001-layers_code.png){: .post-img}
 
 
 
@@ -190,6 +193,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
 ```
+
 화면에 접근이 이루어 졌을때 누가 처리할 것인지를 명명한다.
 `admin`이면 `admin.site.urls` 호출하게 된다.
 
@@ -210,9 +214,7 @@ Django는 더 나아가 MTV를 추구한다. 표준 MVC 패턴과 비교했을 �
 
 즉, 이렇게 3가지 패턴으로 분류함으로써 효율적인 개발 생태계를 유지해나간다.
 
-![img_area](/img/posting/2019-01-05-001-mvc.PNG){: .post-img}
-
-
+![img_area](/img/posting/2019-01-05-001-mvc.png){: .post-img}
 
 
 
@@ -246,6 +248,7 @@ Templates:
 
 
 <br>
+
 ### **Reference**
 ---
 - <https://developer.mozilla.org/ko/docs/Learn/Server-side/Django>
