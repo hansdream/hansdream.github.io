@@ -16,6 +16,7 @@ tags: [전처리]
 <br>
 
 ### 1. 데이터 가져오기
+---
 Kaggle Data [보러가기](https://www.kaggle.com/c/home-credit-default-risk/data)
 
 위 사이트 경로를 통해서 `application_train.csv`파일을 가져왔습니다.
@@ -27,7 +28,7 @@ data = pd.read_csv('./datas/kaggle_homecredit/application_train.csv')
 <br><br>
 
 ### 2. 변수 정보 확인
-
+---
 
 ```python
 # 컬럼별 type 확인 및 결측치 확인
@@ -60,7 +61,7 @@ AMT_GOODS_PRICE  278
 <br><br>
 
 ### 3. 결측값 처리
-
+---
 ```python
 # 문자전환
 data = data.replace(' ', '')
@@ -78,6 +79,7 @@ data.fillna(0, inplace=True)
 <br><br>
 
 ### 4. 범주형 변수 처리
+---
 `남자/여자`, `소형/중형/대형` 등 문자로 표현되는 범주형 데이터는 `One & Hot 인코딩`으로 처리된다.
 
 **One & Hot 인코딩** 을 하게 되면 특정 변수에서 나올수 있는 **문자열 수대로 새로운 항목이 생성** 된다.
@@ -214,6 +216,7 @@ EMERGENCYSTATE_MODE  max :  1.0
 <br><br>
 
 ### 5. 최종 항목 정리
+---
 이제 변환한 데이터의 원본은 제거하고 변환한 데이터 항목을 병합하는 일만 남았다.
 
 원본의 전체 컬럼을 `total_cols`, 변환한 컬럼을 제거한 후 남은 컬럼을 `final_cols`로 정의한다.
@@ -263,6 +266,7 @@ final_df.head()
 <br><br>
 
 ### 6. 결과 저장하기
+---
 원하는 형태로 저장한다.
 
 **csv 저장**
