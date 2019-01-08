@@ -11,7 +11,7 @@ tags: [전처리]
 ---
 
 
-데이터는 **Kaggle의 home credit default risk** 를 사용하였습니다.
+데이터는 **Kaggle의 home credit default risk** 를 사용했다.
 
 <br>
 
@@ -19,7 +19,7 @@ tags: [전처리]
 ---
 Kaggle Data [보러가기](https://www.kaggle.com/c/home-credit-default-risk/data)
 
-위 사이트 경로를 통해서 `application_train.csv`파일을 가져왔습니다.
+ `application_train.csv`파일 다운로드
 
 ```python
 data = pd.read_csv('./datas/kaggle_homecredit/application_train.csv')
@@ -56,7 +56,7 @@ AMT_ANNUITY       12
 AMT_GOODS_PRICE  278
 ```
 
-결측치 수에 따라 항목을 포함할지 여부를 결정합니다.
+결측치 수에 따라 항목을 포함할지 여부를 결정한다.
 
 <br><br>
 
