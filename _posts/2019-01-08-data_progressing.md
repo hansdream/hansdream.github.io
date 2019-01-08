@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Python] 데이터 전처리 과정
+title: "[Python] 데이터 전처리 과정"
 subtitle: "Kaggle 데이터를 활용한 전처리 과정"
 author: "MK"
 comments: true
