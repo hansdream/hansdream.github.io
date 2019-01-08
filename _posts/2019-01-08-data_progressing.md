@@ -13,9 +13,9 @@ tags: [전처리]
 
 데이터는 **Kaggle의 home credit default risk** 를 사용하였습니다.
 
+<br>
 
-
-### 데이터 가져오기
+### 1. 데이터 가져오기
 Kaggle Data [보러가기](https://www.kaggle.com/c/home-credit-default-risk/data)
 
 위 사이트 경로를 통해서 `application_train.csv`파일을 가져왔습니다.
@@ -24,8 +24,9 @@ Kaggle Data [보러가기](https://www.kaggle.com/c/home-credit-default-risk/dat
 data = pd.read_csv('./datas/kaggle_homecredit/application_train.csv')
 ```
 
+<br><br>
 
-### 변수 정보 확인
+### 2. 변수 정보 확인
 
 
 ```python
@@ -56,9 +57,9 @@ AMT_GOODS_PRICE  278
 
 결측치 수에 따라 항목을 포함할지 여부를 결정합니다.
 
+<br><br>
 
-
-### 결측값 처리
+### 3. 결측값 처리
 
 ```python
 # 문자전환
@@ -74,13 +75,14 @@ data.dropna(how='all') # 'all':한 행이 모두 missing value이면 제거, any
 data.fillna(0, inplace=True)
 ```
 
+<br><br>
 
-### 범주형 변수 처리
+### 4. 범주형 변수 처리
 `남자/여자`, `소형/중형/대형` 등 문자로 표현되는 범주형 데이터는 `One & Hot 인코딩`으로 처리된다.
 
-`One & Hot 인코딩`을 하게 되면 특정 변수에서 나올수 있는 문자열 수대로 새로운 항목이 생성된다.
+**One & Hot 인코딩** 을 하게 되면 특정 변수에서 나올수 있는 **문자열 수대로 새로운 항목이 생성** 된다.
 
-다시말해 `소형/중형/대형` 데이터를 같는 변수의 인코딩 처리시 `소형여부`,`중형여부`, `대형여부` 총 3가지 항목값을 매핑해야 한다.
+다시말해 **소형/중형/대형** 데이터를 같는 변수의 인코딩 처리시 **소형여부,중형여부, 대형여부 총 3가지 항목값을 매핑해야 한다.**
 즉, 값이 `중형`일 경우 소형여부, 중형여부, 대형여부의 매핑값은 `0, 1, 0`이 된다.
 
 
@@ -96,9 +98,9 @@ one_hot_list = ['NAME_TYPE_SUITE','NAME_INCOME_TYPE','NAME_EDUCATION_TYPE','NAME
                 'FONDKAPREMONT_MODE','HOUSETYPE_MODE','WALLSMATERIAL_MODE','CODE_GENDER','EMERGENCYSTATE_MODE']
 ```
 
+<br>
 
-
-이제 각각, 다른 로직을 적용한다.
+**_이제 2개의 리스트를 각각, 다른 로직을 적용한다._**
 
 ```python
 # categorize
@@ -137,6 +139,7 @@ categories_encoded.head()
 | 3 | 0                    | 0              | 0                 |
 | 4 | 0                    | 0              | 0                 |
 
+<br>
 
 항목별로 max값을 확인해 0,1값 이상을 갖는지 확인한다. 모두 1이면 정상, 2이상이 나오는 값은 `one_hot_list`로 넘겨서 처리한다.
 ```python
@@ -152,7 +155,7 @@ FLAG_OWN_CAR  max :  1
 FLAG_OWN_REALTY  max :  1
 ```
 
-
+<br><br>
 
 다음은 `one_hot_list` 처리방식이다.
 ```python
@@ -180,6 +183,8 @@ for x in one_hot_list:
 onehot_encoded.columns = [onehot_cols]
 ```
 
+<br>
+
 ```python
 # 항목별 맥스값 체크 (확인용)
 for x in one_hot_list:
@@ -206,8 +211,9 @@ CODE_GENDER  max :  1.0
 EMERGENCYSTATE_MODE  max :  1.0
 ```
 
+<br><br>
 
-### 최종 항목 정리
+### 5. 최종 항목 정리
 이제 변환한 데이터의 원본은 제거하고 변환한 데이터 항목을 병합하는 일만 남았다.
 
 원본의 전체 컬럼을 `total_cols`, 변환한 컬럼을 제거한 후 남은 컬럼을 `final_cols`로 정의한다.
@@ -252,10 +258,11 @@ final_df.head()
 
 
 
-![img_area](/img/posting/2019-01-09-001-progressing.png){: .post-img}
+![img_area](/img/posting/2019-01-09-001-progressing.PNG){: .post-img}
 
+<br><br>
 
-### 결과 저장하기
+### 6. 결과 저장하기
 원하는 형태로 저장한다.
 
 **csv 저장**
