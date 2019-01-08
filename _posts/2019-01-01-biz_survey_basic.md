@@ -7,5 +7,5 @@ comments: false
 sitemap :
   changefreq : daily
   priority : 1.0
-tags: [마크다운]
+tags:
 ---
