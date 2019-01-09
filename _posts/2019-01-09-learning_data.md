@@ -7,11 +7,13 @@ comments: true
 sitemap :
   changefreq : daily
   priority : 1.0
-tags: [파이썬 기초]
+tags: [파이썬기초]
 ---
 
 
 모델링에 주로 사용되는 학습데이터가 있다.
+
+<br>
 
 ### 1. mnist
 ---
@@ -34,6 +36,7 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 다운로드된 데이터는 55,000개의 학습 데이터(`mnist.train`), 10,000개의 테스트 데이터(`mnist.text`), 그리고 5,000개의 검증 데이터(`mnist.validation`) 이렇게 세 부분으로 나뉜다.
 라벨과 이미지데이터를 별도로 갖게 되는데 학습 이미지는 `mnist.train.images`이며, 학습 라벨은 `mnist.train.labels`이다.
 
+<br><br>
 
 ### 2. Iris
 ---
@@ -49,9 +52,8 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 from sklearn import datasets
 # import some data to play with
 iris = datasets.load_iris()
-X = iris.data[:, :2]  # we only take the first two features.
+X = iris.data
 y = iris.target
 ```
-
 
 <br>
