@@ -45,6 +45,9 @@ title: Sites
         https://tensorflowkorea.gitbooks.io/tensorflow-kr/</a><br>
       <p>텐서플로우 문서 한글 번역본</p><br><br>
 
+      <a href = "https://tariat.tistory.com/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%98%A4%ED%94%88%20API%20%ED%99%9C%EC%9A%A9%EA%B8%B0" target="_sub">
+        https://tariat.tistory.com/category</a><br>
+      <p>파이썬 오픈 API 활용기</p><br><br>
 
 
     </div>
