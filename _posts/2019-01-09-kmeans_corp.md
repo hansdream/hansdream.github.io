@@ -57,6 +57,7 @@ feature = scaler.fit_transform(corp_features)
 <br><br>
 
 ### 3. 하이퍼파라메터 설정
+---
 몇개의 클러스터로 분류할지 하이퍼파라메터는 아래 코드로 찾을 수 있다.
 
 #### elbow기법
@@ -77,8 +78,11 @@ def elbow(X):
 elbow(feature)
 ```
 ![img_area](/img/posting/2019-01-09-001-k.PNG){: .post-img}
-서로다른 K개 클러스터 분류의 오차제곱값(SSE)를 확인할 수 있다.
+
+서로 다른 K개 클러스터 분류의 오차제곱값(SSE)를 확인할 수 있다.
 변곡점이 되는 지점에서 K값을 결정하면 된다. 샘플 데이터의 경우 뚜렷하진 않지만 대략 4 언저리에서 elbow를 형성하는 것을 확인할 수 있다.
+
+<br>
 
 #### 실루엣 기법
 실루엣 계수는 한 클러스터 안에 데이터들이 다른 클러스터와 비교해서 얼마나 비슷한가를 나타낸다.
@@ -89,6 +93,7 @@ elbow(feature)
 실루엣 계수가 0이면 지금클러스터나 다른 클러스터 어디에 있든 상관 없음을 의미한다.
 
 ![img_area](/img/posting/2019-01-09-001-silhoutte.PNG){: .post-img}
+
 
 ```python
 # 실루엣 기법
@@ -132,17 +137,21 @@ plotSilhouette(feature, y_km)
 ```
 
 ![img_area](/img/posting/2019-01-09-002-sil_graph.PNG){: .post-img}
+
 결과를 보면 유의하지 않은 데이터가 많은 것으로 보인다.
 
 이상적인 그림은 아래와 같다.
 
 ![img_area](/img/posting/2019-01-09-002-sil_graph2.PNG){: .post-img}
+
 이 예는 코드에 실제로 사용한 데이터의 결과는 아니다. 분류에 의미있는 데이터를 넣었을때 이상적인 결과 그래프는 이처럼 0에 가까운 데이터가 많지 않고 평균이 1에 가까울수록 좋다.
 
 즉, 예시로 사용된 결과는 크게 유의하다고 보긴 어려울 것 같다.
 그럼에도 불구하고 코드의 활용 및 기록을 위해서 다음 단계까지 진행해보자.
 
-### 3. K-means 모델실행
+<br><br>
+
+### 4. K-means 모델실행
 ---
 `n_clusters` 파라메터를 통해 분류 `class수`를 결정할 수 있다.
 ```python
@@ -159,7 +168,7 @@ predict.columns=['predict']
 
 <br><br>
 
-### 4. 예측결과 합치기
+### 5. 예측결과 합치기
 ---
 ```python
 # 결과 합치기
@@ -185,7 +194,7 @@ final_df['group'] = final_df['group'].replace(group_name)
 
 <br><br>
 
-### 5. 결과 시각화 확인(t-SNE활용)
+### 6. 결과 시각화 확인(t-SNE활용)
 ---
 데이터의 분류를 시각화해서 확인하고 싶으나, 다차원의 데이터를 눈으로 확인하기란 불가능에 가깝다. 단, 차원을 줄이면 가능하다. 차원을 축소하여 feature를 2,3로 줄인 후 그래프를 그려 확인해볼 수 있다.
 
@@ -193,6 +202,7 @@ final_df['group'] = final_df['group'].replace(group_name)
 여기서는 tSNE 코드를 사용하였다.
 
 먼저 생성된 결과를 데이터 프레임으로 변환한다.
+
 ```python
 feature_df = pd.DataFrame(feature)
 ```
@@ -229,5 +239,11 @@ plt.show()
 
 
 
+<br><br>
+### **Reference**
+---
 http://blog.naver.com/PostView.nhn?blogId=samsjang&logNo=221017639342&categoryNo=87&parentCategoryNo=49&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
 http://astralworld58.tistory.com/59
+
+
+<br>
