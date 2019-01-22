@@ -88,6 +88,7 @@ import statsmodels
 import statsmodels.api as sm
 ```
 KRX에서 제공하는 `MarketData`를 통해 5개년 종목 시세를 CSV로 저장해 두었다.
+
 http://marketdata.krx.co.kr/mdi#document=13020101
 
 ```python
@@ -114,21 +115,7 @@ data_all.plot()
 
 <br><br>
 
-### 3. 데이터 분할
----
-in-sample, out-of-sample 데이터로 분할
-```python
-train_cnt = int(len(data_all)*0.7)
-test_cnt = len(data_all) - train_cnt
-
-# 7:3
-data = data_all.head(train_cnt)
-data_oos = data_all.tail(test_cnt)
-```
-
----
-
-### 4. 데이터 파악하기
+### 3. 데이터 파악하기
 ---
 **누적 수익률 그래프**
 `pct_change`는 pandas에서 제공하는 변화률 계산 함수이다.
@@ -161,7 +148,7 @@ plt.ylabel(tickers[1])
 
 <br><br>
 
-### 5. Kalman Filter
+### 4. Kalman Filter
 ---
 ```python
 obs_mat = sm.add_constant(data_all[tickers[0]].values, prepend=False)[:, np.newaxis]
@@ -218,7 +205,7 @@ for i, b in enumerate(state_means[::step]):
     plt.plot(xi, b[0] * xi + b[1], alpha=.5, lw=2, c=plt.get_cmap('jet')(colors_l[i]))
 ```
 
-파란색 값들은 과거, 붉은 색 값들이 in-sample의 최근 데이터이다.
+파란색 값들은 과거, 붉은 색 값들이 최근 데이터이다.
 
 회귀선이 시간에 따라 조정되는 현상을 시각적으로 나타낼 수 있다.
 
@@ -228,7 +215,7 @@ for i, b in enumerate(state_means[::step]):
 
 <br><br>
 
-### 6. Spread
+### 5. Spread
 ---
 ```python
 spread_kf = data_all[tickers[1]] - data_all[tickers[0]] * beta_kf['Slope'] - beta_kf['Intercept']
