@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Python] Kalman Filter를 활용한 Pair Trading
+title: "[Python] Kalman Filter를 활용한 Pair Trading"
 subtitle: "칼만필터 알고리즘"
 author: "MK"
 comments: true
