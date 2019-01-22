@@ -13,15 +13,15 @@ tags: [시계열분석]
 
 터널을 통과하는 차의 GPS 신호가 사라졌다. 터널안의 차를 어떻게 탐색할 수 있을까?
 
-발사된 미사일을 격추시키기 위해 미래 미사일의 위치를 어떻게 추정하여 격파시킬 수 있을까?
+발사된 미사일을 격추시키기 위해 미래 미사일의 위치를 어떻게 추정할 수 있을까?
 
 **칼만필터**는 **공간선형모델**로 주로, 네비게이션에서 위치를 추적하는데 쓰이거나 미사일 위치를 추적하는 등 **관측치를 기반으로 현재의 상태를 예측하는데 활용**되는 모델이다.
 
 비교적 빠르고 쉽게 구현할 수 있으며 특정 조건에서 정상적으로 분산된 센서의 잡음에 대한 최적 추정값을 제공한다.
 
-실제로 NASA에서 활용하여 아폴로가 달 착륙시 사용되기도 했다.
+실제로 NASA에서 활용하여 아폴로호에서 달 착륙시 사용되기도 했다.
 
-이에 따라 경제학 분야에서도 랜덤하게 변화는 상태에서 가장 확률적으로 가능성이 높은 예측 상태를 추적하기 위해 활용되었는데 **환율예측이나 주가예측 등 다양한 연구사례들이 있다.**
+이에 따라 경제학 분야에서도 랜덤하게 변화는 상태에서 가장 가능성이 높은 예측 상태를 추정하기 위해 활용되었는데 **환율예측이나 주가예측 등 다양한 연구사례들이 있다.**
 
 현재는 인공지능의 발달로 RNN과 대조되어 사용되기도 하지만, 각각의 특장점이 있어 여전히 많이 쓰이고 있는 칼만 필터에 대해 인지하고 넘어가야할 필요가 있다.
 
@@ -36,33 +36,37 @@ tags: [시계열분석]
 
 칼만필터를 알아보기 전에 선형 회귀 방정식을 살펴보자
 
-a~k~ = βb~k~ + α
+a ~k~ = βb ~k~ + α
 
 여기서 a~k~와 b~k~는 두 종목의 종가이고 β와 α는 기울기(Slope)와 절편(Intercept)이다.
 벡터 형태로 표현하면 아래와 같다.
 
-a~k~ = βb~k~
+a ~k~ = βb ~k~
 
 β = [β α]
-b~k~ = [b~k~ 1]
+
+b ~k~ = [b ~k~ 1]
 
 칼만 필터는 잡음이 있는 데이터스트림에서 재귀적으로 작동해 통계적 최적추정치를 산출하는 모델이다.
 
 칼만필터의 상태공간 모델의 방정식은 다음과 같다.
 
-x~k+1~ = A~k~x~k~ + w~k~
-z~k~ = H~k~x~k~ + v~k~
+x ~k+1~ = A ~k~ x ~k~ + w ~k~
 
-`x~k~`와 `z~k~`는 시각 k에서 숨겨진 상태와 관측 벡터이다.
-`A~k~`와 `H~k~`는 전이행렬(일종의 함수)를 의미한다.
-`w~k~`와 `v~k~`는 평균이 0인 가우시안 잡음이다.
+z ~k~ = H ~k~ x ~k~ + v ~k~
 
-관측치를 기반으로 얻는 주가의 조정 종가를 `z~k~`라 할때 측정행렬 `H`는 마감가격과 조정마감가격으로 구성된 1X2 벡터이다. 이 자체가 단순히 두 Asset 사이에서의 선형 회귀이다.
+x ~k~ 와 z ~k~ 는 시각 k에서 숨겨진 상태와 관측 벡터이다.
 
-이를 응용하여 숨겨진 상태변수 `x~k~`가 `β`로 표시된 선형회귀로 이루어진다고 가정한다. 또한 행렬 A를 랜덤워크로 가정하여 아래와 같은 산식으로 재구성한다.
+A ~k~ 와 H ~k~ 는 전이행렬(일종의 함수)를 의미한다.
+
+w ~k~ 와 v ~k~ 는 평균이 0인 가우시안 잡음이다.
+
+관측치를 기반으로 얻는 주가의 조정 종가를 z ~k~ 라 할때 측정행렬 H는 마감가격과 조정마감가격으로 구성된 1X2 벡터이다. 이 자체가 단순히 두 Asset 사이에서의 선형 회귀이다.
+
+이를 응용하여 숨겨진 상태변수 x ~k~ 가 β로 표시된 선형회귀로 이루어진다고 가정한다. 또한 행렬 A를 랜덤워크로 가정하여 아래와 같은 산식으로 재구성한다.
 
 
-β~k+1~ = Iβ~k~ + w~k~
+β ~k+1~ = Iβ ~k~ + w ~k~
 
 다시 말해 **다음 스텝을 위한 β는 현재의 β와 약간의 잡음을 포함하는 개념이다.**
 
@@ -70,8 +74,10 @@ z~k~ = H~k~x~k~ + v~k~
 
 이제 칼만필터의 관측 방적식을 통해 2개의 주가의 spread를 분석해보자!
 
+<br><br>
 
 ### 1. 데이터 가져오기
+---
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns; sns.set()
@@ -95,11 +101,10 @@ data_all.set_index('Date', inplace=True)
 data_all.sort_values('Date', ascending=True, inplace=True) # ascending=True 오름차순, False 내림차순
 ```
 
-
-
-
+<br><br>
 
 ### 2. 종목 살펴보기
+---
 **주가 추이 그래프**
 ```python
 data_all.plot()
@@ -107,9 +112,10 @@ data_all.plot()
 
 ![img_area](/img/posting/2019-01-20-001-price.PNG){: .post-img}
 
-
+<br><br>
 
 ### 3. 데이터 분할
+---
 in-sample, out-of-sample 데이터로 분할
 ```python
 train_cnt = int(len(data_all)*0.7)
@@ -120,8 +126,10 @@ data = data_all.head(train_cnt)
 data_oos = data_all.tail(test_cnt)
 ```
 
-### 4. 데이터 파악하기
+---
 
+### 4. 데이터 파악하기
+---
 **누적 수익률 그래프**
 `pct_change`는 pandas에서 제공하는 변화률 계산 함수이다.
 
@@ -151,8 +159,10 @@ plt.ylabel(tickers[1])
 
 ![img_area](/img/posting/2019-01-20-001-kf2.PNG){: .post-img}
 
+<br><br>
 
 ### 5. Kalman Filter
+---
 ```python
 obs_mat = sm.add_constant(data_all[tickers[0]].values, prepend=False)[:, np.newaxis]
 delta = 1e-5
@@ -216,9 +226,10 @@ for i, b in enumerate(state_means[::step]):
 
 ![img_area](/img/posting/2019-01-20-001-kf3.PNG){: .post-img}
 
-
+<br><br>
 
 ### 6. Spread
+---
 ```python
 spread_kf = data_all[tickers[1]] - data_all[tickers[0]] * beta_kf['Slope'] - beta_kf['Intercept']
 spread_kf.plot();
@@ -226,8 +237,11 @@ spread_kf.plot();
 
 ![img_area](/img/posting/2019-01-20-001-spread.PNG){: .post-img}
 
-
-
+<br><br>
+### **Reference**
+---
 http://www.thealgoengineer.com/2014/online_linear_regression_kalman_filter/
 
 https://towardsdatascience.com/kalman-filter-an-algorithm-for-making-sense-from-the-insights-of-various-sensors-fused-together-ddf67597f35e
+
+<br>
