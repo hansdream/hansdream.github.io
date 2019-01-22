@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[AI] DNN 모델링시 학습곡선 체크하기"
+title: "[Python] DNN 모델링시 학습곡선 체크하기"
 subtitle: "학습곡선이 중요한 이유"
 author: "MK"
 comments: true
 sitemap :
   changefreq : daily
   priority : 1.0
-tags: [AI, 모델링tip]
+tags: [딥러닝, 모델링tip]
 ---
 
 같은 데이터에 같은 모델을 적용하더라도 설계를 얼마나 잘하느냐에 따라 결과가 매우 달라진다.
