@@ -51,6 +51,12 @@ title: Sites
       <a href = "https://tariat.tistory.com/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%98%A4%ED%94%88%20API%20%ED%99%9C%EC%9A%A9%EA%B8%B0" target="_sub">
         https://tariat.tistory.com/category</a><br><br>
 
+        <p>- 중급 파이썬 TIPS</p><br>
+        <a href = "https://ddanggle.gitbooks.io/interpy-kr/content/" target="_sub">
+          https://ddanggle.gitbooks.io/interpy-kr/content/</a><br><br>
+
+
+
         <h3>Trading</h3>
         <p>- 실전투자기법</p><br>
         <a href = "https://stock79.tistory.com/category/%EC%8B%A4%EC%A0%84%20%ED%88%AC%EC%9E%90%20%EA%B8%B0%EB%B2%95" target="_sub">
