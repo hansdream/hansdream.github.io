@@ -13,7 +13,7 @@ tags: [시계열분석]
 
 
 
-공적분검정을 통해 주식간의 동조화 여부를 확인할 수 있다.
+공적분검정을 통해 개별주식간의 동조화 여부를 확인할 수 있다.
 
 동조화는 추세가 공유되는 장기동조화와 순환이 이전되는 단기동조화로 분해된다.
 
@@ -22,7 +22,7 @@ tags: [시계열분석]
 
 특정 주식의 한 쌍이 동조화를 이룰때 주가의 차이 또는 비율의 차이를 `스프레드`라고 하며 이는 일정한 간격을 유지할 것으로 기대하게 된다.
 
-하지만 특정 이슈로 일시적인 격차가 벌어지거나 좁혀졌을때, 이 현상이 시간에 따라 정상으로 회귀할 것으로 예측된다면 `Pair Trading`이 가능하다.
+하지만 특정 이슈로 **일시적인 격차가 벌어지거나 좁혀졌을때, 이 현상이 시간에 따라 정상으로 회귀할 것으로 예측** 된다면 `Pair Trading`이 가능하다.
 
 **Pair Trading에서 공적분 검증을 활용하는 기본 아이디어** 를 정리하면 아래와 같다.
 
@@ -30,7 +30,7 @@ tags: [시계열분석]
 
 단, 공적분의 의한 방법론은 주가가 비정상 시계열임을 가정하고 스프레드의 정상성을 추구한다.
 
-
+<br><br>
 
 ### 1. 데이터 가져오기
 ---
@@ -56,7 +56,7 @@ data.set_index('Date', inplace=True)
 data.sort_values('Date', ascending=True, inplace=True) # ascending=True 오름차순, False 내림차순
 ```
 
-** 주가 추이 그래프 **
+**주가 추이 그래프**
 ```python
 pd.concat([data[tickers[0]], data[tickers[1]]], axis=1).plot(figsize=(15,7))
 plt.ylabel('Stock Price');
@@ -67,14 +67,14 @@ plt.title(title)
 
 ![img_area](/img/posting/2019-01-25-001-price.PNG){: .post-img}
 
+<br><br>
 
-
-
-### 1. 공적분 분석 요소 셋팅
+### 2. 공적분 분석 요소 셋팅
+---
 상관관계와 유사한 공적분은 두 주식간의 비율이 평균을 중심으로 달라짐을 의미한다.
-요소항목은 log 처리한 종가를 사용하여 주가별 스케일 차이를 완화하여 분석하였다.
+요소항목은 log 처리한 종가를 사용하거나 단순 종가 혹은 일별 수익률을 사용하기도 한다.
 
-두 주식의 수익률 X, Y의 관계는 다음과 같이 정의 할 수 있다.
+두 주식 X, Y의 관계는 다음과 같이 정의 할 수 있다.
 
 **Y = ⍺ X + e**
 
@@ -83,16 +83,17 @@ plt.title(title)
 Pair Trading이 가능하려면 **시간 경과에 따른 비율의 기대값이 평균에 수렴해야 한다.**
 즉, 공적분 관계가 성립되어야 함을 의미한다.
 
-** 공적분 관계 성립 조건 **
+**공적분 관계 성립 조건**
 > - 각각의 시계열들이 모두 같은 order of integration을 가진다.
 (order of integration이란 어떤 시계열이 정상적(stationary)이 되기 위해 필요한 차분(difference) 횟수를 말한다.)
 > - 시계열들의 선형 결합으로 만들어진 새로운 시계열은 기존의 시계열들보다 더 낮은 order of integration을 가진다.
 
-** 공적분 쉽게 이해하기 **
+**공적분 쉽게 이해하기**
 > 공적분을 쉽게 설명하는 일화로 '취한 남편과 아내', 혹은 '취한 사람과 그의 개' 이야기가 있다. 아래에는 취한 사람과 개 이야기를 적어둔다.
 >어떤 취한 사람이 비틀거리며 어디론가 걷고 있다. 이 때 이 사람이 어디로 갈 지는 아무도 모른다. 다만 현재 자기가 있는 자리에서 어디론가 이동하려 한다는 것은 알 수 있다. 이것을 랜덤워크(random walk), 즉 무작위로 걷는다고 한다.(실제로 시계열분석시 볼 수 있는 통계용어다.) 만약 이런 취한 사람이 두 명 있다면 그들은 서로 각자 알아서 길을 갈 것이다. 즉 랜덤워크의 특성을 지닌 시계열이 두 개 있는 셈이다. 이 두 취한 사람들이 걸어간 자취 사이에는 아무 상관관계도 없다. 그런데, 이런 취한 사람 한 명이 애완견비글을 목줄 묶어서 데리고 다닌다고 생각해보자. 그렇다면 애완견이 이리저리 무작위로 뛰어다닌다 해도 결국 이 취한 사람이 가는 길과 비슷한 길을 가게 된다. 즉 애완견이 있는 위치와 취한 사람이 있는 위치 사이의 거리는 일정 수준 이상을 벗어나지 않는 다는 것을 알 수 있다. 이 때 애완견의 위치를 나타내는 시계열과 취한 사람의 위치를 나타내는 시계열은 공적분 관계에 있다고 할 수 있다.
 
-** 일일 수익률 계산 **
+**일일 수익률 계산**
+
 편의상 최근 100일치 데이터만 확인
 ```python
 cumm_rtn = (1 + data.pct_change()) # 일일수익률
@@ -109,10 +110,10 @@ plt.title(title)
 ```
 ![img_area](/img/posting/2019-01-25-001-return.PNG){: .post-img}
 
+<br><br>
 
-### 2. 공적분 계산
-
-** 공적분 계산 **
+### 3. 공적분 계산
+---
 ```python
 (Y/X).plot(figsize=(15,7))
 plt.axhline((Y/X).mean(), color='red', linestyle='--')
@@ -123,9 +124,10 @@ plt.show()
 
 ![img_area](/img/posting/2019-01-25-001-cointegration.PNG){: .post-img}
 
+<br><br>
 
-
-#### 3. 공적분 검증
+#### 4. 공적분 검증
+---
 ```python
 score, pvalue, _ = coint(X,Y)
 print('Correlation: ' + str(X.corr(Y)))
@@ -140,10 +142,13 @@ Cointegration test p-value: 3.883901182423506e-0
 공적분의 p-value가 매우 적게 나와 유의한 것으로 판정된다.
 즉, **신한지주와 KB금융은 장기적으로 유의한 관계가 있다.**
 
+<br><br>
 
-### 4. Pair Trading 활용
+### 5. Pair Trading 활용
+---
 이제 다시 원점으로 돌아와, 이러한 유의한 2개의 쌍을 찾는 것 부터 시작해보자.
 예시로 100개의 종목 데이터를 추출해왔다.
+
 
 #### 1) 데이터 가져오기
 상장 종목별 시계열데이터를 생성해야 한다.
@@ -160,6 +165,7 @@ fdr.__version__
 df_krx = fdr.StockListing('KRX')
 df_krx.head()
 ```
+
 |   | Symbol | Name     | Sector                  | Industry                                                                                 |
 |---|--------|----------|-------------------------|------------------------------------------------------------------------------------------|
 | 0 | 001040 | CJ       | 기타 금융업             | 지주회사                                                                                 |
@@ -171,6 +177,7 @@ df_krx.head()
 
 모든 종목을 고려하면 좋지만, 임시로 10개 종목만 분석하였다.
 시작일과 종료일은 5개년 데이터를 사용했다.
+<br>
 
 ```python
 n = 10 # 생성할 종목수 지정
@@ -194,6 +201,7 @@ kospi_df.head()
 | 3    | 2014-01-07 | 1959.44 | 1947.65 | 1965.74 | 1947.08 | 193030000.0 | 0.0032  |
 | 4    | 2014-01-08 | 1958.96 | 1965.50 | 1966.95 | 1950.02 | 217070000.0 | -0.0002 |
 
+<br>
 
 
 ```python
@@ -263,7 +271,7 @@ stock_df.head()
 | 3    | 2014-01-07 | 114500   | 2425    | 8370.0   | 17100 | 193000       | 742        | 7810   | 4895           | 2000     | 30332 |
 | 4    | 2014-01-08 | 115500   | 2440    | 8320.0   | 16900 | 196500       | 752        | 7900   | 4850           | 2020     | 30416 |
 
-
+<br>
 #### 2) 데이터 정비
 편의를 위해 오름차순 정렬 및 인덱스를 설정하고, 있을지 모를 결측치를 전일자로 채운다.
 공적분에 사용할 data는 종가 자체 데이터를 사용했다.
@@ -277,7 +285,7 @@ stock_df.set_index('Date', inplace=True)
 data = stock_df
 ```
 
-
+<br>
 #### 3) 공적분 함수
 ```python
 # p-value가 지정된 값보다 작은 pair 쌍을 반환한다.
@@ -336,7 +344,8 @@ def find_cointegrated_pairs(data):
     return score_matrix, pvalue_matrix, pair_pvalue, pairs
 ```
 
-#### 3) Heatmap 그래프
+<br>
+#### 4) Heatmap 그래프
 ```python
 # Heatmap
 instrumentIds = list(data.columns.values)
@@ -356,7 +365,7 @@ print(pairs)
 붉은색일수록 공적분관계가 유의한 것으로 판단되는 Pair이다.
 ![img_area](/img/posting/2019-01-25-001-hitmap.PNG){: .post-img}
 
-** Pair별 p-value 확인 **
+**Pair별 p-value 확인**
 ```python
 pair_pvalue.head(5)
 ```
@@ -373,8 +382,8 @@ pair_pvalue.head(5)
 유의하게 판단되는 항목은 CJ, CJ씨푸드가 유일한 것으로 나타난다.
 다만 10종목만 분석한 경우이므로, 종목 확장시 상당수의 Pair를 찾을 수 있을 것으로 보인다.
 
-
-#### 4) Pair 종목 시계열 비교
+<br>
+#### 5) Pair 종목 시계열 비교
 데이터를 파악해보기 위한 용도로 Z-score 그래프를 그려보자.
 여기서 사용되는 Z-score는 일정한 크기를 부여하기 위한 용도로만 사용되었다.
 만약, 실제 주식시장 분석 용도로 사용할 경우에는 정규분포를 가정하게 되므로 실제 비대칭적 주식시장에는 맞지 않아 유의해야 한다.
@@ -391,9 +400,11 @@ plt.show()
 ```
 ![img_area](/img/posting/2019-01-25-001-zscore.PNG){: .post-img}
 
+<br>
+#### 6) 트레이딩 전략
 
-#### 5) 트레이딩 전략
-** Step 1: Setup your problem **
+**Step 1: Setup your problem**
+
 종목1의 주가를 S1, 종목2를 S2로 두고 아래와 같이 Ratio 비율을 계산한다.
 
 Ratio = S1/S2
@@ -403,7 +414,8 @@ Ratio 비율은 S1 1개당 S2의 수량을 의미한다.
 매도 신호(+1이상) 포착시, S1을 n개 매도하고, S2를 n*Ratio개 매수한다.
 
 
-** Step 2: Collect Reliable and Accurate Data **
+**Step 2: Collect Reliable and Accurate Data**
+
 트레이딩 전략을 세울 Pair를 셋팅한다.
 
 ```python
@@ -415,7 +427,8 @@ S2 = data[s2_nm]
 ```
 
 
-** Step 3: Split Data **
+**Step 3: Split Data**
+
 검증을 위해 7:3 비율로 Train:Test 셋으로 나눈다.
 
 ```python
@@ -431,8 +444,9 @@ S2_test = S2.iloc[cut:]
 ```
 
 
-** Step 4: Feature Engineering **
-다음과 같은 요소들에 의해 매도/매수 신호를 포착한다.
+**Step 4: Feature Engineering**
+
+다음과 같은 요소들에 의해 `매도/매수 신호`를 포착한다.
 - 60 day Moving Average of Ratio: Measure of rolling mean
 - 5 day Moving Average of Ratio: Measure of current value of mean
 - 60 day Standard Deviation
@@ -473,10 +487,12 @@ plt.show()
 ![img_area](/img/posting/2019-01-25-001-ma_signal.PNG){: .post-img}
 
 
-** Step 5: Model Selection **
-Z-score가 -1이하로 떨어지면 S1매수&S2매도하고 +1이상 오르면 S1매도&S2매수한다.
+**Step 5: Model Selection**
 
-** Step 6: Train, Validate and Optimize **
+Z-score가 `-1이하`로 떨어지면 `S1매수&S2매도`하고 `+1이상` 오르면 `S1매도&S2매수`한다.
+
+**Step 6: Train, Validate and Optimize**
+
 모델이 수행하는 액션을 그래프로 확인해보자.
 ```python
 # Plot the ratios and buy and sell signals from z score
@@ -497,8 +513,11 @@ plt.show()
 ![img_area](/img/posting/2019-01-25-001-real_signal.PNG){: .post-img}
 
 위 그래프는 Ratio에 대한 그래프이다.
+
 다음 코드를 통해 실제 주가 그래프로 시그널을 확인할 수 있다.
+
 다만, 두개 주가가 스케일 차이가 있을 수 있으므로 편의상 log처리 후 그래프로 나타냈다.
+
 실제 모델에서는 단순 종가를 사용한다.
 
 ```python
@@ -530,13 +549,14 @@ plt.show()
 일정 간격을 유지하며 움직이고 있음을 보다 명확하게 확인할 수 있다.
 
 
-** 실전 트레이딩 전략 짜기 **
-원하는대로 엑션을 수정해볼 수 있다.
+**실전 트레이딩 전략 짜기**
+
+원하는대로 액션을 수정해볼 수 있다.
 셋팅된 기준은 Z-score를 기준으로
 
-+1 이상일 경우 : S1 n개 매도, S1 n*ratio 매수
--1 이하일 경우 : S1 n개 매수, S1 n*ratio 매도
--0.5 ~ 0.5 사이이면서 현재 수익(+)을 내고 있을 경우, 포지션 정리하여 이익을 실현한다.  
++1 이상일 경우 : S1 n개 매도, S1 n*ratio 매수<br>
+-1 이하일 경우 : S1 n개 매수, S1 n*ratio 매도<br>
+-0.5 ~ 0.5 사이이면서 현재 수익(+)을 내고 있을 경우, 포지션 정리하여 이익을 실현한다.  <br>
 
 ```python
 # Trade using a simple strategy
@@ -595,7 +615,7 @@ money
 
 65149.11의 이익을 창출할 것으로 예상된다.
 
-** Step 7: Backtest on Test Data **
+**Step 7: Backtest on Test Data**
 
 Test데이터로 백테스팅을 해보자.
 ```python
@@ -606,13 +626,16 @@ money
 576053.30의 이익이 산출되었다.
 
 
-함수에서 설정한 78과 5는 window 크기, 즉 평균치로 볼 기간과 현재시점으로 볼 일수를 의미한다.
+함수에서 설정한 78과 5는 `window 크기`, 즉 평균치로 볼 기간과 현재시점으로 볼 일수를 의미한다.
+
 78이라는 숫자는 어떻게 나왔을까?
-최적의 숫자를 설정하기 위해 그리드서치를 수행해볼 수 있다.
+
+최적의 숫자를 설정하기 위해 `그리드서치`를 수행해볼 수 있다.
+
 실제로 78은 예제 데이터를 기준으로 그리드서치한 결과이다.
 
 
-** Window Size Search **
+**Window Size Search**
 ```python
 # train
 length_scores = [trade(S1_train,
@@ -643,7 +666,9 @@ plt.show()
 ![img_area](/img/posting/2019-01-25-001-windowsearch.PNG){: .post-img}
 
 그래프는 Train과 Test 데이터의 Window일수별 수익금액 시뮬레이션 결과이다.
+
 둘다 높은 수익을 낼 것으로 예상되는 구간을 찾아야 한다.
+
 해당 데이터에서는 75~80 사이가 비교적 합리적일 것으로 판단된다.
 
 
