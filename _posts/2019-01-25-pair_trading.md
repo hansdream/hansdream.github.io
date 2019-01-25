@@ -363,6 +363,7 @@ print(pairs)
 ```
 
 붉은색일수록 공적분관계가 유의한 것으로 판단되는 Pair이다.
+
 ![img_area](/img/posting/2019-01-25-001-hitmap.PNG){: .post-img}
 
 **Pair별 p-value 확인**
