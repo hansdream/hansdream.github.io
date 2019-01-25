@@ -149,7 +149,7 @@ Cointegration test p-value: 3.883901182423506e-0
 이제 다시 원점으로 돌아와, 이러한 유의한 2개의 쌍을 찾는 것 부터 시작해보자.
 예시로 100개의 종목 데이터를 추출해왔다.
 
-
+<br>
 #### 1) 데이터 가져오기
 상장 종목별 시계열데이터를 생성해야 한다.
 여기서는 `FinanceDataReader` 모듈을 사용했다.
@@ -402,7 +402,7 @@ plt.show()
 
 <br>
 #### 6) 트레이딩 전략
-
+<br>
 **Step 1: Setup your problem**
 
 종목1의 주가를 S1, 종목2를 S2로 두고 아래와 같이 Ratio 비율을 계산한다.
@@ -410,10 +410,10 @@ plt.show()
 Ratio = S1/S2
 Ratio 비율은 S1 1개당 S2의 수량을 의미한다.
 
-매수 신호(-1이하) 포착시, S1을 n개 매수하고, S2를 n*Ratio개 매도한다.
-매도 신호(+1이상) 포착시, S1을 n개 매도하고, S2를 n*Ratio개 매수한다.
+매수 신호(-1이하) 포착시, S1을 n개 매수하고, S2를 n * Ratio개 매도한다.
+매도 신호(+1이상) 포착시, S1을 n개 매도하고, S2를 n * Ratio개 매수한다.
 
-
+<br>
 **Step 2: Collect Reliable and Accurate Data**
 
 트레이딩 전략을 세울 Pair를 셋팅한다.
@@ -426,7 +426,7 @@ S1 = data[s1_nm]
 S2 = data[s2_nm]
 ```
 
-
+<br>
 **Step 3: Split Data**
 
 검증을 위해 7:3 비율로 Train:Test 셋으로 나눈다.
@@ -443,7 +443,7 @@ S1_test = S1.iloc[cut:]
 S2_test = S2.iloc[cut:]
 ```
 
-
+<br>
 **Step 4: Feature Engineering**
 
 다음과 같은 요소들에 의해 `매도/매수 신호`를 포착한다.
@@ -486,11 +486,12 @@ plt.show()
 
 ![img_area](/img/posting/2019-01-25-001-ma_signal.PNG){: .post-img}
 
-
+<br>
 **Step 5: Model Selection**
 
 Z-score가 `-1이하`로 떨어지면 `S1매수&S2매도`하고 `+1이상` 오르면 `S1매도&S2매수`한다.
 
+<br>
 **Step 6: Train, Validate and Optimize**
 
 모델이 수행하는 액션을 그래프로 확인해보자.
@@ -548,7 +549,7 @@ plt.show()
 
 일정 간격을 유지하며 움직이고 있음을 보다 명확하게 확인할 수 있다.
 
-
+<br>
 **실전 트레이딩 전략 짜기**
 
 원하는대로 액션을 수정해볼 수 있다.
@@ -615,6 +616,7 @@ money
 
 65149.11의 이익을 창출할 것으로 예상된다.
 
+<br>
 **Step 7: Backtest on Test Data**
 
 Test데이터로 백테스팅을 해보자.
@@ -634,7 +636,7 @@ money
 
 실제로 78은 예제 데이터를 기준으로 그리드서치한 결과이다.
 
-
+<br>
 **Window Size Search**
 ```python
 # train
