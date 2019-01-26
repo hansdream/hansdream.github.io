@@ -399,7 +399,7 @@ plt.axhline(1.0, color='red')
 plt.axhline(-1.0, color='green')
 plt.show()
 ```
-![img_area](/img/posting/2019-01-25-001-zscore.PNG)
+![img_area](/img/posting/2019-01-25-001-zscore.PNG){: .post-img}
 
 <br>
 #### 6) 트레이딩 전략
