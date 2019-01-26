@@ -26,16 +26,20 @@ tags: [시계열분석]
 
 ![img_area](/img/posting/2019-01-27-001-all_plot.PNG){: .post-img}
 
-point들은 각 개별 종목이며 유사 그룹은 색상으로 표시된다. 눈에 잘 띄지는 않지만 연결 강도는 선의 진하기로 나타낼수 있다.
+**point들은 각 개별 종목이며 유사 그룹은 색상으로 표시된다. 눈에 잘 띄지는 않지만 연결 강도는 선의 진하기로 나타낼수 있다.**
 
 다시 정리하자면,
 종목들간의 유사도를 측정하여 `클러스터링`하고, 각각의 `연결 강도를 측정`하며 `공간상의 위치`를 나타내게 되는데 그 방법론은 아래와 같다.
 
 
+```
 - 일일 가격변화 표준값 X = (Close - Open) / std
 - 클러스터링 그룹(labels) : X의 공분산값을 기준으로 음의 제곱 유클리드 거리 계산, (GraphLassoCV, affinity_propagation)
 - 종목의 위치(embedding) : 일별 가격변동의 표준화값을 기준으로 2차원 embedding (LocallyLinearEmbedding)
 - 연결강도(partial_corr) : X의 정밀도값을 기준으로 결정(그룹내에서 실제 유사도가 얼마나 큰지) (GraphLassoCV)
+```
+
+
 
 정밀도의 의미상의 개념은 **유사하다고 측정된 그룹에서 실제 얼마나 관련이 있는지의 정도** 를 나타낸다.
 
@@ -206,7 +210,7 @@ sns.heatmap(gl_prec) # vmin=-2, vmax=2
 
 
 
-**alpha선택을 위한 그리드서치**
+**alpha 선택을 위한 그리드서치**
 ```python
 plt.figure()
 plt.plot(gl_alphas, gl_scores, marker='o', color='b', lw=2.0, label='GraphLassoCV')
@@ -226,13 +230,13 @@ plt.legend()
 
 유사도 s(i,k) 는 아래와 같이 표현된다.
 
-s(i,k)=−||xi−xk||<sup>2</sup>
+s(i,k) = −|| xi−xk || <sup>2</sup>
 
-s(k,k)는 특정한 음수 값으로 사용자가 정해 주게 되는데 이 값에 따라서 클러스터의 갯수가 달라지는 하이퍼 모수가 된다. s(k,k)가 크면 자기 자신에 대한 유사도가 커져서 클러스터의 수가 증가한다.
+`s(k,k)`는 특정한 음수 값으로 사용자가 정해주게 되는데 이 값에 따라서 클러스터의 갯수가 달라지는 `하이퍼 모수`가 된다. **s(k,k)가 크면 자기 자신에 대한 유사도가 커져서 클러스터의 수가 증가한다.**
 
 기본 설정이 인수(preference)로 전달되지 않으면 입력 유사성의 중앙값으로 설정됩니다.
 
-더 이상 변화하지 않고 수렴하면 계산이 종료되고 종료 시점에서 r(k,k)+a(k,k)>0이 데이터가 클러스터의 중심이 된다.
+더 이상 변화하지 않고 수렴하면 계산이 종료되고 종료 시점에서 r(k,k)+a(k,k) > 0이 데이터가 클러스터의 중심이 된다.
 
 ```python
 names = np.array(code_nm_list)
@@ -284,7 +288,9 @@ embedding = node_model.fit_transform(X.T).T  # 일일 가격차 표준화값( (c
 ---
 임의로 원하는 라벨을 지정해 해당 그룹의 관계를 파악해보자.
 
-#### 1) 원하는 그룹 데이터 추리기
+#### 1) 원하는 그룹 데이터 추출
+
+
 ```python
 select_label = 14 # 라벨 사용자 지정
 ```
@@ -330,6 +336,8 @@ plt.ylabel('Price');
 plt.xlabel('Time');
 plt.show()
 ```
+
+어느정도 유사한 패턴으로 움직이고 있는 것을 확인할 수 있다.
 
 ![img_area](/img/posting/2019-01-27-001-group_closes.PNG)
 
@@ -389,6 +397,9 @@ for index, (x_names, x_labels, (x,y)) in enumerate(zip(np.array(plot_temp['names
 
 ![img_area](/img/posting/2019-01-27-001-group_plot.PNG){: .post-img}
 
+선의 색상은 정밀도를 통한 연결강도를 의미한다.
+
+
 <br><br>
 
 ### 7. 분석대상 전체 그래프
@@ -423,7 +434,7 @@ ax.add_collection(lc)
 
 ![img_area](/img/posting/2019-01-27-001-all_plot.PNG){: .post-img}
 
-
+편의상 종목명 라벨은 생략하였다.
 
 <br><br>
 ### **Reference**
