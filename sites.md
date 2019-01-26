@@ -62,6 +62,9 @@ title: Sites
         <a href = "https://stock79.tistory.com/category/%EC%8B%A4%EC%A0%84%20%ED%88%AC%EC%9E%90%20%EA%B8%B0%EB%B2%95" target="_sub">
           https://stock79.tistory.com/category/</a><br><br>
 
+        <p>- quantopian API</p><br>
+        <a href = "https://www.quantopian.com/lectures" target="_sub">
+          https://www.quantopian.com/lectures</a><br><br>
 
     </div>
   </section>
