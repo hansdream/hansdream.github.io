@@ -65,7 +65,7 @@ title = tickers[0] + 'and ' + tickers[1]
 plt.title(title)
 ```
 
-![img_area](/img/posting/2019-01-25-001-price.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-price.PNG)
 
 <br><br>
 
@@ -108,7 +108,7 @@ plt.xlabel('Time');
 title = 'Cummulative Plot of ' + tickers[0] + 'and ' + tickers[1]
 plt.title(title)
 ```
-![img_area](/img/posting/2019-01-25-001-return.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-return.PNG)
 
 <br><br>
 
@@ -122,7 +122,7 @@ plt.legend(['Price Ratio', 'Mean'])
 plt.show()
 ```
 
-![img_area](/img/posting/2019-01-25-001-cointegration.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-cointegration.PNG)
 
 <br><br>
 
@@ -399,7 +399,7 @@ plt.axhline(1.0, color='red')
 plt.axhline(-1.0, color='green')
 plt.show()
 ```
-![img_area](/img/posting/2019-01-25-001-zscore.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-zscore.PNG)
 
 <br>
 #### 6) 트레이딩 전략
@@ -470,7 +470,7 @@ plt.ylabel('Ratio')
 plt.show()
 ```
 
-![img_area](/img/posting/2019-01-25-001-ma.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-ma.PNG)
 
 ```python
 plt.figure(figsize=(15,7))
@@ -485,7 +485,7 @@ plt.show()
 최근 5일 이평선과 60일 이평선(평균)으로 산출한 Z-score를 그래프로 확인해보자.
 대부분 -1~1사이에 위치해 있으며 평균으로 회귀하려는 경향을 확인할 수 있다.
 
-![img_area](/img/posting/2019-01-25-001-ma_signal.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-ma_signal.PNG)
 
 <br>
 **Step 5: Model Selection**
@@ -512,7 +512,7 @@ plt.legend(['Ratio', 'Buy Signal', 'Sell Signal'])
 plt.show()
 ```
 
-![img_area](/img/posting/2019-01-25-001-real_signal.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-real_signal.PNG)
 
 위 그래프는 Ratio에 대한 그래프이다.
 
@@ -546,7 +546,7 @@ plt.axis((x1,x2,min(S1_log.min(),S2_log.min())-1,max(S1_log.max(),S2_log.max())+
 plt.legend([s1_nm, s2_nm, 'Buy Signal', 'Sell Signal'])
 plt.show()
 ```
-![img_area](/img/posting/2019-01-25-001-log_signal.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-log_signal.PNG)
 
 일정 간격을 유지하며 움직이고 있음을 보다 명확하게 확인할 수 있다.
 
@@ -666,7 +666,7 @@ plt.legend(['Training', 'Test'])
 plt.show()
 ```
 
-![img_area](/img/posting/2019-01-25-001-windowsearch.PNG){: .post-img}
+![img_area](/img/posting/2019-01-25-001-windowsearch.PNG)
 
 그래프는 Train과 Test 데이터의 Window일수별 수익금액 시뮬레이션 결과이다.
 
