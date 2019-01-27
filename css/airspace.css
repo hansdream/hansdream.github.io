@@ -115,6 +115,7 @@ header .navbar-default {
 }
 header .navbar-default .navbar-nav {
   padding-top: 10px;
+  display: inline-block !important;
 }
 header .navbar-default .navbar-nav li a {
   color: #333333;
@@ -146,7 +147,7 @@ header .navbar-default .navbar-nav .sub-category {
 
 header .navbar-default .navbar-nav .sub-category ul li{
   display:none !important; /* 평상시에는 드랍메뉴가 안보이게 하기 */
-  padding: 0px 26px;
+  padding: 0px 26px !important;
   height:auto;
   float: left;
   clear: left;
