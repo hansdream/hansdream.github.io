@@ -129,9 +129,10 @@ header .navbar-title li a {
   padding: 10px 26px !important;
 }
 
-header .navbar-default .navbar-nav li a:hover {
+header .nav .navbar-nav .home-title li a:hover {
   color: #4E2E5A;
 }
+
 header .navbar-button {
   float: right !important;
   padding: 0px !important;
@@ -141,12 +142,11 @@ header .navbar-button {
 }
 
 header .navbar-default .navbar-nav .sub-category {
-  padding: 10px 26px !important;
+  padding: 0px 26px !important;
 }
 
 header .navbar-default .navbar-nav .sub-category ul li{
   display:none !important; /* 평상시에는 드랍메뉴가 안보이게 하기 */
-  padding: 0px 26px !important;
   height:auto;
   float: left;
   clear: left;
