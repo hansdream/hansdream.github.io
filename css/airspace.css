@@ -136,6 +136,25 @@ header .navbar-button {
   display: inline-block !important;
 }
 
+
+header .navbar-title li ul{
+  background: rgb(109,109,109);
+  display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+  height:auto;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  position:absolute;
+  width:200px;
+  z-index:200;
+  /*top:1em;
+  /*left:0;*/
+}
+
+header .navbar-title li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
 .logo-text {
   color: #4E2E5A;
   text-transform: uppercase;
