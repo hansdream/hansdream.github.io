@@ -66,6 +66,25 @@ title: Sites
         <a href = "https://www.quantopian.com/lectures" target="_sub">
           https://www.quantopian.com/lectures</a><br><br>
 
+        <p>- System Trader Success</p><br>
+        <a href = "http://systemtradersuccess.com/" target="_sub">
+          http://systemtradersuccess.com/</a><br><br>
+
+
+        <p>- Quantified Strategies</p><br>
+        <a href = "http://www.quantifiedstrategies.com/" target="_sub">
+          http://www.quantifiedstrategies.com/</a><br><br>            
+
+        <p>- Finance Data Vendors</p><br>
+        <a href = "https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors" target="_sub">
+          https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors</a><br><br>            
+
+        <p>- Great tools for algo-trading</p><br>
+        <a href = "https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd" target="_sub">
+          https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd</a><br><br>   
+
+
+
     </div>
   </section>
 </div>

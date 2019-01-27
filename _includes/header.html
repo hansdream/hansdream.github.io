@@ -46,6 +46,25 @@
               <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
               <li><a href="{{ site.baseurl }}/tags/#">Tags</a></li>
             </ul>
+
+
+            <ul>
+
+              {% assign pages_list = site.pages %}
+              {% for node in pages_list %}
+                {% if node.title != null %}
+                  {% if node.layout == "category" %}
+                    <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                    href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+
+          </ul>
+
+
+
+          
           </div><!-- /.navbar-collapse -->
 
           <!-- Search bar -->

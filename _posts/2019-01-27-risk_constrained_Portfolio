@@ -1,0 +1,15 @@
+---
+layout: post
+title: "[Python] Risk Factor Model을 통한 포트폴리오 최적화"
+subtitle: "Risk-Constrained Portfolio Optimization"
+author: "MK"
+comments: true
+sitemap :
+  changefreq : daily
+  priority : 1.0
+tags: [시계열분석]
+---
+
+
+위험 관리는 포트폴리오 및 알고리즘을 구축하는데 매우 중요하다.
+위험을 적절히 고려해 수익의 일관성을 개선할 수 있다. 포트폴리오에 잠재되어 있는 위험의 영향을 제한하거나 제거함으로써 우리가 원하는 알파에만 노출될 수 있도록 해야한다.
