@@ -119,7 +119,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 0px;
-  font-size: 15px;\
+  font-size: 15px;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -137,6 +137,15 @@ header .navbar-button {
 }
 
 
+.sub-category ul li {
+  background: rgb(109,109,109);
+  display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+  height:auto;
+}
+
+.sub-category li:hover ul{
+  display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
 
 .logo-text {
   color: #4E2E5A;
