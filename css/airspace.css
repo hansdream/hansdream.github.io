@@ -137,18 +137,14 @@ header .navbar-button {
 }
 
 
-header .navbar-default .navbar-nav .sub-category{
-  background: #dfe0ee;
-}
-
-
 header .navbar-default .navbar-nav .sub-category ul li{
   display:none !important; /* 평상시에는 드랍메뉴가 안보이게 하기 */
 }
 
 
-header .navbar-default .navbar-nav .sub-category ul:hover li{
+header .navbar-default .navbar-nav .sub-category li:hover ul{
   display:block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+  background: #dfe0ee;
 }
 
 .logo-text {
