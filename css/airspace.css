@@ -145,7 +145,7 @@ header .navbar-default .navbar-nav .sub-category ul li{
   display: inline-block;
 }
 
-header .navbar-default .navbar-nav .sub-category ul li:hover a{
+header .navbar-default .navbar-nav .sub-category :hover{
   display:block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 
