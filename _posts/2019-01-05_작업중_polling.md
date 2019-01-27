@@ -7,6 +7,7 @@ comments: true
 sitemap :
   changefreq : daily
   priority : 1.0
+categories : [Etc]
 tags: [Django]
 ---
 

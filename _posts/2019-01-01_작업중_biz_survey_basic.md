@@ -7,5 +7,6 @@ comments: false
 sitemap :
   changefreq : daily
   priority : 1.0
+categories : [Trend]
 tags:
 ---
