@@ -146,7 +146,7 @@ header .navbar-default .navbar-nav .sub-category ul li{
   padding: 10px 0px !important;
 }
 
-header .navbar-default .navbar-nav .sub-category li:hover ul{
+header .navbar-default .navbar-nav .sub-category ul li:hover{
   display:block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 
