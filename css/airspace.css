@@ -138,7 +138,7 @@ header .navbar-button {
 }
 
 
-header .navbar-default .navbar-nav li ul li{
+header .navbar-default .navbar-nav ul li ul li{
   background: rgb(109,109,109);
   display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
   height:auto;
