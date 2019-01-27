@@ -121,7 +121,11 @@ header .navbar-default .navbar-nav li a {
   padding: 0px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav .navbar-right li a:hover {
+font header .home-title li a:hover {
+  color: #4E2E5A;
+  font-weight: bold;
+}
+font header .sub-category li a:hover {
   color: #4E2E5A;
   font-weight: bold;
 }
