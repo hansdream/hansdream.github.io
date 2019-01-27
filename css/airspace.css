@@ -129,7 +129,7 @@ header .navbar-title li a {
   padding: 10px 26px !important;
 }
 
-header .nav li a:hover {
+.nav li a:hover {
   color: #4E2E5A !important;
 }
 
