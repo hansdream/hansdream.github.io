@@ -143,10 +143,9 @@ header .navbar-default .navbar-nav .sub-category ul li{
   height:auto;
   float: left;
   display: inline-block;
-  padding: 10px 0px !important;
 }
 
-header .navbar-default .navbar-nav .sub-category ul li:hover{
+header .navbar-default .navbar-nav .sub-category ul li:hover a{
   display:block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 
