@@ -40,19 +40,19 @@
               <li><a href="{{ site.baseurl }}/">Home</a></li>
               <li><a href="{{ site.baseurl }}/work">Work</a></li>
               <div class="nav navbar-nav navbar-right sub-category">
-              <li><a href="{{ site.baseurl }}/blog">Blog</a>
+                <li><a href="{{ site.baseurl }}/blog">Blog</a>
 
-                {% assign pages_list = site.pages %}
-                  {% for node in pages_list %}
-                    {% if node.title != null %}
-                      {% if node.layout == "category" %}
-                        <ul><a class="category-link {% if page.url == node.url %} active{% endif %}"
-                        href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></ul>
+                  {% assign pages_list = site.pages %}
+                    {% for node in pages_list %}
+                      {% if node.title != null %}
+                        {% if node.layout == "category" %}
+                          <ul><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></ul>
+                        {% endif %}
                       {% endif %}
-                    {% endif %}
-                  {% endfor %}
+                    {% endfor %}
 
-              </li>
+                </li>
               </div>
               <!--
               <li><a href="{{ site.baseurl }}/trend">Trend</a></li>
