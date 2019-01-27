@@ -142,6 +142,7 @@ header .navbar-button {
 }
 
 header .navbar-default .navbar-nav .sub-category {
+  padding: 0px 26px;
   width: 52px;
 }
 
