@@ -1,5 +1,5 @@
 ---
 layout: category
 title: Etc
-pelmalink: 'blog/etc'
+pelmalink: /blog/etc/
 ---

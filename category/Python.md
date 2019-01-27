@@ -1,5 +1,5 @@
 ---
 layout: category
 title: Python
-pelmalink: 'blog/python'
+pelmalink: /blog/python/
 ---
