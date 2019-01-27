@@ -39,7 +39,8 @@
             <ul class="nav navbar-nav navbar-right home-title">
               <li><a href="{{ site.baseurl }}/">Home</a></li>
               <li><a href="{{ site.baseurl }}/work">Work</a></li>
-              <li class="nav navbar-nav navbar-right sub-category><a href="{{ site.baseurl }}/blog">Blog</a>
+              <div class="nav navbar-nav navbar-right sub-category">
+              <li><a href="{{ site.baseurl }}/blog">Blog</a>
                 <ul>
                 {% assign pages_list = site.pages %}
                   {% for node in pages_list %}
@@ -52,6 +53,7 @@
                   {% endfor %}
                 </ul>
               </li>
+              </div>
               <!--
               <li><a href="{{ site.baseurl }}/trend">Trend</a></li>
                -->
