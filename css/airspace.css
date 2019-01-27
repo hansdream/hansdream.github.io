@@ -137,15 +137,22 @@ header .navbar-button {
 }
 
 
+header .navbar-default .navbar-nav .sub-category {
+  white-space: nowrap;
+}
+
 header .navbar-default .navbar-nav .sub-category ul li{
-  padding: 10px 26px !important;
   display:none !important; /* 평상시에는 드랍메뉴가 안보이게 하기 */
   height:auto;
   float: left;
 }
 
+header .navbar-default .navbar-nav .sub-category li:hover ul{
+  display: block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
 header .navbar-default .navbar-nav .sub-category li:hover ul li{
-  display: inline-block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+  display: block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 
 
