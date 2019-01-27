@@ -137,7 +137,7 @@ header .navbar-button {
 }
 
 
-header .sub-category ul li {
+header .navbar-default .navbar-nav ul li {
   background: rgb(109,109,109);
   display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
   height:auto;
@@ -145,7 +145,7 @@ header .sub-category ul li {
   display: inline-block !important;
 }
 
-header .sub-category li:hover ul{
+header .navbar-default .navbar-nav li:hover ul{
   display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 
