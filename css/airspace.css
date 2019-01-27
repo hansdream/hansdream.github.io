@@ -143,6 +143,7 @@ header .navbar-button {
 
 header .navbar-default .navbar-nav .sub-category {
   padding: 0px 26px !important;
+  margin-left: 0px;
 }
 
 header .navbar-default .navbar-nav .sub-category ul li{
