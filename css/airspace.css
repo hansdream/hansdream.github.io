@@ -147,7 +147,7 @@ header .navbar-default .navbar-nav .sub-category ul li{
 }
 
 header .navbar-default .navbar-nav .sub-category li:hover ul{
-  display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+  display:block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 
 
