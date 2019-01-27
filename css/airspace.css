@@ -129,7 +129,7 @@ header .navbar-title li a {
   padding: 10px 26px !important;
 }
 
-header .nav .navbar-nav li a:hover {
+header .nav li a:hover {
   color: #4E2E5A !important;
 }
 
@@ -142,7 +142,8 @@ header .navbar-button {
 }
 
 header .navbar-default .navbar-nav .sub-category {
-  padding: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
   width: 52px;
 }
 
