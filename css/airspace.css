@@ -121,8 +121,9 @@ header .navbar-default .navbar-nav li a {
   padding: 0px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav li a:hover {
-  color: #4E2E5A !important;
+font header .navbar-default .navbar-nav .navbar-right li a:hover {
+  color: #4E2E5A;
+  font-weight: bold;
 }
 
 header .navbar-title li a {
