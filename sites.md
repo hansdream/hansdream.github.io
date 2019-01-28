@@ -88,7 +88,7 @@ title: Sites
       <a href = "https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors" target="_sub">
         https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors</a><br><br>            
 
-      <p>- Great tools for algo-trading</p>
+      <p style="margin-bottum=0px;">- Great tools for algo-trading</p>
       <a href = "https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd" target="_sub">
         https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd</a><br><br>   
 
