@@ -30,18 +30,23 @@ title: Sites
       <img src="/img/sites/paletton.PNG" class = "post-img"><br><br>
 
       <h3>Tool Info</h3>
-      <p>- 프로그래밍 언어 및 프레임워크 비교 사이트</p><br>
+      <p stype="padding=0px;">- 프로그래밍 언어 및 프레임워크 비교 사이트</p><br>
       <a href = "https://stackshare.io/stackups/django-vs-laravel-vs-nodejs" target="_sub">
         https://stackshare.io/stackups</a><br>
 
       <img src="/img/sites/stackshare.PNG" class = "post-img" ><br><br>
 
+      <br>
       <h3>Code</h3>
       <p>- 마크다운 테이블 생성기</p><br>
       <a href = "http://www.tablesgenerator.com/markdown_tables" target="_sub">
         http://www.tablesgenerator.com/markdown_tables</a><br><br>
 
 
+
+
+
+      <br>
       <h3>Python</h3>
       <p>- 텐서플로우 문서 한글 번역본</p><br>
       <a href = "https://tensorflowkorea.gitbooks.io/tensorflow-kr/" target="_sub">
@@ -51,37 +56,41 @@ title: Sites
       <a href = "https://tariat.tistory.com/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%98%A4%ED%94%88%20API%20%ED%99%9C%EC%9A%A9%EA%B8%B0" target="_sub">
         https://tariat.tistory.com/category</a><br><br>
 
-        <p>- 중급 파이썬 TIPS</p><br>
-        <a href = "https://ddanggle.gitbooks.io/interpy-kr/content/" target="_sub">
-          https://ddanggle.gitbooks.io/interpy-kr/content/</a><br><br>
+      <p>- 중급 파이썬 TIPS</p><br>
+      <a href = "https://ddanggle.gitbooks.io/interpy-kr/content/" target="_sub">
+        https://ddanggle.gitbooks.io/interpy-kr/content/</a><br><br>
 
 
 
-        <h3>Trading</h3>
-        <p>- 실전투자기법</p><br>
-        <a href = "https://stock79.tistory.com/category/%EC%8B%A4%EC%A0%84%20%ED%88%AC%EC%9E%90%20%EA%B8%B0%EB%B2%95" target="_sub">
-          https://stock79.tistory.com/category/</a><br><br>
-
-        <p>- quantopian API</p><br>
-        <a href = "https://www.quantopian.com/lectures" target="_sub">
-          https://www.quantopian.com/lectures</a><br><br>
-
-        <p>- System Trader Success</p><br>
-        <a href = "http://systemtradersuccess.com/" target="_sub">
-          http://systemtradersuccess.com/</a><br><br>
 
 
-        <p>- Quantified Strategies</p><br>
-        <a href = "http://www.quantifiedstrategies.com/" target="_sub">
-          http://www.quantifiedstrategies.com/</a><br><br>            
 
-        <p>- Finance Data Vendors</p><br>
-        <a href = "https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors" target="_sub">
-          https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors</a><br><br>            
+      <br>
+      <h3>Trading</h3>
+      <p>- 실전투자기법</p><br>
+      <a href = "https://stock79.tistory.com/category/%EC%8B%A4%EC%A0%84%20%ED%88%AC%EC%9E%90%20%EA%B8%B0%EB%B2%95" target="_sub">
+        https://stock79.tistory.com/category/</a><br><br>
 
-        <p>- Great tools for algo-trading</p><br>
-        <a href = "https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd" target="_sub">
-          https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd</a><br><br>   
+      <p>- quantopian API</p><br>
+      <a href = "https://www.quantopian.com/lectures" target="_sub">
+        https://www.quantopian.com/lectures</a><br><br>
+
+      <p>- System Trader Success</p><br>
+      <a href = "http://systemtradersuccess.com/" target="_sub">
+        http://systemtradersuccess.com/</a><br><br>
+
+
+      <p>- Quantified Strategies</p><br>
+      <a href = "http://www.quantifiedstrategies.com/" target="_sub">
+        http://www.quantifiedstrategies.com/</a><br><br>            
+
+      <p>- Finance Data Vendors</p><br>
+      <a href = "https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors" target="_sub">
+        https://blog.alpaca.markets/blog/2018/7/24/data-data-data-11-great-financial-datavendors</a><br><br>            
+
+      <p>- Great tools for algo-trading</p><br>
+      <a href = "https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd" target="_sub">
+        https://hackernoon.com/9-great-tools-for-algo-trading-e0938a6856cd</a><br><br>   
 
 
 
