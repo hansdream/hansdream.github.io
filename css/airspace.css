@@ -121,11 +121,11 @@ header .navbar-default .navbar-nav li a {
   padding: 0px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav .navbar-right .home-title li a:hover {
+font header .navbar-default .navbar-nav .navbar-right .home-title li:hover {
   color: #4E2E5A;
   font-weight: bold;
 }
-font header .navbar-default .navbar-nav .navbar-right .sub-category li a:hover {
+font header .navbar-default .navbar-nav .navbar-right .sub-category li:hover {
   color: #4E2E5A;
   font-weight: bold;
 }
@@ -158,6 +158,8 @@ header .navbar-default .navbar-nav .sub-category ul li{
 
 header .navbar-default .navbar-nav .sub-category li:hover ul li{
   display: block !important; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+  color: #4E2E5A;
+  font-weight: bold;
 }
 
 
