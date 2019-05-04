@@ -72,3 +72,6 @@ def daterange(start_date, end_date):
 ```phthon
 alco_with_nan.notnull() # null이 아닌 경우 True
 ```
+
+
+<br><br>

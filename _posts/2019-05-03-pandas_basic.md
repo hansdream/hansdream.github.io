@@ -32,6 +32,7 @@ df= pd.DataFrame(test_dict)
 ```phthon
 frame_test_column = pd.DataFrame.from_dict(test_dict, orient='columns')
 ```
+
 |   | name   |
 |---|--------|
 | 0 | Jake   |
@@ -39,12 +40,15 @@ frame_test_column = pd.DataFrame.from_dict(test_dict, orient='columns')
 | 2 | Philip |
 
 
+
 ```phthon
 frame_test_index = pd.DataFrame.from_dict(test_dict, orient='index')
 ```
+
 |      | 0    | 1      | 2      | 3     |
 |------|------|--------|--------|-------|
 | name | Jake | Eunice | Philip | Karen |
+
 
 
 <br><br>
@@ -69,14 +73,29 @@ result_df = result_df.iloc[:, result_df.columns != "del"]  # del 항목 제외
 df[frame_test['names']=='Eunice']
 ```
 
-**4) 값 패딩**
+**5) 값 패딩**
 ```phthon
 data['code'] = data['code'].map(lambda x: str(x).rjust(6, '0'))[:]  # 6자리로 0패딩하기
 ```
 
 
+
 <br><br>
-### 3. 행/열 삭제
+### 3. iloc vs loc
+---
+```phthon
+# iloc 은 숫자 인덱스 사용
+default_df.iloc[1]
+
+# loc 은 실제 설정된 인덱스 사용!
+default_df.loc[2011]
+```
+
+
+
+
+<br><br>
+### 4. 행/열 삭제
 ---
 ```phthon
 default_df.drop(['first_name'],axis=1) # 열삭제
@@ -89,7 +108,7 @@ df.drop_duplicates() # 중복제거
 ```
 
 <br><br>
-### 2. 피봇테이블 생성
+### 5. 피봇테이블 생성
 ---
 ```phthon
 data_pivot=stock_df.pivot_table('Change',index='Code',columns='Year', aggfunc='mean')
@@ -97,7 +116,7 @@ data_pivot
 ```
 
 <br><br>
-### 4. 데이터프레임 컬럼
+### 6. 데이터프레임 컬럼
 ---
 **컬럼명 가져오기**
 ```phthon
@@ -121,7 +140,7 @@ df.rename(columns={"first_name":"성"}, inplace = True)
 
 
 <br><br>
-### 5. 연산
+### 7. 연산
 ---
 **행 합산**
 ```phthon
@@ -134,7 +153,7 @@ df['period'] = df[['Year', 'quarter']].apply(lambda x: ' '.join(x.astype(str)), 
 ```
 
 <br><br>
-### 6. 요약보기
+### 8. 요약보기
 ---
 ```phthon
 df.describe()
@@ -149,13 +168,14 @@ df.describe()
 
 
 
+
 **범주형 데이터 확인**
 ```phthon
 print(data.gender.value_counts())
 ```
 
 <br><br>
-### 7. 인덱스 변경
+### 9. 인덱스 변경
 ---
 **특정컬럼 인덱스 지정**
 ```phthon
@@ -179,7 +199,7 @@ df.reindex(index=[2010,2011, 2012, 2013, 2014, 2015, 2016, 2017], columns=['firs
 
 
 <br><br>
-### 8. 결측치 처리
+### 10. 결측치 처리
 ---
 **1) 채우기 메서드 활용**
 ```phthon
@@ -187,28 +207,28 @@ df.reindex(index=[2010,2011, 2012, 2013, 2014, 2015, 2016, 2017], columns=['firs
 # bfill, backfill
 df.sort_index().reindex([2010,2011, 2012, 2013, 2014, 2015, 2016, 2017], method='ffill')
 ```
-**1) fillna 활용**
+**2) fillna 활용**
 ```phthon
 df.fillna(0) # 지정된 값으로 채우기
 ```
 
-**2) replace 활용**
+**3) replace 활용**
 ```phthon
 df.replace(np.NaN, 'NULL Value', inplace=True)
 ```
 
-**3) fill_value 활용**
+**4) fill_value 활용**
 ```phthon
 default_df.reindex([2011, 2012, 2013, 2014, 2015, 2016, 2017], fill_value='NoName')  # 없는 값은 'NoName'으로 채우기
 ```
-**4) NA행 삭제**
+**5) NA행 삭제**
 ```phthon
 # how = any, all
 df.dropna(how='all') # 행삭제
 df.dropna(how='all', axis=1) # 열삭제
 ```
 
-**5) 나머지의 평균으로 채우기**
+**6) 나머지의 평균으로 채우기**
 ```phthon
 d1 = alco_with_nan['D1']
 clean = d1.notnull()
@@ -216,20 +236,10 @@ d1[-clean] = d1[clean].mean()
 ```
 
 
-<br><br>
-### 5. iloc vs loc
----
-```phthon
-# iloc 은 숫자 인덱스 사용
-default_df.iloc[1]
-
-# loc 은 실제 설정된 인덱스 사용!
-default_df.loc[2011]
-```
 
 
 <br><br>
-### 6. 정렬하기
+### 11. 정렬하기
 ---
 **인덱스 기준**
 ```phthon
@@ -244,7 +254,7 @@ default_df.sort_values(by='first_name', ascending=True)
 
 
 <br><br>
-### 7. 순위지정
+### 12. 순위지정
 ---
 ```phthon
 rank_test = pd.DataFrame(np.random.randn(10))
@@ -252,7 +262,7 @@ rank_test = pd.DataFrame(np.random.randn(10))
 
 
 <br><br>
-### 8. 병합하기
+### 13. 병합하기
 ---
 ```phthon
 # 인덱스를 원래 열로 돌려두고 다시 합친다.
@@ -270,7 +280,7 @@ pd.merge(merge1[:10], merge2, left_index=True, right_index=True, how='left')
 
 
 <br><br>
-### 10. 데이터 연결하기
+### 14. 데이터 연결하기
 ---
 ```phthon
 # concat 아래로 이어 붙이기
@@ -283,7 +293,7 @@ pd.concat([merge1,merge2],axis=1)
 
 
 <br><br>
-## 11. 그룹만들기(group by)
+### 15. 그룹만들기(group by)
 ---
 ```phthon
 merge1.groupby('column')
@@ -295,3 +305,7 @@ merge1.rolling(windows=5)
 # 묶어서 계산하기
 merge1.rolling(windows=5).mean() #평균
 ```
+
+
+
+<br><br>
