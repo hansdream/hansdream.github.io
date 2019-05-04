@@ -8,7 +8,7 @@ sitemap :
   changefreq : daily
   priority : 1.0
 categories : [Python]
-tags: [pandas]
+tags: [파이썬기초]
 ---
 
 `pandas`는 데이터 분석에 용이한 파이썬 패키지이다.

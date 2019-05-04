@@ -8,7 +8,7 @@ sitemap :
   changefreq : daily
   priority : 1.0
 categories : [Python]
-tags:
+tags: [파이썬기초]
 ---
 
 
