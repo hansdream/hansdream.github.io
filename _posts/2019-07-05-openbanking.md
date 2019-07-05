@@ -20,12 +20,13 @@ tags: [핀테크]
 (이체 외 기타 API도 인하 적용)
 
 
-![img_area](/img/posting/2019-07-05-001-openbanking.PNG){: .post-img600}
+![img_area](/img/posting/2019-07-05-001-openbanking.PNG){: .post-img700}
 
-![img_area](/img/posting/2019-07-05-002-openbanking.PNG){: .post-img600}
+![img_area](/img/posting/2019-07-05-002-openbanking.PNG){: .post-img700}
 
 
-이용절차는 아래와 같다.
+이용절차는 아래와 같다.<br>
+
 ![img_area](/img/posting/2019-07-05-003-openbanking.PNG){: .post-img}
 
 
@@ -33,7 +34,7 @@ tags: [핀테크]
 신청하려면 은행 또는 핀테크 사업자에 해당되어야 하는데,
 핀테크 사업의 기준은 아래와 같다.
 
-![img_area](/img/posting/2019-07-05-004-openbanking.PNG){: .post-img600}
+![img_area](/img/posting/2019-07-05-004-openbanking.PNG){: .post-img700}
 
 
 
@@ -45,7 +46,8 @@ tags: [핀테크]
 
 OPEN API 예시 항목은 다음과 같다.
 
-![img_area](/img/posting/2019-07-05-006-openbanking.PNG){: .post-img600}
+![img_area](/img/posting/2019-07-05-006-openbanking.PNG){: .post-img700}
+
 ![img_area](/img/posting/2019-07-05-007-openbanking.PNG){: .post-img}
 
 
@@ -54,7 +56,7 @@ OPEN API 예시 항목은 다음과 같다.
 
 더구나 금융업인만큼 보안이 매우 중요한데, 전반적인 운영시스템 내에서의 취약성은 아래와 같다.
 
-![img_area](/img/posting/2019-07-05-009-openbanking.PNG){: .post-img600}
+![img_area](/img/posting/2019-07-05-009-openbanking.PNG){: .post-img700}
 
 
 이러한 문제를 해결하기 위해 크게 2가지에 대한 점검 항목들을 관리하고 수행한다.
