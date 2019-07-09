@@ -84,7 +84,7 @@ print(Noun_words)
 
 
 <br><br>
-### 5. 불용어 제거 전 별도 사전 구축
+### 5. 불용어 제거용 사전 구축
 
 분석대상에서 제외하고 싶은 단어를 stopwords에 명시한다.
 
@@ -137,4 +137,28 @@ plt.show()
 ![img_area](/img/posting/2019-07-09-001-wordcloud.PNG){: .post-img}
 
 
+워드클라우드 옵션을 변경해 볼 수도 있다.
+max_font_size를 변경하고 background_color를 white로 바꿔보자. max_words를 통해 최대로 표현할 단어수를 제한할 수도 있다.
+
+
+```python
+wordcloud = WordCloud(max_font_size=50, max_words=30, background_color='white', relative_scaling=.5, font_path=FONT_PATH).generate(noun_text)
+plt.figure()
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+```
+![img_area](/img/posting/2019-07-09-002-wordcloud.PNG){: .post-img}
+
+
+이미지를 파일로 저장하기
+```python
+wordcloud.to_file("img/first_review.png")
+```
+
 <br>
+
+
+### **Reference**
+---
+- <https://www.datacamp.com/community/tutorials/wordcloud-python>
